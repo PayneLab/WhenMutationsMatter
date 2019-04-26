@@ -1,3 +1,8 @@
 This folder is a practice folder for Daniel to get familiar
 with CPTAC, and to practice fundamentals for pandas, numpy, scipy, etc.
-For information on pandas see <a href="https://www.dataquest.io/blog/pandas-python-tutorial/">here.</a>
+For information on pandas see https://www.dataquest.io/blog/pandas-python-tutorial/
+https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html
+
+For more information on Seaborn see:
+https://seaborn.pydata.org/tutorial.html
+https://elitedatascience.com/python-seaborn-tutorial
