@@ -1,0 +1,6 @@
+sampleAFromGroup2
+sampleBFromGroup2
+sampleCFromGroup2
+sampleDFromGroup2
+sampleEFromGroup2
+sampleFFromGroup2

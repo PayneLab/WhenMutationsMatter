@@ -1,0 +1,2 @@
+group_of_interest   #CC97B4
+not_in_group_of_interest    #7C5947
