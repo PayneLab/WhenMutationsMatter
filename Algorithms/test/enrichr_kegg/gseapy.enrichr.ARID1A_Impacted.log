@@ -141,3 +141,9 @@ LINE 703 : 2019-05-23 12:32:10,364 [DEBUG   ] Embedding font /anaconda3/lib/pyth
 LINE 710 : 2019-05-23 12:32:10,364 [DEBUG   ] Writing TrueType font.
 LINE 348 : 2019-05-23 12:32:10,374 [INFO    ] Done.
 
+LINE 128 : 2019-05-24 12:19:12,264 [DEBUG   ] diff parser start
+LINE 139 : 2019-05-24 12:19:12,266 [DEBUG   ] diff parser calculated
+LINE 140 : 2019-05-24 12:19:12,266 [DEBUG   ] diff: line_lengths old: 1, new: 1
+LINE 144 : 2019-05-24 12:19:12,266 [DEBUG   ] diff code[replace] old[1:1] new[1:1]
+LINE 263 : 2019-05-24 12:19:12,267 [DEBUG   ] parse_part from 1 to 1 (to 0 in part parser)
+LINE 173 : 2019-05-24 12:19:12,267 [DEBUG   ] diff parser end
