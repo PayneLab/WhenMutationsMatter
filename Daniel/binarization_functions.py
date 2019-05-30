@@ -1,5 +1,8 @@
-#Binarization Functions:
+#Import dependencies
+import numpy as np
+import pandas as pd
 
+#Binarization Functions
 def binarizeCutOff(df, column, cut_off, replace_high, replace_low):
     """Input parameters:
            df:
@@ -134,7 +137,7 @@ def binarizeCategorical(df, column, dictionary):
     Return Value:
         A one column dataframe with the specified, replaced values.
     """
-    
+    new_df = df.copy()
     new_df[column] = df[column].map(dictionary).fillna(np.nan)
     
     return(new_df[column])
