@@ -141,3 +141,57 @@ def binarizeCategorical(df, column, dictionary):
     new_df[column] = df[column].map(dictionary).fillna(np.nan)
     
     return(new_df[column])
+
+
+def significantEnrichments(df, column, p_value=0.05):
+    """
+    Input Parameters
+        df:
+            The DataFrame returned from the compare_groups_outliers
+            function in cptac.Algorithms().
+        
+        column:
+            The column within df that you want to filter for 
+            significance. For example, 'Histologic_type_Serous_enrichment_FDR'.
+        
+        p_value:
+            This is the cut off you choose to filter for significant
+            enrichments. The default value of 0.05, for instance, will
+            print out the proteins and their associated p-values ONLY
+            for proteins whose p-values are less than 0.05.
+            
+    Methods Description:
+        This function will drop NaN values from the column you choose to 
+        filter, and then will filter that column based on the chosen p_value.
+        It will then print out the number of significant proteins compared to
+        the original number of proteins, and the p-values associated with each
+        significant protein that are less than 0.05.
+    
+    Return Value:
+        The DataFrame of significant proteins and their p-values will be returned.
+    """
+    #Get rid of _enrichment_FDR for nicer print statement
+    words = column.split('_')
+    attribute = []
+    for item in words:
+        if item == 'enrichment' or item == 'FDR':
+            break
+        else:
+            attribute.append(item)
+    attribute = "_".join(attribute)
+    total_proteins = len(df[column])
+    
+    #Drop NaN values and filter by p_value
+    results = df[column].dropna()
+    sig_results = results[results < p_value]
+    sig_results = pd.DataFrame(sig_results)
+    sig_results.columns = [attribute+'_P_values']
+
+    print('There are '+str(len(sig_results))+' significant proteins from '
+          +str(total_proteins)+' proteins regarding '+attribute+':\n')
+    
+    #Account for columns that have no significant values
+    if len(sig_results) == 0:
+        print('No significant enrichments.')
+        return
+    return(sig_results)
