@@ -170,7 +170,7 @@ def significantEnrichments(df, column, p_value=0.05):
     Return Value:
         The DataFrame of significant proteins and their p-values will be returned.
     """
-    #Get rid of _enrichment_FDR for nicer print statement
+    #Get rid of '_enrichment_FDR' for nicer print statement
     words = column.split('_')
     attribute = []
     for item in words:
@@ -182,7 +182,7 @@ def significantEnrichments(df, column, p_value=0.05):
     total_proteins = len(df[column])
     
     #Drop NaN values and filter by p_value
-    results = df[column].dropna()
+    #results = df[column].dropna()
     sig_results = results[results < p_value]
     sig_results = pd.DataFrame(sig_results)
     sig_results.columns = [attribute+'_P_values']
@@ -193,12 +193,14 @@ def significantEnrichments(df, column, p_value=0.05):
         return
     
     elif len(sig_results) == 1:
-        print('There is 1 significant protein enrichment in '+attribute+':\n')
+        print('1 significant protein enrichment in '
+              +attribute+':\n')
         
         return(sig_results)
     
     else:
-        print('There are '+str(len(sig_results))
-              +' significant proteins enrichments in '+attribute+'\n')
+        print(str(len(sig_results))
+              +' significant protein enrichments in '
+              +attribute+'\n')
         
         return(sig_results)
