@@ -186,12 +186,19 @@ def significantEnrichments(df, column, p_value=0.05):
     sig_results = results[results < p_value]
     sig_results = pd.DataFrame(sig_results)
     sig_results.columns = [attribute+'_P_values']
-
-    print('There are '+str(len(sig_results))+' significant proteins from '
-          +str(total_proteins)+' proteins regarding '+attribute+':\n')
     
-    #Account for columns that have no significant values
-    if len(sig_results) == 0:
-        print('No significant enrichments.')
+    if len(sig_results) < 1:
+        print('No significant results in '+attribute+'\n')
+        
         return
-    return(sig_results)
+    
+    elif len(sig_results) == 1:
+        print('There is 1 significant protein enrichment in '+attribute+':\n')
+        
+        return(sig_results)
+    
+    else:
+        print('There are '+str(len(sig_results))
+              +' significant proteins enrichments in '+attribute+'\n')
+        
+        return(sig_results)
