@@ -149,6 +149,7 @@ def significantEnrichments(df, column, p_value=0.05):
         df:
             The DataFrame returned from the compare_groups_outliers
             function in cptac.Algorithms().
+            
         column:
             The column within df that you want to filter for 
             significance. For example, 'Histologic_type_Serous_enrichment_FDR'.
