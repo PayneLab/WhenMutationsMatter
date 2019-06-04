@@ -182,7 +182,7 @@ def significantEnrichments(df, column, p_value=0.05):
     total_proteins = len(df[column])
     
     #Drop NaN values and filter by p_value
-    #results = df[column].dropna()
+    results = df[column].dropna().copy()
     sig_results = results[results < p_value]
     sig_results = pd.DataFrame(sig_results)
     sig_results.columns = [attribute+'_P_values']
