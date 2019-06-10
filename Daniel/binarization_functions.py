@@ -179,7 +179,6 @@ def significantEnrichments(df, column, p_value=0.05):
         else:
             attribute.append(item)
     attribute = "_".join(attribute)
-    total_proteins = len(df[column])
     
     #Drop NaN values and filter by p_value
     results = df[column].dropna().copy()
