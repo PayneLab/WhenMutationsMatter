@@ -187,7 +187,6 @@ def significantEnrichments(df, column, p_value=0.05):
     sig_results.columns = [attribute+'_P_values']
     
     if len(sig_results) < 1:
-        print('No significant results in '+attribute+'\n')
         
         return
     
