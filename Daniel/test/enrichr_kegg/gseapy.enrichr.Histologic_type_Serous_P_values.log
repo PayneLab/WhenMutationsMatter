@@ -675,3 +675,103 @@ LINE 703 : 2019-06-25 12:52:42,609 [DEBUG   ] Embedding font C:\Users\Daniel\App
 LINE 710 : 2019-06-25 12:52:42,609 [DEBUG   ] Writing TrueType font.
 LINE 348 : 2019-06-25 12:52:42,637 [INFO    ] Done.
 
+LINE 506 : 2019-06-25 14:28:41,124 [DEBUG   ] locator: <matplotlib.ticker.MaxNLocator object at 0x0000021C7CB99F28>
+LINE 535 : 2019-06-25 14:28:41,124 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 536 : 2019-06-25 14:28:41,124 [DEBUG   ] locator: <matplotlib.ticker.MaxNLocator object at 0x0000021C7CB99F28>
+LINE 692 : 2019-06-25 14:28:41,124 [DEBUG   ] Setting pcolormesh
+LINE 2515: 2019-06-25 14:28:41,156 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:41,572 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:41,620 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:41,724 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:41,760 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:41,784 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:41,900 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:41,996 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:42,020 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:42,040 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:42,136 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:42,264 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:42,308 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:42,332 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:42,472 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:42,564 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:42,588 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:42,604 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:42,704 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:42,796 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:42,828 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:42,848 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:42,944 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:43,048 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:43,076 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:43,092 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:43,173 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:43,288 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:43,321 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:43,336 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:43,436 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:43,525 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:43,549 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:43,565 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:43,641 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:43,773 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:43,821 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:43,849 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:43,973 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:44,053 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:44,077 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:44,093 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:44,177 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:44,309 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:44,349 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:44,377 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:44,513 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:44,625 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:44,669 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:44,693 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:44,809 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:44,909 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:44,933 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:44,949 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:45,033 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:45,157 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:45,197 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:45,225 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:45,361 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:45,452 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:45,474 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:45,490 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:45,598 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:45,694 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:45,722 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:45,742 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:45,838 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:45,930 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:45,954 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:45,974 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:46,070 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:46,166 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:46,198 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:46,222 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:46,314 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:46,622 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:46,682 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:46,710 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:46,754 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:46,778 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:46,798 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:28:47,126 [DEBUG   ] update_title_pos
+LINE 506 : 2019-06-25 14:29:11,639 [DEBUG   ] locator: <matplotlib.ticker.MaxNLocator object at 0x0000021C71DF74E0>
+LINE 535 : 2019-06-25 14:29:11,639 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 536 : 2019-06-25 14:29:11,639 [DEBUG   ] locator: <matplotlib.ticker.MaxNLocator object at 0x0000021C71DF74E0>
+LINE 692 : 2019-06-25 14:29:11,643 [DEBUG   ] Setting pcolormesh
+LINE 2515: 2019-06-25 14:29:11,723 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:29:12,143 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:29:12,264 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:29:12,628 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:29:12,732 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:29:12,784 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:29:12,980 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:29:13,032 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:29:13,052 [DEBUG   ] update_title_pos
+LINE 2515: 2019-06-25 14:29:13,436 [DEBUG   ] update_title_pos
