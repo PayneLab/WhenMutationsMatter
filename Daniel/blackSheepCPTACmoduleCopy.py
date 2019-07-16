@@ -7,6 +7,7 @@ import scipy.stats
 agg_col = "agg_col"
 
 def convertToOutliers(df, samples, NUM_IQRs, up_or_down):
+
     df['row_iqr'] = scipy.stats.iqr(df[samples], axis=1, nan_policy='omit')
     df['row_median'] = np.nanquantile(df[samples], q=0.5, axis=1)
 
@@ -177,6 +178,10 @@ def compare_groups_outliers(outliers, annotations, frac_filter=0.3):
     results_df = pd.DataFrame(index=outliers.index)
     for comp in annotations.columns:
         group0_label, group0, group1_label, group1 = getSampleLists(annotations, comp)
+        outlier_samples = [col.split('_')[0] for col in outliers.columns]
+        group0 = [samp for samp in group0 if samp in outlier_samples]
+        group1 = [samp for samp in group1 if samp in outlier_samples]
+
         label0 = '%s_%s_enrichment_FDR' %(comp, group0_label)
         df = filterOutliers(outliers, group0, group1, frac_filter)
         if len(df) > 0:
