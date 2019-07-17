@@ -1,5 +1,5 @@
 def format_cis_comparison_data(cancer_object, specific_omics, omics_name, gene):
-    
+    import numpy as np
     # Step 1 - Create dataframe in order to do comparisons with wrap_ttest - drop nan values
     omics_and_mutations = cancer_object.join_omics_to_mutations(
         mutations_genes = gene, omics_df_name = omics_name, omics_genes = gene).dropna()
@@ -27,7 +27,7 @@ def format_cis_comparison_data(cancer_object, specific_omics, omics_name, gene):
             return omics_binary_mutations
 
 def get_missence_truncation_comparison(cancer_object, specific_omics, omics_name, gene):
-    
+    import numpy as np
     #get omics data and tumors
     omics_and_mutations = cancer_object.join_omics_to_mutations(
                 mutations_genes = gene, omics_df_name = omics_name, omics_genes = gene)
