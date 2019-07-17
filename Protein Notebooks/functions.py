@@ -1,11 +1,11 @@
-def format_cis_comparison_data(cancer_object, specific_omics, gene):
+def format_cis_comparison_data(cancer_object, specific_omics, omics_name, gene):
     
     # Step 1 - Create dataframe in order to do comparisons with wrap_ttest - drop nan values
-    omics_and_mutations = cancer_object.append_mutations_to_omics(
-        mutation_genes = gene, omics_df_name = specific_omics.name, omics_genes = gene).dropna()
-    print(omics_and_mutations.head())
+    omics_and_mutations = cancer_object.join_mutations_to_omics(
+        mutations_genes = gene, omics_df_name = omics_name, omics_genes = gene).dropna()
+    #print(omics_and_mutations.head())
     # Check if values in omics data (if not found in proteomics, after na dropped dataframe should be empty)
-    if omics_and_mutations[gene+"_"+specific_omics.name].empty:
+    if omics_and_mutations[gene+"_"+omics_name].empty:
         print('Not possible to do T-test. No data for', gene, 'in', specific_omics.name)
         return None
     else:
@@ -22,27 +22,16 @@ def format_cis_comparison_data(cancer_object, specific_omics, gene):
         if len(omics_binary_mutations.columns) != 2:
             print('exeption with columns. check omics data')
             return None
+            
         else:
-            # Make a list of the column label of omics to be used in the wrap_ttest function
-            omics_col_list = [omics_binary_mutations.columns[0]] 
+            return omics_binary_mutations
 
-            # Step 4 - T-test comparing means of mutated vs wildtype effect on cis omics
-            print("Doing t-test comparison\n")
-            significant_pval_results = al.wrap_ttest(omics_binary_mutations, 'binary_mutations', omics_col_list)
-            print(significant_pval_results)
-            
-            
-
-            formated_data_for_boxplot = {'data': omics_binary_mutations, 'x': "binary_mutations", 
-                                         'y': gene+"_proteomics", 'pval': significant_pval_results}
-            return formated_data_for_boxplot
-
-  def get_missence_truncation_comparison(cancer_object, specific_omics, gene):
-    specific_omics = cancer_object.get_proteomics()
+  def get_missence_truncation_comparison(cancer_object, specific_omics, omics_name gene):
+    
     #get omics data and tumors
     omics_and_mutations = cancer_object.append_mutations_to_omics(
-                mutation_genes = gene, omics_df_name = specific_omics.name, omics_genes = gene)
-    tumors = omics_and_mutations.loc[omics_and_mutations['Sample_Status'] == 'Tumor']
+                mutation_genes = gene, omics_df_name = omics_name, omics_genes = gene)
+    tumors = omics_and_mutations.loc[omics_and_mutations['Sample_Status'] == 'Tumor'] #drop Normal samples
 
 
     somatic_mutations = cancer_object.get_mutations().reset_index()
@@ -91,14 +80,4 @@ def format_cis_comparison_data(cancer_object, specific_omics, gene):
     columns_to_drop = [gene+"_Mutation", gene+"_Location", gene+"_Mutation_Status", "Sample_Status"]
     binary_mut_omics = binary_mut_omics.drop(columns_to_drop, axis = 1)
 
-    # Make a list of the column label of omics to be used in the wrap_ttest function
-    omics_col_list = [binary_mut_omics.columns[0]] 
-
-    # Step 4 - T-test comparing means of mutated vs wildtype effect on cis omics
-    print("Doing t-test comparison\n")
-    significant_pval_results = al.wrap_ttest(binary_mut_omics, 'binary_mutations', omics_col_list)
-    print(significant_pval_results)
-
-    formated_data_for_boxplot = {'data': binary_mut_omics, 'x': "binary_mutations", 
-                                 'y': gene+"_"+specific_omics.name, 'pval': significant_pval_results}
-    return formated_data_for_boxplot
+    return binary_mut_omics
