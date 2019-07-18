@@ -236,6 +236,9 @@ def renameDuplicateColumns(outliers_df, dict_of_counts=False):
             elif outliers_list[i + 1] == outliers_list[i][0:-4]:
                 count += 1
                 outliers_list[i + 1] += "({})".format(str(count))
+        
+        #Renaming Columns to avoid errors
+        outliers_df.columns = outliers_list
 
         if dict_of_counts == True:
             
