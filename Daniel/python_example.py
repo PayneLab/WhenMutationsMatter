@@ -15,16 +15,16 @@ import json
 import requests
 
 def usage():
-  print "Usage Examples:"
-  print "python python_example.py --help"
-  print "python python_example.py --genes='FLT3'"
-  print "python python_example.py --genes='FLT3,EGFR,KRAS'"
-  print "python python_example.py --genes='FLT3,EGFR' --interaction_sources='TALC,TEND'"
-  print "python python_example.py --genes='FLT3,EGFR' --gene_categories='KINASE'"
-  print "python python_example.py --genes='FLT3,EGFR' --interaction_types='inhibitor'"
-  print "python python_example.py --genes='FLT3,EGFR' --source_trust_levels='Expert curated'"
-  print "python python_example.py --genes='FLT3,EGFR' --antineoplastic_only"
-  print "python python_example.py --genes='FLT3,EGFR,KRAS' --interaction_sources='TALC,TEND,MyCancerGenome' --gene_categories='KINASE' --interaction_types='inhibitor' --antineoplastic_only"
+  print ("Usage Examples:")
+  print ("python python_example.py --help")
+  print ("python python_example.py --genes='FLT3'")
+  print ("python python_example.py --genes='FLT3,EGFR,KRAS'")
+  print ("python python_example.py --genes='FLT3,EGFR' --interaction_sources='TALC,TEND'")
+  print ("python python_example.py --genes='FLT3,EGFR' --gene_categories='KINASE'")
+  print ("python python_example.py --genes='FLT3,EGFR' --interaction_types='inhibitor'")
+  print ("python python_example.py --genes='FLT3,EGFR' --source_trust_levels='Expert curated'")
+  print ("python python_example.py --genes='FLT3,EGFR' --antineoplastic_only")
+  print ("python python_example.py --genes='FLT3,EGFR,KRAS' --interaction_sources='TALC,TEND,MyCancerGenome' --gene_categories='KINASE' --interaction_types='inhibitor' --antineoplastic_only")
   sys.exit(0)
 
 def parse_args():
@@ -75,7 +75,7 @@ class DGIAPI:
         response = json.loads(self.response.content)
         matches = response['matchedTerms']
         if(matches):
-          print "gene_name\tdrug_name\tinteraction_type\tsource\tgene_categories"
+          print ("gene_name\tdrug_name\tinteraction_type\tsource\tgene_categories")
         for match in matches:
             gene = match['geneName']
             categories = match['geneCategories']
@@ -85,10 +85,10 @@ class DGIAPI:
                 source = interaction['source']
                 drug = interaction['drugName']
                 interaction_type = interaction['interactionType']
-                print gene + "\t" + drug + "\t" + interaction_type + "\t" + source + "\t" + joined_categories.lower()
+                print (gene + "\t" + drug + "\t" + interaction_type + "\t" + source + "\t" + joined_categories.lower())
         for unmatched in response['unmatchedTerms']:
-            print "Unmatched search term: " + unmatched['searchTerm']
-            print "Possible suggestions: " + ",".join(unmatched['suggestions'])
+            print ("Unmatched search term: " + unmatched['searchTerm'])
+            print ("Possible suggestions: " + ",".join(unmatched['suggestions']))
 
 if __name__ == '__main__':
     args = parse_args()

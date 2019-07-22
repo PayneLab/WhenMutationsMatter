@@ -202,3 +202,51 @@ def significantEnrichments(df, column, p_value=0.05):
               +attribute+'\n')
         
         return(sig_results)
+
+def renameDuplicateColumns(outliers_df, dict_of_counts=False):
+    #Dealing with the duplicate genes problem
+    outliers_list = list(outliers_df.columns)
+    if len(outliers_list) == len(set(outliers_list)):
+        print("There are no duplicates")
+
+        return
+
+    else:
+        duplicates = {} #Keys = gene name, Values = counts
+        duplicates_list = []
+
+        #Create duplicate list and populate duplicate dictionary
+        for i in range(len(outliers_list) - 1):
+            if outliers_list[i] == outliers_list[i + 1]:
+                duplicates_list.append(outliers_list[i])
+                duplicates[outliers_list[i]] = 1
+
+        #Go through and check for duplicates, and then rename duplicates accordingly
+        #Can this be made more efficient?
+        for i in range(len(outliers_list) - 1):
+            #Check if the current == the next
+            if outliers_list[i] == outliers_list[i + 1]:
+                count = 1
+                outliers_list[i + count] += "({})".format(str(count))
+            #Check if the next == the current before the (#)
+            elif outliers_list[i + 1] == outliers_list[i][0:-3]:
+                count += 1
+                outliers_list[i + 1] += "({})".format(str(count))
+            #Check if the next == the current before the (#) if there are greater than 9 duplicates
+            elif outliers_list[i + 1] == outliers_list[i][0:-4]:
+                count += 1
+                outliers_list[i + 1] += "({})".format(str(count))
+        
+        #Renaming Columns to avoid errors
+        outliers_df.columns = outliers_list
+
+        if dict_of_counts == True:
+            
+            #Count how many duplicates of each gene there are and update counts in dict        
+            for i in range(len(duplicates_list) - 1):
+                if duplicates_list[i] == duplicates_list[i + 1]:
+                    duplicates[duplicates_list[i]] += 1
+
+            return duplicates
+        
+        return
