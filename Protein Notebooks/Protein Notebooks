@@ -1,0 +1,2 @@
+This folder contains sub folders for a variety of frequently mutated genes. A folder has been created for every gene with a mutation rate of atleast 10% in the Colon, Endometrial, and Ovarian datasets. Additionally, genes with a mutation rate of atleast 20% in 2 of these 3 datasets have a folder created. 
+Extensive investigation is already being done in TP53, as it is the most frequenly mutated of these genes across cancer types, so leave that one alone.

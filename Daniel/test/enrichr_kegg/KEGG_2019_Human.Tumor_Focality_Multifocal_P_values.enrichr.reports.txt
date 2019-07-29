@@ -1,0 +1,3 @@
+Gene_set	Term	Overlap	P-value	Adjusted P-value	Old P-value	Old Adjusted P-value	Odds Ratio	Combined Score	Genes
+KEGG_2019_Human	Measles	1/138	0.013752610127341022	1.0	0	0	72.46376811594203	310.61787285808134	EIF3H
+KEGG_2019_Human	RNA transport	1/165	0.0164322116614672	1.0	0	0	60.6060606060606	249.0007118076141	EIF3H
