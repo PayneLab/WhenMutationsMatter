@@ -1,6 +1,8 @@
 #Import dependencies
 import numpy as np
 import pandas as pd
+import requests
+import json
 
 #Binarization Functions
 def binarizeCutOff(df, column, cut_off, replace_high, replace_low):
@@ -248,5 +250,249 @@ def renameDuplicateColumns(outliers_df, dict_of_counts=False):
                     duplicates[duplicates_list[i]] += 1
 
             return duplicates
+        
+        return
+
+def dgidb_list_parameters():
+    """
+    This function takes no parameters, and will list possible options
+    for querying the DGIdb with the dgidb_get_request(). dgidb_list_parameters()
+    will be called in dgidb_get_request() if incorrect parameter values are given.
+    """
+    
+    param_list = ['genes_or_drugs_list, genes, drugs, interaction_sources, interaction_types, fda_approved_drug, immunotherapy, anti_neoplastic, clinically_actionable, druggable_genome, drug_resistance, gene_categories, source_trust_levels']
+    
+    print('\nFull list of parameters:')
+    for param in param_list:
+        print(param)
+    
+    print('\nRequired Parameters:')
+    print('genes_or_drugs_list (list)')
+    print('genes (string: "true" or "false")')
+    print('drugs (string: "true" or "false"\n')
+    
+    print('Optional Parameters')
+    print('interaction_sources (string: "TTD", "DrugBank", "TALC", "something")')
+    print('interaction_types (string: "inhibitor", "activator")')
+    print('fda_approved_drug (string: "true" or "false")')
+    print('immunotherapy (string: "true" or "false")')
+    print('anti_neoplastic (string: "true" or "false")')
+    print('clinically_actionable (string: "true" or "false")')
+    print('druggable_genome (string: "true" or "false")')
+    print('drug_resistance (string: "true" or "false")')
+    print('gene_categories (string: see www.dgidb.org/api for options)')
+    print('source_trust_levels (string: see www.dgidb.org/api for options)')
+    
+    print('\nFor more information on function parameters and DGIdb, see:')
+    print('http://www.dgidb.org/api')
+    
+    return
+    
+#GET request maker for the DGIdb    
+def dgidb_get_request(genes_or_drugs_list,
+                      genes='N/A', drugs='N/A',
+                      interaction_sources=[], 
+                      interaction_types=[], 
+                      fda_approved_drug='N/A', 
+                      immunotherapy='N/A', 
+                      anti_neoplastic='N/A', 
+                      clinically_actionable='N/A', 
+                      druggable_genome='N/A', 
+                      drug_resistance='N/A', 
+                      gene_categories=[], 
+                      source_trust_levels=[]):
+    """
+    Input Parameters (parameter descriptions are from www.dgidb.org/api)
+        genes_or_drugs_list (list; Required):
+            A comma delimited list of gene or drug names/symbols. 
+            
+        genes='N/A' (NOTE, either drugs or genes must be included):
+            If this value is set to 'yes', the corresponding genes_list
+            will be created into a string of values and connected to the
+            HTTP request.
+        
+        drugs='N/A' (NOTE, either drugs or genes must be included):
+            If this value is set to 'yes', the corresponding drugs_list
+            will be created into a string of values and connected to the
+            HTTP request.
+            
+        interaction_sources=[] (list; optional):
+            A comma delimited list of interaction types to include in the result set. 
+            If this field is omitted, all interaction types will be included.
+            Valid Inputs: ["DrugBank","PharmGKB","TALC","TEND","TTD"]
+            
+        interaction_types=[] (list; optional):
+            A comma delimited list of interaction types to include in the result set. If 
+            this field is omitted, all interaction types will be included.
+            Valid inputs: ["activator", "inhibitor", "unknown"]
+        
+        fda_approved_drug='N/A' (string: optional):
+            A flag denoting whether or not to limit interactions to only the ones involving 
+            fda-approved drugs. If this field is omitted, interactions for all types of
+            drugs will be included.
+            Valid inputs: 'true', 'false'
+            
+        immunotherapy='N/A' (string: optional):
+            A flag denoting whether or not to limit interactions to only the ones involving 
+            immunotherapeutic drugs. If this field is omitted, interactions for all types
+            of drugs will be included.
+            Valid inputs: 'true', 'false'
+            
+        anti_neoplastic='N/A' (string: optional):
+            A flag denoting whether or not to limit interactions to only the ones involving 
+            antineoplastic drugs. If this field is omitted, interactions for all types of 
+            drugs will be included.
+            Valid inputs: 'true', 'false'
+            
+        clinically_actionable='N/A' (string: optional):
+            A flag denoting whether or not to limit interactions to only the ones involving 
+            clinically actionable genes. If this field is omitted, interactions for all 
+            types of genes will be included.
+            Valid inputs: 'true', 'false'
+            
+        druggable_genome='N/A' (string: optional):
+            A flag denoting whether or not to limit interactions to only the ones involving 
+            the durggable genome. If this field is omitted, interactions for all types of 
+            genes will be included.
+            Valid inputs: 'true', 'false'
+            
+        drug_resistance='N/A' (string: optional):
+            A flag denoting whether or not to limit interactions to only the ones involving 
+            drug-resistant genes. If this field is omitted, interactions for all types of 
+            genes will be included.
+            Valid inputs: 'true', 'false'
+            
+        gene_categories=[] (list: optional):
+            A comma delimited list of gene categories to include in the result set. 
+            If this field is omitted, all gene categories will be included.
+            Valid inputs (not case-sensitive): ["KINASE", "DNA REPAIR", "TUMOR SUPPRESSOR"]
+        
+        source_trust_levels=[] (list: optional):
+            A comma delimited list of source trust levels to include in the result set. 
+            If this field is omitted, all trust levels will be included.
+            Valid inputs (case-sensitive): ["Expert curated", "Non-curated"]
+            
+    Methods Description:
+        This function will take a list of either drugs or genes, and any other
+        parameters to filter and create a specific HTTP GET request to the 
+        Drug Gene Interaction Database (DGIdb). It is advised to use this function 
+        after an Outlier analysis is performed and significant gene enrichments are 
+        found. This will allow you to quickly  find drugs suitable for cancer
+        treatment based on patients' gene enrichments for higher precision.
+    
+    Return Value:
+        A Python requests object containing JSON with the information from your GET
+        request to the DGIdb.
+    """
+    url = 'http://www.dgidb.org/api/v2/interactions.json?'
+    valid_interaction_sources = ["DrugBank","PharmGKB","TALC","TEND","TTD"]
+    valid_interaction_types = ["activator", "inhibitor", "unknown"]
+    valid_gene_categories = ["KINASE", "DNA REPAIR", "TUMOR SUPPRESSOR"] #check api if case sensitive
+    valid_source_trust_levels = ["Expert curated", "Non-curated"]
+    try:
+    
+        if genes == 'yes':
+            genes_string = 'genes='
+            for gene in genes_or_drugs_list:
+                if gene == genes_or_drugs_list[0]:
+                    genes_string += gene
+                else:
+                    genes_string += ',' + gene
+
+            url += genes_string
+
+        elif drugs == 'yes':
+            drugs_string = 'drugs='
+            for drug in genes_or_drugs_list:
+                if drug == genes_or_drugs_list[0]:
+                    drugs_string += drug
+                else:
+                    drugs_string += ',' + drug
+            url += drugs_string
+        
+        if drugs == "N/A" and genes == "N/A":
+            raise Exception("genes_or_drugs is ambiguous. Please specify if it is a list of genes or drugs.")
+
+        if interaction_sources == 'true' or interaction_sources == 'false':
+            url += '&interaction_sources=' + interaction_sources
+           
+        elif interaction_sources != "N/A":
+            raise Exception("Invalid input interaction_sources: {}".format(interaction_sources))
+
+        if interaction_types == 'true' or interaction_types == 'false':
+            url += '&interaction_types=' + interaction_types
+            
+        elif interaction_types != "N/A":
+            raise Exception("Invalid input interaction_types: {}".format(interaction_types))
+
+        if fda_approved_drug == 'true' or fda_approved_drug == 'false':
+            url += '&fda_approved_drug=' + fda_approved_drug
+        
+        elif fda_approved_drug != "N/A":
+            raise Exception("Invalid input: fda_approved_drug. Must be 'true' or 'false'. Got {}".format(fda_approved_drug))
+            
+        if immunotherapy == 'true' or immunotherapy == 'false':
+            url += '&immunotherapy=' + immunotherapy
+        
+        elif immunotherapy != "N/A":
+            raise Exception("Invalid input: immunotherapy. Must be 'true' or 'false'. Got {}".format(immunotherapy))
+        
+        if anti_neoplastic == 'true' or anti_neoplastic == 'false':
+            url += '&anti_neoplastic=' + anti_neoplastic
+        
+        elif anti_neoplastic != "N/A":
+            raise Exception("Invalid input: anti_neoplastic. Must be 'true' or 'false'. Got {}".format(anti_neoplastic))
+        
+        if clinically_actionable == 'true' or clinically_actionable == 'false':
+            url += '&clinically_actionable=' + clinically_actionable
+            
+        elif clinically_actionable != "N/A":
+            raise Exception("Invalid input: clinically_actionable. Must be 'true' or 'false'. Got {}".format(clinically_actionable))
+
+        if druggable_genome == 'true' or druggable_genome == 'false':
+            url += '&druggable_genome=' + druggable_genome
+            
+        elif druggable_genome != "N/A":
+            raise Exception("Invalid input: druggable_genome. Must be 'true' or 'false'. Got {}".format(druggable_genome))
+
+        if drug_resistance == 'true' or drug_resistance == 'false':
+            url += '&drug_resistance=' + drug_resistance
+        
+        elif drug_resistance != "N/A":
+            raise Exception("Invalid input: drug_resistance. Must be 'true' or 'false'. Got  {}".format(drug_resistance))
+        
+        if len(gene_categories == 1):
+            url += '&gene_categories=' + gene_categories[0]
+            
+        elif len(set(gene_categories) > 1):
+            unique_categories = set(gene_categories)
+            for cat in unique_categories:
+                if cat not in valid_gene_categories:
+                    raise Exception("Invalid gene category: {}".format(cat))
+                elif cat == unique_categories[0]:
+                    url += '&gene_categories=' + cat + ","
+                elif cat == unique_categories[-1]:
+                    url += cat
+                else:
+                    url += cat + ","
+                    
+        if source_trust_levels != 'N/A': #continue refactoring from here
+            url += '&source_trust_levels=' + source_trust_levels
+
+       #Cannot feasibly call an error because of the numerous combinations this can take
+        #Possible values available at www.dgidb.org/api
+            
+        print("This is the full URL to your GET request:")
+        print(url)
+        r = requests.get(url)
+        print("If this request failed, it is likely due to invalid inputs for gene_categories or source_trust_levels")
+        print("See www.dgidb.org/api for further explanation and resources for valid parameter inputs")
+        
+        return r
+    
+    except Exception as e:
+        print("Invalid parameter value: ")
+        print(e)
+        dgidb_list_parameters()
         
         return
