@@ -490,8 +490,7 @@ def dgidb_get_request(genes_or_drugs_list,
         print("This is the full URL to your GET request:")
         print(url)
         r = requests.get(url)
-        print("If this request failed, it is likely due to invalid inputs for gene_categories or source_trust_levels")
-        print("See www.dgidb.org/api for further explanation and resources for valid parameter inputs")
+        print("\nSee www.dgidb.org/api or this function's docstring for further explanation and resources on valid parameter inputs")
         
         return r
     
