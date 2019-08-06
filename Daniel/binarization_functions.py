@@ -265,8 +265,8 @@ def get_dgidb_parameters():
     
     print('\nRequired Parameters:')
     print('genes_or_drugs_list (list)')
-    print('genes (bool)')
-    print('drugs (bool)\n')
+    print('\nOne of the following:')
+    print('genes (bool) OR drugs (bool)\n')
     
     print('Optional Parameters:')
     print('interaction_sources (list (case-sensitive): ["DrugBank","PharmGKB","TALC","TEND","TTD"])')

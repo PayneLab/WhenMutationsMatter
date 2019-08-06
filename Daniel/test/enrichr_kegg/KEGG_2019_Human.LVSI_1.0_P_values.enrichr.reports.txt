@@ -1,4 +1,0 @@
-Gene_set	Term	Overlap	P-value	Adjusted P-value	Old P-value	Old Adjusted P-value	Odds Ratio	Combined Score	Genes
-KEGG_2019_Human	Glyoxylate and dicarboxylate metabolism	1/30	0.013421829479327331	1.0	0	0	74.07407407407408	319.32391347347306	GLDC
-KEGG_2019_Human	Glycine, serine and threonine metabolism	1/40	0.01786007107272191	1.0	0	0	55.555555555555564	223.62154022811023	GLDC
-KEGG_2019_Human	RNA transport	1/165	0.07185996172492938	1.0	0	0	13.468013468013467	35.46176471287255	XPO5
