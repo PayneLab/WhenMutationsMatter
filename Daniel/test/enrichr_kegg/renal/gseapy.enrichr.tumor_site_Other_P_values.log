@@ -1,0 +1,70 @@
+LINE 206 : 2019-08-06 16:45:31,326 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-06 16:45:31,462 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-06 16:45:31,526 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-06 16:45:31,526 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-06 16:45:31,526 [INFO    ] Analysis name: tumor_site_Other_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-06 16:45:31,538 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-06 16:45:31,694 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-06 16:45:32,702 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-06 16:45:32,851 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18337847&filename=KEGG_2019_Human.tumor_site_Other_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 103
+LINE 338 : 2019-08-06 16:45:33,880 [INFO    ] Save file of enrichment results: Job Id:4adfd08b5b0730ab1d1962c9e64bb598
+LINE 347 : 2019-08-06 16:45:33,888 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.5
+LINE 348 : 2019-08-06 16:45:33,900 [INFO    ] Done.
+
+LINE 206 : 2019-08-06 16:45:33,908 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-06 16:45:34,044 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-06 16:45:34,112 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-06 16:45:34,112 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-06 16:45:34,112 [INFO    ] Analysis name: histologic_type_non-Clear Cell renal cell carcinoma_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-06 16:45:34,120 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-06 16:45:34,460 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-06 16:45:35,468 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-06 16:45:35,648 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18337850&filename=KEGG_2019_Human.histologic_type_non-Clear%20Cell%20renal%20cell%20carcinoma_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 400 972
+LINE 206 : 2019-08-06 16:51:20,141 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-06 16:51:20,281 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-06 16:51:20,345 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-06 16:51:20,345 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-06 16:51:20,345 [INFO    ] Analysis name: tumor_site_Other_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-06 16:51:20,353 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-06 16:51:20,517 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-06 16:51:21,521 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-06 16:51:21,673 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18338133&filename=KEGG_2019_Human.tumor_site_Other_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 103
+LINE 338 : 2019-08-06 16:51:22,697 [INFO    ] Save file of enrichment results: Job Id:4ec90ff639f8d15e0c5530e851b82bf2
+LINE 347 : 2019-08-06 16:51:22,709 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.5
+LINE 348 : 2019-08-06 16:51:22,721 [INFO    ] Done.
+
+LINE 206 : 2019-08-06 16:51:22,753 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-06 16:51:22,889 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-06 16:51:22,957 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-06 16:51:22,957 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-06 16:51:22,961 [INFO    ] Analysis name: histologic_type_non-Clear Cell renal cell carcinoma_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-06 16:51:22,965 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-06 16:51:23,336 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-06 16:51:24,351 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-06 16:51:24,562 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18338136&filename=KEGG_2019_Human.histologic_type_non-Clear%20Cell%20renal%20cell%20carcinoma_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 400 972
+LINE 206 : 2019-08-06 16:51:38,757 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-06 16:51:38,893 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-06 16:51:38,957 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-06 16:51:38,957 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-06 16:51:38,961 [INFO    ] Analysis name: tumor_site_Other_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-06 16:51:38,965 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-06 16:51:39,125 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-06 16:51:40,134 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-06 16:51:40,295 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18338149&filename=KEGG_2019_Human.tumor_site_Other_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 103
+LINE 338 : 2019-08-06 16:51:41,311 [INFO    ] Save file of enrichment results: Job Id:d581070e12a36ff7eff218f959c81037
+LINE 347 : 2019-08-06 16:51:41,319 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.5
+LINE 348 : 2019-08-06 16:51:41,331 [INFO    ] Done.
+
+LINE 206 : 2019-08-06 16:51:41,355 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-06 16:51:41,491 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-06 16:51:41,555 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-06 16:51:41,555 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-06 16:51:41,555 [INFO    ] Analysis name: histologic_type_non-Clear Cell renal cell carcinoma_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-06 16:51:41,563 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-06 16:51:41,803 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-06 16:51:42,811 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-06 16:51:42,953 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18338152&filename=KEGG_2019_Human.histologic_type_non-Clear%20Cell%20renal%20cell%20carcinoma_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 400 972
+LINE 206 : 2019-08-06 16:56:45,908 [DEBUG   ] Starting new HTTP connection (1): www.dgidb.org:80
+LINE 396 : 2019-08-06 16:56:46,068 [DEBUG   ] http://www.dgidb.org:80 "GET /api/v2/interactions.json?genes=AZU1,CAMP,FLNC,S100P,TXNRD1 HTTP/1.1" 200 None
+LINE 206 : 2019-08-06 17:04:03,465 [DEBUG   ] Starting new HTTP connection (1): www.dgidb.org:80
+LINE 396 : 2019-08-06 17:04:04,269 [DEBUG   ] http://www.dgidb.org:80 "GET /api/v2/interactions.json?genes=AAGAB,ABCB7,ABCF2,AGA,AKT2,ANKMY2,AP5S1,AP5Z1,ASAH1,ATRAID,CAPN2,CAPNS1,CCDC6,CCDC9B,CCZ1,CHKB,CIAPIN1,CKAP5,CLCN7,COPG2,CTSD,CYB5B,DAZAP2,DDX19A,DMXL2,EPG5,EPHA2,EXOC7,EXOC8,FIG4,FYCO1,GABARAPL2,GOLM1,GPAT4,GPD2,GPNMB,GPX1,GSPT1,GTPBP1,GYG1,KPNA4,KRT18,LAMA3,LAMTOR3,LCMT1,LRRN4,MANBA,MAP4,MBP,MCU,MICU1,MICU2,MINDY1,MINDY2,MROH1,MTMR1,MYO5A,NPC1,NPTN,NTMT1,OCRL,OSTM1,PHKA1,PIP4P2,PLD1,PLEK2,PPFIA1,PRKAA1,PTGFRN,PTPN11,RAB11FIP1,RAB7A,RABEP2,RABGEF1,RANBP10,RHEB,RMC1,RPTOR,RRAGB,RRAGC,RWDD4,SLC25A25,SLC25A40,SLC2A4,SLC2A8,SLC38A1,SLC9A7,SMDT1,SORL1,SPG11,SPTLC2,SRPK2,STT3B,STXBP6,TMCO4,TMEM106B,TMEM200C,TOM1,TP53BP1,TRIM4,TXNL1,UBE3C,USP7,VAC14,VPS13C,VPS16,VPS18,VPS33A,WDR24,WDR37,WIPI2,WWP2,YKT6,YTHDF2,ZNF330 HTTP/1.1" 200 None
