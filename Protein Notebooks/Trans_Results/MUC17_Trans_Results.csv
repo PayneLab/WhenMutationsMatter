@@ -1,0 +1,3 @@
+Cancer_Type,Gene,Comparison,Interacting_Protein,P_Value
+Colon,MUC17,CAPN13_transcriptomics,False,3.900875119065982e-08
+Colon,MUC17,PAIP2B_transcriptomics,False,1.150385351087403e-06
