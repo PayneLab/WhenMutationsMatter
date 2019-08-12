@@ -1,70 +1,508 @@
-LINE 206 : 2019-08-06 16:45:31,326 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
-LINE 396 : 2019-08-06 16:45:31,462 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
-LINE 311 : 2019-08-06 16:45:31,526 [INFO    ] Connecting to Enrichr Server to get latest library names
-LINE 329 : 2019-08-06 16:45:31,526 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
-LINE 330 : 2019-08-06 16:45:31,526 [INFO    ] Analysis name: tumor_site_Other_P_values, Enrichr Library: KEGG_2019_Human
-LINE 206 : 2019-08-06 16:45:31,538 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
-LINE 396 : 2019-08-06 16:45:31,694 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
-LINE 206 : 2019-08-06 16:45:32,702 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
-LINE 396 : 2019-08-06 16:45:32,851 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18337847&filename=KEGG_2019_Human.tumor_site_Other_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 103
-LINE 338 : 2019-08-06 16:45:33,880 [INFO    ] Save file of enrichment results: Job Id:4adfd08b5b0730ab1d1962c9e64bb598
-LINE 347 : 2019-08-06 16:45:33,888 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.5
-LINE 348 : 2019-08-06 16:45:33,900 [INFO    ] Done.
+LINE 206 : 2019-08-12 08:36:39,640 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:36:40,308 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 08:36:40,393 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 08:36:40,394 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 08:36:40,395 [INFO    ] Analysis name: tumor_site_Other_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 08:36:40,400 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:36:40,606 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 08:36:41,612 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:36:41,799 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18401916&filename=KEGG_2019_Human.tumor_site_Other_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 103
+LINE 338 : 2019-08-12 08:36:42,814 [INFO    ] Save file of enrichment results: Job Id:0aa34ca6b9def0f318be328ed77486e3
+LINE 347 : 2019-08-12 08:36:42,888 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.05
+LINE 348 : 2019-08-12 08:36:42,899 [INFO    ] Done.
 
-LINE 206 : 2019-08-06 16:45:33,908 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
-LINE 396 : 2019-08-06 16:45:34,044 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
-LINE 311 : 2019-08-06 16:45:34,112 [INFO    ] Connecting to Enrichr Server to get latest library names
-LINE 329 : 2019-08-06 16:45:34,112 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
-LINE 330 : 2019-08-06 16:45:34,112 [INFO    ] Analysis name: histologic_type_non-Clear Cell renal cell carcinoma_P_values, Enrichr Library: KEGG_2019_Human
-LINE 206 : 2019-08-06 16:45:34,120 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
-LINE 396 : 2019-08-06 16:45:34,460 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
-LINE 206 : 2019-08-06 16:45:35,468 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
-LINE 396 : 2019-08-06 16:45:35,648 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18337850&filename=KEGG_2019_Human.histologic_type_non-Clear%20Cell%20renal%20cell%20carcinoma_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 400 972
-LINE 206 : 2019-08-06 16:51:20,141 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
-LINE 396 : 2019-08-06 16:51:20,281 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
-LINE 311 : 2019-08-06 16:51:20,345 [INFO    ] Connecting to Enrichr Server to get latest library names
-LINE 329 : 2019-08-06 16:51:20,345 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
-LINE 330 : 2019-08-06 16:51:20,345 [INFO    ] Analysis name: tumor_site_Other_P_values, Enrichr Library: KEGG_2019_Human
-LINE 206 : 2019-08-06 16:51:20,353 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
-LINE 396 : 2019-08-06 16:51:20,517 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
-LINE 206 : 2019-08-06 16:51:21,521 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
-LINE 396 : 2019-08-06 16:51:21,673 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18338133&filename=KEGG_2019_Human.tumor_site_Other_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 103
-LINE 338 : 2019-08-06 16:51:22,697 [INFO    ] Save file of enrichment results: Job Id:4ec90ff639f8d15e0c5530e851b82bf2
-LINE 347 : 2019-08-06 16:51:22,709 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.5
-LINE 348 : 2019-08-06 16:51:22,721 [INFO    ] Done.
+LINE 206 : 2019-08-12 08:37:44,817 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:37:45,121 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 08:37:45,205 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 08:37:45,206 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 08:37:45,206 [INFO    ] Analysis name: histologic_type_non-Clear Cell renal cell carcinoma_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 08:37:45,210 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:37:45,493 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 08:37:46,498 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:37:46,744 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18401954&filename=KEGG_2019_Human.histologic_type_non-Clear%20Cell%20renal%20cell%20carcinoma_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 400 972
+LINE 206 : 2019-08-12 08:44:22,691 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:44:22,952 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 08:44:23,060 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 08:44:23,062 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 08:44:23,062 [INFO    ] Analysis name: , Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 08:44:23,066 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:44:23,346 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 08:44:24,352 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:44:24,603 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18402249&filename=KEGG_2019_Human..reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 None
+LINE 338 : 2019-08-12 08:44:25,618 [INFO    ] Save file of enrichment results: Job Id:c4ca59852411affa95b2db5e3f59a940
+LINE 2515: 2019-08-12 08:44:25,802 [DEBUG   ] update_title_pos
+LINE 1254: 2019-08-12 08:44:25,819 [DEBUG   ] findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=16.0 to DejaVu Sans ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+LINE 653 : 2019-08-12 08:44:25,834 [DEBUG   ] Assigning font /b'F1' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 1254: 2019-08-12 08:44:25,844 [DEBUG   ] findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=bold:stretch=normal:size=16.0 to DejaVu Sans ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf') with score of 0.000000.
+LINE 1254: 2019-08-12 08:44:25,880 [DEBUG   ] findfont: Matching :family=STIXGeneral:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to STIXGeneral ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXGeneral.ttf') with score of 0.050000.
+LINE 1254: 2019-08-12 08:44:25,889 [DEBUG   ] findfont: Matching :family=STIXGeneral:style=italic:variant=normal:weight=normal:stretch=normal:size=10.0 to STIXGeneral ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXGeneralItalic.ttf') with score of 0.050000.
+LINE 1254: 2019-08-12 08:44:25,892 [DEBUG   ] findfont: Matching :family=STIXGeneral:style=normal:variant=normal:weight=bold:stretch=normal:size=10.0 to STIXGeneral ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXGeneralBol.ttf') with score of 0.000000.
+LINE 1254: 2019-08-12 08:44:25,899 [DEBUG   ] findfont: Matching :family=STIXNonUnicode:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to STIXNonUnicode ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXNonUni.ttf') with score of 0.050000.
+LINE 1254: 2019-08-12 08:44:25,906 [DEBUG   ] findfont: Matching :family=STIXNonUnicode:style=italic:variant=normal:weight=normal:stretch=normal:size=10.0 to STIXNonUnicode ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXNonUniIta.ttf') with score of 0.050000.
+LINE 1254: 2019-08-12 08:44:25,908 [DEBUG   ] findfont: Matching :family=STIXNonUnicode:style=normal:variant=normal:weight=bold:stretch=normal:size=10.0 to STIXNonUnicode ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXNonUniBol.ttf') with score of 0.000000.
+LINE 1254: 2019-08-12 08:44:25,916 [DEBUG   ] findfont: Matching :family=STIXSizeOneSym:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to STIXSizeOneSym ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizOneSymReg.ttf') with score of 0.050000.
+LINE 1254: 2019-08-12 08:44:25,923 [DEBUG   ] findfont: Matching :family=STIXSizeTwoSym:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to STIXSizeTwoSym ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizTwoSymReg.ttf') with score of 0.050000.
+LINE 1254: 2019-08-12 08:44:25,930 [DEBUG   ] findfont: Matching :family=STIXSizeThreeSym:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to STIXSizeThreeSym ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizThreeSymReg.ttf') with score of 0.050000.
+LINE 1254: 2019-08-12 08:44:25,938 [DEBUG   ] findfont: Matching :family=STIXSizeFourSym:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to STIXSizeFourSym ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizFourSymReg.ttf') with score of 0.050000.
+LINE 1254: 2019-08-12 08:44:25,945 [DEBUG   ] findfont: Matching :family=STIXSizeFiveSym:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to STIXSizeFiveSym ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizFiveSymReg.ttf') with score of 0.050000.
+LINE 1254: 2019-08-12 08:44:25,952 [DEBUG   ] findfont: Matching :family=cmsy10:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to cmsy10 ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmsy10.ttf') with score of 0.050000.
+LINE 1254: 2019-08-12 08:44:25,962 [DEBUG   ] findfont: Matching :family=cmr10:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to cmr10 ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmr10.ttf') with score of 0.050000.
+LINE 1254: 2019-08-12 08:44:25,970 [DEBUG   ] findfont: Matching :family=cmtt10:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to cmtt10 ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmtt10.ttf') with score of 0.050000.
+LINE 1254: 2019-08-12 08:44:25,978 [DEBUG   ] findfont: Matching :family=cmmi10:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to cmmi10 ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmmi10.ttf') with score of 0.050000.
+LINE 1254: 2019-08-12 08:44:25,986 [DEBUG   ] findfont: Matching :family=cmb10:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to cmb10 ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmb10.ttf') with score of 0.050000.
+LINE 1254: 2019-08-12 08:44:25,995 [DEBUG   ] findfont: Matching :family=cmss10:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to cmss10 ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmss10.ttf') with score of 0.050000.
+LINE 1254: 2019-08-12 08:44:26,003 [DEBUG   ] findfont: Matching :family=cmex10:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to cmex10 ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmex10.ttf') with score of 0.050000.
+LINE 1254: 2019-08-12 08:44:26,010 [DEBUG   ] findfont: Matching :family=DejaVu Sans:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+LINE 1254: 2019-08-12 08:44:26,017 [DEBUG   ] findfont: Matching :family=DejaVu Sans:style=italic:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Oblique.ttf') with score of 0.150000.
+LINE 1254: 2019-08-12 08:44:26,019 [DEBUG   ] findfont: Matching :family=DejaVu Sans:style=normal:variant=normal:weight=bold:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf') with score of 0.000000.
+LINE 1254: 2019-08-12 08:44:26,026 [DEBUG   ] findfont: Matching :family=DejaVu Sans Mono:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans Mono ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSansMono.ttf') with score of 0.050000.
+LINE 1254: 2019-08-12 08:44:26,052 [DEBUG   ] findfont: Matching :family=DejaVu Sans Display:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans Display ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSansDisplay.ttf') with score of 0.050000.
+LINE 653 : 2019-08-12 08:44:26,337 [DEBUG   ] Assigning font /b'F2' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf'
+LINE 1254: 2019-08-12 08:44:26,366 [DEBUG   ] findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=bold:stretch=normal:size=24.0 to DejaVu Sans ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf') with score of 0.000000.
+LINE 703 : 2019-08-12 08:44:26,368 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans-Bold.ttf.
+LINE 710 : 2019-08-12 08:44:26,369 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-08-12 08:44:26,413 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-08-12 08:44:26,413 [DEBUG   ] Writing TrueType font.
+LINE 2515: 2019-08-12 08:44:26,451 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-12 08:44:26,488 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-12 08:44:26,510 [DEBUG   ] update_title_pos
+LINE 653 : 2019-08-12 08:44:26,523 [DEBUG   ] Assigning font /b'F1' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 653 : 2019-08-12 08:44:26,547 [DEBUG   ] Assigning font /b'F2' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf'
+LINE 703 : 2019-08-12 08:44:26,580 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans-Bold.ttf.
+LINE 710 : 2019-08-12 08:44:26,580 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-08-12 08:44:26,600 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-08-12 08:44:26,600 [DEBUG   ] Writing TrueType font.
+LINE 348 : 2019-08-12 08:44:26,623 [INFO    ] Done.
 
-LINE 206 : 2019-08-06 16:51:22,753 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
-LINE 396 : 2019-08-06 16:51:22,889 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
-LINE 311 : 2019-08-06 16:51:22,957 [INFO    ] Connecting to Enrichr Server to get latest library names
-LINE 329 : 2019-08-06 16:51:22,957 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
-LINE 330 : 2019-08-06 16:51:22,961 [INFO    ] Analysis name: histologic_type_non-Clear Cell renal cell carcinoma_P_values, Enrichr Library: KEGG_2019_Human
-LINE 206 : 2019-08-06 16:51:22,965 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
-LINE 396 : 2019-08-06 16:51:23,336 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
-LINE 206 : 2019-08-06 16:51:24,351 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
-LINE 396 : 2019-08-06 16:51:24,562 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18338136&filename=KEGG_2019_Human.histologic_type_non-Clear%20Cell%20renal%20cell%20carcinoma_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 400 972
-LINE 206 : 2019-08-06 16:51:38,757 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
-LINE 396 : 2019-08-06 16:51:38,893 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
-LINE 311 : 2019-08-06 16:51:38,957 [INFO    ] Connecting to Enrichr Server to get latest library names
-LINE 329 : 2019-08-06 16:51:38,957 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
-LINE 330 : 2019-08-06 16:51:38,961 [INFO    ] Analysis name: tumor_site_Other_P_values, Enrichr Library: KEGG_2019_Human
-LINE 206 : 2019-08-06 16:51:38,965 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
-LINE 396 : 2019-08-06 16:51:39,125 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
-LINE 206 : 2019-08-06 16:51:40,134 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
-LINE 396 : 2019-08-06 16:51:40,295 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18338149&filename=KEGG_2019_Human.tumor_site_Other_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 103
-LINE 338 : 2019-08-06 16:51:41,311 [INFO    ] Save file of enrichment results: Job Id:d581070e12a36ff7eff218f959c81037
-LINE 347 : 2019-08-06 16:51:41,319 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.5
-LINE 348 : 2019-08-06 16:51:41,331 [INFO    ] Done.
+LINE 206 : 2019-08-12 08:44:33,526 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:44:33,892 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 08:44:33,977 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 08:44:33,978 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 08:44:33,979 [INFO    ] Analysis name: , Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 08:44:33,983 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:44:34,222 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 08:44:35,228 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:44:35,411 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18402258&filename=KEGG_2019_Human..reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 103
+LINE 338 : 2019-08-12 08:44:36,427 [INFO    ] Save file of enrichment results: Job Id:01390516d18f059f4f06d76aa23ebcf6
+LINE 347 : 2019-08-12 08:44:36,431 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.05
+LINE 348 : 2019-08-12 08:44:36,440 [INFO    ] Done.
 
-LINE 206 : 2019-08-06 16:51:41,355 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
-LINE 396 : 2019-08-06 16:51:41,491 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
-LINE 311 : 2019-08-06 16:51:41,555 [INFO    ] Connecting to Enrichr Server to get latest library names
-LINE 329 : 2019-08-06 16:51:41,555 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
-LINE 330 : 2019-08-06 16:51:41,555 [INFO    ] Analysis name: histologic_type_non-Clear Cell renal cell carcinoma_P_values, Enrichr Library: KEGG_2019_Human
-LINE 206 : 2019-08-06 16:51:41,563 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
-LINE 396 : 2019-08-06 16:51:41,803 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
-LINE 206 : 2019-08-06 16:51:42,811 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
-LINE 396 : 2019-08-06 16:51:42,953 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18338152&filename=KEGG_2019_Human.histologic_type_non-Clear%20Cell%20renal%20cell%20carcinoma_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 400 972
-LINE 206 : 2019-08-06 16:56:45,908 [DEBUG   ] Starting new HTTP connection (1): www.dgidb.org:80
-LINE 396 : 2019-08-06 16:56:46,068 [DEBUG   ] http://www.dgidb.org:80 "GET /api/v2/interactions.json?genes=AZU1,CAMP,FLNC,S100P,TXNRD1 HTTP/1.1" 200 None
-LINE 206 : 2019-08-06 17:04:03,465 [DEBUG   ] Starting new HTTP connection (1): www.dgidb.org:80
-LINE 396 : 2019-08-06 17:04:04,269 [DEBUG   ] http://www.dgidb.org:80 "GET /api/v2/interactions.json?genes=AAGAB,ABCB7,ABCF2,AGA,AKT2,ANKMY2,AP5S1,AP5Z1,ASAH1,ATRAID,CAPN2,CAPNS1,CCDC6,CCDC9B,CCZ1,CHKB,CIAPIN1,CKAP5,CLCN7,COPG2,CTSD,CYB5B,DAZAP2,DDX19A,DMXL2,EPG5,EPHA2,EXOC7,EXOC8,FIG4,FYCO1,GABARAPL2,GOLM1,GPAT4,GPD2,GPNMB,GPX1,GSPT1,GTPBP1,GYG1,KPNA4,KRT18,LAMA3,LAMTOR3,LCMT1,LRRN4,MANBA,MAP4,MBP,MCU,MICU1,MICU2,MINDY1,MINDY2,MROH1,MTMR1,MYO5A,NPC1,NPTN,NTMT1,OCRL,OSTM1,PHKA1,PIP4P2,PLD1,PLEK2,PPFIA1,PRKAA1,PTGFRN,PTPN11,RAB11FIP1,RAB7A,RABEP2,RABGEF1,RANBP10,RHEB,RMC1,RPTOR,RRAGB,RRAGC,RWDD4,SLC25A25,SLC25A40,SLC2A4,SLC2A8,SLC38A1,SLC9A7,SMDT1,SORL1,SPG11,SPTLC2,SRPK2,STT3B,STXBP6,TMCO4,TMEM106B,TMEM200C,TOM1,TP53BP1,TRIM4,TXNL1,UBE3C,USP7,VAC14,VPS13C,VPS16,VPS18,VPS33A,WDR24,WDR37,WIPI2,WWP2,YKT6,YTHDF2,ZNF330 HTTP/1.1" 200 None
+LINE 206 : 2019-08-12 08:44:36,445 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:44:36,624 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 08:44:36,709 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 08:44:36,710 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 08:44:36,711 [INFO    ] Analysis name: , Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 08:44:36,716 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:44:37,031 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 08:44:38,036 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:44:38,236 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18402261&filename=KEGG_2019_Human..reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 None
+LINE 338 : 2019-08-12 08:44:39,254 [INFO    ] Save file of enrichment results: Job Id:92cb62ea4401480b9f3fb28adbf983a8
+LINE 2515: 2019-08-12 08:44:39,353 [DEBUG   ] update_title_pos
+LINE 653 : 2019-08-12 08:44:39,375 [DEBUG   ] Assigning font /b'F1' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 653 : 2019-08-12 08:44:39,410 [DEBUG   ] Assigning font /b'F2' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf'
+LINE 703 : 2019-08-12 08:44:39,446 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans-Bold.ttf.
+LINE 710 : 2019-08-12 08:44:39,446 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-08-12 08:44:39,466 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-08-12 08:44:39,466 [DEBUG   ] Writing TrueType font.
+LINE 2515: 2019-08-12 08:44:39,494 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-12 08:44:39,535 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-12 08:44:39,563 [DEBUG   ] update_title_pos
+LINE 653 : 2019-08-12 08:44:39,578 [DEBUG   ] Assigning font /b'F1' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 653 : 2019-08-12 08:44:39,611 [DEBUG   ] Assigning font /b'F2' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf'
+LINE 703 : 2019-08-12 08:44:39,646 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans-Bold.ttf.
+LINE 710 : 2019-08-12 08:44:39,646 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-08-12 08:44:39,670 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-08-12 08:44:39,671 [DEBUG   ] Writing TrueType font.
+LINE 348 : 2019-08-12 08:44:39,698 [INFO    ] Done.
+
+LINE 206 : 2019-08-12 08:44:39,704 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:44:39,967 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 08:44:40,053 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 08:44:40,054 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 08:44:40,054 [INFO    ] Analysis name: , Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 08:44:40,058 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:44:40,267 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 08:44:41,274 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:44:41,462 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18402265&filename=KEGG_2019_Human..reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 1190
+LINE 338 : 2019-08-12 08:44:42,477 [INFO    ] Save file of enrichment results: Job Id:e3b0a76422a3ccef3e1512d6412bddec
+LINE 347 : 2019-08-12 08:44:42,483 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.05
+LINE 348 : 2019-08-12 08:44:42,506 [INFO    ] Done.
+
+LINE 206 : 2019-08-12 08:48:14,668 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:48:14,859 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 08:48:14,945 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 08:48:14,946 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 08:48:14,946 [INFO    ] Analysis name: tumor_site_Other_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 08:48:14,951 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:48:15,197 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 08:48:16,204 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:48:16,395 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18402322&filename=KEGG_2019_Human.tumor_site_Other_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 103
+LINE 338 : 2019-08-12 08:48:17,421 [INFO    ] Save file of enrichment results: Job Id:bbb32d0957c29132338ec21a9321171d
+LINE 347 : 2019-08-12 08:48:17,427 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.05
+LINE 348 : 2019-08-12 08:48:17,441 [INFO    ] Done.
+
+LINE 206 : 2019-08-12 08:48:17,446 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:48:17,621 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 08:48:17,708 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 08:48:17,709 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 08:48:17,709 [INFO    ] Analysis name: histologic_type_non-Clear Cell renal cell carcinoma_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 08:48:17,716 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:48:18,001 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 08:48:19,007 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:48:19,235 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18402324&filename=KEGG_2019_Human.histologic_type_non-Clear%20Cell%20renal%20cell%20carcinoma_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 400 972
+LINE 206 : 2019-08-12 08:49:21,341 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:49:21,570 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 08:49:21,656 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 08:49:21,658 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 08:49:21,658 [INFO    ] Analysis name: , Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 08:49:21,662 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:49:21,865 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 08:49:22,871 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:49:23,056 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18402335&filename=KEGG_2019_Human..reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 103
+LINE 338 : 2019-08-12 08:49:24,075 [INFO    ] Save file of enrichment results: Job Id:1b8785332be6f796dc7930f45191a208
+LINE 347 : 2019-08-12 08:49:24,081 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.05
+LINE 348 : 2019-08-12 08:49:24,091 [INFO    ] Done.
+
+LINE 206 : 2019-08-12 08:49:24,108 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:49:24,287 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 08:49:24,372 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 08:49:24,373 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 08:49:24,374 [INFO    ] Analysis name: , Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 08:49:24,380 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:49:24,667 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 08:49:25,673 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:49:25,869 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18402338&filename=KEGG_2019_Human..reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 None
+LINE 338 : 2019-08-12 08:49:26,885 [INFO    ] Save file of enrichment results: Job Id:1aa825a128721d28dd88b1ff67a9a32c
+LINE 2515: 2019-08-12 08:49:26,958 [DEBUG   ] update_title_pos
+LINE 653 : 2019-08-12 08:49:26,973 [DEBUG   ] Assigning font /b'F1' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 653 : 2019-08-12 08:49:27,007 [DEBUG   ] Assigning font /b'F2' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf'
+LINE 703 : 2019-08-12 08:49:27,037 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans-Bold.ttf.
+LINE 710 : 2019-08-12 08:49:27,037 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-08-12 08:49:27,058 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-08-12 08:49:27,058 [DEBUG   ] Writing TrueType font.
+LINE 2515: 2019-08-12 08:49:27,104 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-12 08:49:27,157 [DEBUG   ] update_title_pos
+LINE 206 : 2019-08-12 08:50:09,271 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:50:09,467 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 08:50:09,554 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 08:50:09,555 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 08:50:09,555 [INFO    ] Analysis name: , Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 08:50:09,560 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:50:09,768 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 08:50:10,774 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:50:10,960 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18402345&filename=KEGG_2019_Human..reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 103
+LINE 338 : 2019-08-12 08:50:11,978 [INFO    ] Save file of enrichment results: Job Id:f739484ddfd22ca77e4d841773b818a8
+LINE 347 : 2019-08-12 08:50:11,985 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.05
+LINE 348 : 2019-08-12 08:50:11,994 [INFO    ] Done.
+
+LINE 206 : 2019-08-12 08:50:12,009 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:50:12,188 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 08:50:12,274 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 08:50:12,275 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 08:50:12,276 [INFO    ] Analysis name: , Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 08:50:12,280 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:50:12,563 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 08:50:13,568 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:50:13,757 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18402347&filename=KEGG_2019_Human..reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 None
+LINE 338 : 2019-08-12 08:50:14,775 [INFO    ] Save file of enrichment results: Job Id:a61b15796cd5eae4ae784ec5eebb3536
+LINE 2515: 2019-08-12 08:50:14,883 [DEBUG   ] update_title_pos
+LINE 653 : 2019-08-12 08:50:14,906 [DEBUG   ] Assigning font /b'F1' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 653 : 2019-08-12 08:50:14,947 [DEBUG   ] Assigning font /b'F2' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf'
+LINE 703 : 2019-08-12 08:50:14,985 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans-Bold.ttf.
+LINE 710 : 2019-08-12 08:50:14,985 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-08-12 08:50:15,005 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-08-12 08:50:15,006 [DEBUG   ] Writing TrueType font.
+LINE 2515: 2019-08-12 08:50:15,039 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-12 08:50:15,092 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-12 08:50:15,122 [DEBUG   ] update_title_pos
+LINE 653 : 2019-08-12 08:50:15,136 [DEBUG   ] Assigning font /b'F1' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 653 : 2019-08-12 08:50:15,171 [DEBUG   ] Assigning font /b'F2' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf'
+LINE 703 : 2019-08-12 08:50:15,212 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans-Bold.ttf.
+LINE 710 : 2019-08-12 08:50:15,212 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-08-12 08:50:15,236 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-08-12 08:50:15,236 [DEBUG   ] Writing TrueType font.
+LINE 348 : 2019-08-12 08:50:15,268 [INFO    ] Done.
+
+LINE 206 : 2019-08-12 08:50:15,282 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:50:15,476 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 08:50:15,560 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 08:50:15,561 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 08:50:15,562 [INFO    ] Analysis name: , Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 08:50:15,565 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:50:15,770 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 08:50:16,776 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:50:16,972 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18402348&filename=KEGG_2019_Human..reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 1190
+LINE 338 : 2019-08-12 08:50:17,987 [INFO    ] Save file of enrichment results: Job Id:48ed9c504f356019139a9dbb48b819d9
+LINE 347 : 2019-08-12 08:50:17,995 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.05
+LINE 348 : 2019-08-12 08:50:18,005 [INFO    ] Done.
+
+LINE 206 : 2019-08-12 08:51:51,955 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:51:52,164 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 08:51:52,252 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 08:51:52,253 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 08:51:52,253 [INFO    ] Analysis name: tumor_site_Other_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 08:51:52,257 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:51:52,461 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 08:51:53,472 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:51:53,658 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18402364&filename=KEGG_2019_Human.tumor_site_Other_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 103
+LINE 338 : 2019-08-12 08:51:54,685 [INFO    ] Save file of enrichment results: Job Id:110df219b10e551344d5d225ba5ddcdf
+LINE 347 : 2019-08-12 08:51:54,691 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.05
+LINE 348 : 2019-08-12 08:51:54,704 [INFO    ] Done.
+
+LINE 206 : 2019-08-12 08:51:54,736 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:51:54,924 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 08:51:55,012 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 08:51:55,014 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 08:51:55,014 [INFO    ] Analysis name: histologic_type_non-Clear Cell renal cell carcinoma_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 08:51:55,018 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:51:55,303 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 08:51:56,314 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:51:56,644 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18402366&filename=KEGG_2019_Human.histologic_type_non-Clear%20Cell%20renal%20cell%20carcinoma_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 400 972
+LINE 206 : 2019-08-12 08:53:12,829 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:53:13,022 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 08:53:13,114 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 08:53:13,115 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 08:53:13,116 [INFO    ] Analysis name: , Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 08:53:13,119 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:53:13,415 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 08:53:14,424 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:53:14,617 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18402382&filename=KEGG_2019_Human..reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 None
+LINE 338 : 2019-08-12 08:53:15,645 [INFO    ] Save file of enrichment results: Job Id:1aa9cee976d35827d6fc576082845ce9
+LINE 2515: 2019-08-12 08:53:15,720 [DEBUG   ] update_title_pos
+LINE 653 : 2019-08-12 08:53:15,733 [DEBUG   ] Assigning font /b'F1' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 653 : 2019-08-12 08:53:15,758 [DEBUG   ] Assigning font /b'F2' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf'
+LINE 703 : 2019-08-12 08:53:15,790 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans-Bold.ttf.
+LINE 710 : 2019-08-12 08:53:15,790 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-08-12 08:53:15,810 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-08-12 08:53:15,810 [DEBUG   ] Writing TrueType font.
+LINE 2515: 2019-08-12 08:53:15,837 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-12 08:53:15,870 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-12 08:53:15,891 [DEBUG   ] update_title_pos
+LINE 653 : 2019-08-12 08:53:15,902 [DEBUG   ] Assigning font /b'F1' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 653 : 2019-08-12 08:53:15,924 [DEBUG   ] Assigning font /b'F2' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf'
+LINE 703 : 2019-08-12 08:53:15,956 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans-Bold.ttf.
+LINE 710 : 2019-08-12 08:53:15,956 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-08-12 08:53:15,974 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-08-12 08:53:15,974 [DEBUG   ] Writing TrueType font.
+LINE 348 : 2019-08-12 08:53:15,994 [INFO    ] Done.
+
+LINE 206 : 2019-08-12 08:54:36,422 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:54:36,792 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 08:54:36,879 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 08:54:36,881 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 08:54:36,882 [INFO    ] Analysis name: tumor_site_Other_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 08:54:36,889 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:54:37,094 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 08:54:38,103 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:54:38,291 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18402395&filename=KEGG_2019_Human.tumor_site_Other_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 103
+LINE 338 : 2019-08-12 08:54:39,316 [INFO    ] Save file of enrichment results: Job Id:bdbcfec830b3b1a4209b433567e6217b
+LINE 347 : 2019-08-12 08:54:39,323 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.05
+LINE 348 : 2019-08-12 08:54:39,342 [INFO    ] Done.
+
+LINE 206 : 2019-08-12 08:54:39,364 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:54:39,547 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 08:54:39,633 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 08:54:39,635 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 08:54:39,635 [INFO    ] Analysis name: histologic_type_non-Clear_Cell_renal_cell_carcinoma_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 08:54:39,639 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:54:39,946 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 08:54:40,955 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:54:41,199 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18402396&filename=KEGG_2019_Human.histologic_type_non-Clear_Cell_renal_cell_carcinoma_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 None
+LINE 338 : 2019-08-12 08:54:42,224 [INFO    ] Save file of enrichment results: Job Id:b70bf000887f60abcd0fd94a148b3005
+LINE 2515: 2019-08-12 08:54:42,334 [DEBUG   ] update_title_pos
+LINE 653 : 2019-08-12 08:54:42,348 [DEBUG   ] Assigning font /b'F1' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 653 : 2019-08-12 08:54:42,378 [DEBUG   ] Assigning font /b'F2' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf'
+LINE 703 : 2019-08-12 08:54:42,412 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans-Bold.ttf.
+LINE 710 : 2019-08-12 08:54:42,412 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-08-12 08:54:42,433 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-08-12 08:54:42,433 [DEBUG   ] Writing TrueType font.
+LINE 2515: 2019-08-12 08:54:42,461 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-12 08:54:42,500 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-12 08:54:42,525 [DEBUG   ] update_title_pos
+LINE 653 : 2019-08-12 08:54:42,539 [DEBUG   ] Assigning font /b'F1' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 653 : 2019-08-12 08:54:42,563 [DEBUG   ] Assigning font /b'F2' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf'
+LINE 703 : 2019-08-12 08:54:42,601 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans-Bold.ttf.
+LINE 710 : 2019-08-12 08:54:42,602 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-08-12 08:54:42,620 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-08-12 08:54:42,620 [DEBUG   ] Writing TrueType font.
+LINE 348 : 2019-08-12 08:54:42,642 [INFO    ] Done.
+
+LINE 206 : 2019-08-12 08:54:42,657 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:54:42,851 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 08:54:42,955 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 08:54:42,957 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 08:54:42,957 [INFO    ] Analysis name: pathologic_staging_regional_lymph_nodes_pN_pN0or1_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 08:54:42,965 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:54:43,160 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 08:54:44,169 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:54:44,355 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18402398&filename=KEGG_2019_Human.pathologic_staging_regional_lymph_nodes_pN_pN0or1_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 1190
+LINE 338 : 2019-08-12 08:54:45,378 [INFO    ] Save file of enrichment results: Job Id:521addf33398aa4c3f2570bc0744a3b6
+LINE 347 : 2019-08-12 08:54:45,386 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.05
+LINE 348 : 2019-08-12 08:54:45,396 [INFO    ] Done.
+
+LINE 206 : 2019-08-12 08:55:28,473 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:55:28,666 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 08:55:28,752 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 08:55:28,754 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 08:55:28,754 [INFO    ] Analysis name: tumor_site_Other_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 08:55:28,764 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:55:29,008 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 08:55:30,013 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:55:30,196 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18402407&filename=KEGG_2019_Human.tumor_site_Other_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 103
+LINE 338 : 2019-08-12 08:55:31,211 [INFO    ] Save file of enrichment results: Job Id:48728ae7e3c823bac7f20147626187e3
+LINE 347 : 2019-08-12 08:55:31,217 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.05
+LINE 348 : 2019-08-12 08:55:31,236 [INFO    ] Done.
+
+LINE 206 : 2019-08-12 08:55:31,274 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:55:31,456 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 08:55:31,541 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 08:55:31,544 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 08:55:31,544 [INFO    ] Analysis name: histologic_type_non-Clear_Cell_renal_cell_carcinoma_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 08:55:31,548 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:55:31,828 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 08:55:32,839 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:55:33,047 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18402409&filename=KEGG_2019_Human.histologic_type_non-Clear_Cell_renal_cell_carcinoma_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 None
+LINE 338 : 2019-08-12 08:55:34,060 [INFO    ] Save file of enrichment results: Job Id:a78e0234604f2564b2cde1f235ff8cd3
+LINE 2515: 2019-08-12 08:55:34,146 [DEBUG   ] update_title_pos
+LINE 653 : 2019-08-12 08:55:34,159 [DEBUG   ] Assigning font /b'F1' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 653 : 2019-08-12 08:55:34,182 [DEBUG   ] Assigning font /b'F2' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf'
+LINE 703 : 2019-08-12 08:55:34,216 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans-Bold.ttf.
+LINE 710 : 2019-08-12 08:55:34,216 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-08-12 08:55:34,237 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-08-12 08:55:34,237 [DEBUG   ] Writing TrueType font.
+LINE 2515: 2019-08-12 08:55:34,264 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-12 08:55:34,301 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-12 08:55:34,322 [DEBUG   ] update_title_pos
+LINE 653 : 2019-08-12 08:55:34,334 [DEBUG   ] Assigning font /b'F1' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 653 : 2019-08-12 08:55:34,359 [DEBUG   ] Assigning font /b'F2' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf'
+LINE 703 : 2019-08-12 08:55:34,389 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans-Bold.ttf.
+LINE 710 : 2019-08-12 08:55:34,389 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-08-12 08:55:34,407 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-08-12 08:55:34,407 [DEBUG   ] Writing TrueType font.
+LINE 348 : 2019-08-12 08:55:34,428 [INFO    ] Done.
+
+LINE 206 : 2019-08-12 08:55:34,480 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:55:34,680 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 08:55:34,765 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 08:55:34,766 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 08:55:34,766 [INFO    ] Analysis name: pathologic_staging_regional_lymph_nodes_pN_pN0or1_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 08:55:34,770 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:55:34,975 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 08:55:35,986 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 08:55:36,171 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18402410&filename=KEGG_2019_Human.pathologic_staging_regional_lymph_nodes_pN_pN0or1_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 1190
+LINE 338 : 2019-08-12 08:55:37,199 [INFO    ] Save file of enrichment results: Job Id:6d70ecf942528b8b1d21efc878562daa
+LINE 347 : 2019-08-12 08:55:37,212 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.05
+LINE 348 : 2019-08-12 08:55:37,222 [INFO    ] Done.
+
+LINE 206 : 2019-08-12 09:00:04,338 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 09:00:04,530 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 09:00:04,617 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 09:00:04,619 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 09:00:04,619 [INFO    ] Analysis name: tumor_site_Other_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 09:00:04,623 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 09:00:04,821 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 09:00:05,828 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 09:00:06,017 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18402475&filename=KEGG_2019_Human.tumor_site_Other_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 103
+LINE 338 : 2019-08-12 09:00:07,042 [INFO    ] Save file of enrichment results: Job Id:ef90f0a5352bf7e8290708d7552051b0
+LINE 347 : 2019-08-12 09:00:07,051 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.05
+LINE 348 : 2019-08-12 09:00:07,121 [INFO    ] Done.
+
+LINE 206 : 2019-08-12 09:00:07,157 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 09:00:07,334 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 09:00:07,425 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 09:00:07,427 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 09:00:07,428 [INFO    ] Analysis name: histologic_type_non-Clear_Cell_renal_cell_carcinoma_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 09:00:07,435 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 09:00:07,715 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 09:00:08,720 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 09:00:08,948 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18402484&filename=KEGG_2019_Human.histologic_type_non-Clear_Cell_renal_cell_carcinoma_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 None
+LINE 338 : 2019-08-12 09:00:09,974 [INFO    ] Save file of enrichment results: Job Id:6b127f7e477d8d442bc87e51da4abf95
+LINE 2515: 2019-08-12 09:00:10,185 [DEBUG   ] update_title_pos
+LINE 653 : 2019-08-12 09:00:10,200 [DEBUG   ] Assigning font /b'F1' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 653 : 2019-08-12 09:00:10,229 [DEBUG   ] Assigning font /b'F2' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf'
+LINE 703 : 2019-08-12 09:00:10,260 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans-Bold.ttf.
+LINE 710 : 2019-08-12 09:00:10,261 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-08-12 09:00:10,280 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-08-12 09:00:10,281 [DEBUG   ] Writing TrueType font.
+LINE 2515: 2019-08-12 09:00:10,308 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-12 09:00:10,347 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-12 09:00:10,371 [DEBUG   ] update_title_pos
+LINE 653 : 2019-08-12 09:00:10,385 [DEBUG   ] Assigning font /b'F1' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 653 : 2019-08-12 09:00:10,410 [DEBUG   ] Assigning font /b'F2' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf'
+LINE 703 : 2019-08-12 09:00:10,441 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans-Bold.ttf.
+LINE 710 : 2019-08-12 09:00:10,442 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-08-12 09:00:10,462 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-08-12 09:00:10,462 [DEBUG   ] Writing TrueType font.
+LINE 348 : 2019-08-12 09:00:10,481 [INFO    ] Done.
+
+LINE 206 : 2019-08-12 09:00:10,663 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 09:00:10,920 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 09:00:11,006 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 09:00:11,008 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 09:00:11,008 [INFO    ] Analysis name: pathologic_staging_regional_lymph_nodes_pN_pN0or1_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 09:00:11,013 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 09:00:11,213 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 09:00:12,221 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 09:00:12,409 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18402494&filename=KEGG_2019_Human.pathologic_staging_regional_lymph_nodes_pN_pN0or1_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 1190
+LINE 338 : 2019-08-12 09:00:13,440 [INFO    ] Save file of enrichment results: Job Id:2c5c7ca0467a34bcd0fc86b7255f9255
+LINE 347 : 2019-08-12 09:00:13,454 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.05
+LINE 348 : 2019-08-12 09:00:13,480 [INFO    ] Done.
+
+LINE 206 : 2019-08-12 09:21:35,857 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 09:21:36,050 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 09:21:36,135 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 09:21:36,136 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 09:21:36,136 [INFO    ] Analysis name: tumor_site_Other_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 09:21:36,140 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 09:21:36,419 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 09:21:37,425 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 09:21:37,611 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18403090&filename=KEGG_2019_Human.tumor_site_Other_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 103
+LINE 338 : 2019-08-12 09:21:38,627 [INFO    ] Save file of enrichment results: Job Id:4f07c4d4bcdb7aaf0ea441917100918e
+LINE 347 : 2019-08-12 09:21:38,633 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.05
+LINE 348 : 2019-08-12 09:21:38,643 [INFO    ] Done.
+
+LINE 206 : 2019-08-12 09:21:38,683 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 09:21:38,863 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 09:21:38,950 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 09:21:38,951 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 09:21:38,952 [INFO    ] Analysis name: histologic_type_non-Clear_Cell_renal_cell_carcinoma_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 09:21:38,957 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 09:21:39,256 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 09:21:40,262 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 09:21:40,525 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18403092&filename=KEGG_2019_Human.histologic_type_non-Clear_Cell_renal_cell_carcinoma_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 None
+LINE 338 : 2019-08-12 09:21:41,545 [INFO    ] Save file of enrichment results: Job Id:729d8adde80738e2184c3741d265eb38
+LINE 2515: 2019-08-12 09:21:41,653 [DEBUG   ] update_title_pos
+LINE 653 : 2019-08-12 09:21:41,670 [DEBUG   ] Assigning font /b'F1' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 653 : 2019-08-12 09:21:41,699 [DEBUG   ] Assigning font /b'F2' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf'
+LINE 703 : 2019-08-12 09:21:41,741 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans-Bold.ttf.
+LINE 710 : 2019-08-12 09:21:41,741 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-08-12 09:21:41,769 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-08-12 09:21:41,769 [DEBUG   ] Writing TrueType font.
+LINE 2515: 2019-08-12 09:21:41,808 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-12 09:21:41,862 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-12 09:21:41,891 [DEBUG   ] update_title_pos
+LINE 653 : 2019-08-12 09:21:41,908 [DEBUG   ] Assigning font /b'F1' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 653 : 2019-08-12 09:21:41,939 [DEBUG   ] Assigning font /b'F2' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf'
+LINE 703 : 2019-08-12 09:21:41,984 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans-Bold.ttf.
+LINE 710 : 2019-08-12 09:21:41,984 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-08-12 09:21:42,009 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-08-12 09:21:42,009 [DEBUG   ] Writing TrueType font.
+LINE 348 : 2019-08-12 09:21:42,038 [INFO    ] Done.
+
+LINE 2515: 2019-08-12 09:21:42,250 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-12 09:21:42,785 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-12 09:21:42,833 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-12 09:21:42,893 [DEBUG   ] update_title_pos
+LINE 206 : 2019-08-12 09:21:43,732 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 09:21:43,912 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 09:21:43,999 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 09:21:44,001 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 09:21:44,001 [INFO    ] Analysis name: pathologic_staging_regional_lymph_nodes_pN_pN0or1_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 09:21:44,006 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 09:21:44,216 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-12 09:21:45,222 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 09:21:45,433 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18403094&filename=KEGG_2019_Human.pathologic_staging_regional_lymph_nodes_pN_pN0or1_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 1190
+LINE 338 : 2019-08-12 09:21:46,452 [INFO    ] Save file of enrichment results: Job Id:d6e7a5284334b940f628f2be317f8366
+LINE 347 : 2019-08-12 09:21:46,461 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.05
+LINE 348 : 2019-08-12 09:21:46,472 [INFO    ] Done.
+

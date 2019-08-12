@@ -260,9 +260,7 @@ def get_dgidb_parameters():
     dgidb_list_parameters() will be called in dgidb_get_request() if 
     incorrect parameter values are given.
     """
-    
-    param_list = ['genes_or_drugs_list, genes, drugs, interaction_sources, interaction_types, fda_approved_drug, immunotherapy, anti_neoplastic, clinically_actionable, druggable_genome, drug_resistance, gene_categories, source_trust_levels']
-    
+        
     print('\nRequired Parameters:')
     print('genes_or_drugs_list (list)')
     print('\nOne of the following:')
