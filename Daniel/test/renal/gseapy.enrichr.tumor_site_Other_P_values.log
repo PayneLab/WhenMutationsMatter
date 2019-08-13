@@ -1,0 +1,90 @@
+LINE 206 : 2019-08-13 13:17:00,397 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-13 13:17:00,537 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-13 13:17:00,605 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-13 13:17:00,609 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-13 13:17:00,609 [INFO    ] Analysis name: tumor_site_Other_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-13 13:17:00,617 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-13 13:17:00,784 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-13 13:17:01,799 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-13 13:17:01,940 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18418682&filename=KEGG_2019_Human.tumor_site_Other_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 103
+LINE 338 : 2019-08-13 13:17:02,986 [INFO    ] Save file of enrichment results: Job Id:80ff24c99010138176e9ec1d49e633ad
+LINE 347 : 2019-08-13 13:17:03,046 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.05
+LINE 348 : 2019-08-13 13:17:03,138 [INFO    ] Done.
+
+LINE 206 : 2019-08-13 13:17:03,250 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-13 13:17:03,387 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-13 13:17:03,455 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-13 13:17:03,455 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-13 13:17:03,455 [INFO    ] Analysis name: histologic_type_non-Clear_Cell_renal_cell_carcinoma_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-13 13:17:03,459 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-13 13:17:03,714 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-13 13:17:04,732 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-13 13:17:04,952 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18418683&filename=KEGG_2019_Human.histologic_type_non-Clear_Cell_renal_cell_carcinoma_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 None
+LINE 338 : 2019-08-13 13:17:05,991 [INFO    ] Save file of enrichment results: Job Id:2d2477b3a493424382f231b4aaee5e3d
+LINE 2515: 2019-08-13 13:17:06,123 [DEBUG   ] update_title_pos
+LINE 1254: 2019-08-13 13:17:06,143 [DEBUG   ] findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=16.0 to DejaVu Sans ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+LINE 653 : 2019-08-13 13:17:06,151 [DEBUG   ] Assigning font /b'F1' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 1254: 2019-08-13 13:17:06,163 [DEBUG   ] findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=bold:stretch=normal:size=16.0 to DejaVu Sans ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf') with score of 0.000000.
+LINE 1254: 2019-08-13 13:17:06,175 [DEBUG   ] findfont: Matching :family=STIXGeneral:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to STIXGeneral ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXGeneral.ttf') with score of 0.050000.
+LINE 1254: 2019-08-13 13:17:06,183 [DEBUG   ] findfont: Matching :family=STIXGeneral:style=italic:variant=normal:weight=normal:stretch=normal:size=10.0 to STIXGeneral ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXGeneralItalic.ttf') with score of 0.050000.
+LINE 1254: 2019-08-13 13:17:06,187 [DEBUG   ] findfont: Matching :family=STIXGeneral:style=normal:variant=normal:weight=bold:stretch=normal:size=10.0 to STIXGeneral ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXGeneralBol.ttf') with score of 0.000000.
+LINE 1254: 2019-08-13 13:17:06,195 [DEBUG   ] findfont: Matching :family=STIXNonUnicode:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to STIXNonUnicode ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXNonUni.ttf') with score of 0.050000.
+LINE 1254: 2019-08-13 13:17:06,203 [DEBUG   ] findfont: Matching :family=STIXNonUnicode:style=italic:variant=normal:weight=normal:stretch=normal:size=10.0 to STIXNonUnicode ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXNonUniIta.ttf') with score of 0.050000.
+LINE 1254: 2019-08-13 13:17:06,207 [DEBUG   ] findfont: Matching :family=STIXNonUnicode:style=normal:variant=normal:weight=bold:stretch=normal:size=10.0 to STIXNonUnicode ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXNonUniBol.ttf') with score of 0.000000.
+LINE 1254: 2019-08-13 13:17:06,215 [DEBUG   ] findfont: Matching :family=STIXSizeOneSym:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to STIXSizeOneSym ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizOneSymReg.ttf') with score of 0.050000.
+LINE 1254: 2019-08-13 13:17:06,227 [DEBUG   ] findfont: Matching :family=STIXSizeTwoSym:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to STIXSizeTwoSym ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizTwoSymReg.ttf') with score of 0.050000.
+LINE 1254: 2019-08-13 13:17:06,235 [DEBUG   ] findfont: Matching :family=STIXSizeThreeSym:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to STIXSizeThreeSym ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizThreeSymReg.ttf') with score of 0.050000.
+LINE 1254: 2019-08-13 13:17:06,243 [DEBUG   ] findfont: Matching :family=STIXSizeFourSym:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to STIXSizeFourSym ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizFourSymReg.ttf') with score of 0.050000.
+LINE 1254: 2019-08-13 13:17:06,255 [DEBUG   ] findfont: Matching :family=STIXSizeFiveSym:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to STIXSizeFiveSym ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizFiveSymReg.ttf') with score of 0.050000.
+LINE 1254: 2019-08-13 13:17:06,263 [DEBUG   ] findfont: Matching :family=cmsy10:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to cmsy10 ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmsy10.ttf') with score of 0.050000.
+LINE 1254: 2019-08-13 13:17:06,271 [DEBUG   ] findfont: Matching :family=cmr10:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to cmr10 ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmr10.ttf') with score of 0.050000.
+LINE 1254: 2019-08-13 13:17:06,283 [DEBUG   ] findfont: Matching :family=cmtt10:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to cmtt10 ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmtt10.ttf') with score of 0.050000.
+LINE 1254: 2019-08-13 13:17:06,291 [DEBUG   ] findfont: Matching :family=cmmi10:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to cmmi10 ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmmi10.ttf') with score of 0.050000.
+LINE 1254: 2019-08-13 13:17:06,303 [DEBUG   ] findfont: Matching :family=cmb10:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to cmb10 ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmb10.ttf') with score of 0.050000.
+LINE 1254: 2019-08-13 13:17:06,311 [DEBUG   ] findfont: Matching :family=cmss10:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to cmss10 ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmss10.ttf') with score of 0.050000.
+LINE 1254: 2019-08-13 13:17:06,323 [DEBUG   ] findfont: Matching :family=cmex10:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to cmex10 ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmex10.ttf') with score of 0.050000.
+LINE 1254: 2019-08-13 13:17:06,331 [DEBUG   ] findfont: Matching :family=DejaVu Sans:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+LINE 1254: 2019-08-13 13:17:06,343 [DEBUG   ] findfont: Matching :family=DejaVu Sans:style=italic:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Oblique.ttf') with score of 0.150000.
+LINE 1254: 2019-08-13 13:17:06,343 [DEBUG   ] findfont: Matching :family=DejaVu Sans:style=normal:variant=normal:weight=bold:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf') with score of 0.000000.
+LINE 1254: 2019-08-13 13:17:06,351 [DEBUG   ] findfont: Matching :family=DejaVu Sans Mono:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans Mono ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSansMono.ttf') with score of 0.050000.
+LINE 1254: 2019-08-13 13:17:06,363 [DEBUG   ] findfont: Matching :family=DejaVu Sans Display:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans Display ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSansDisplay.ttf') with score of 0.050000.
+LINE 653 : 2019-08-13 13:17:06,611 [DEBUG   ] Assigning font /b'F2' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf'
+LINE 1254: 2019-08-13 13:17:06,647 [DEBUG   ] findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=bold:stretch=normal:size=24.0 to DejaVu Sans ('C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf') with score of 0.000000.
+LINE 703 : 2019-08-13 13:17:06,647 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans-Bold.ttf.
+LINE 710 : 2019-08-13 13:17:06,651 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-08-13 13:17:06,671 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-08-13 13:17:06,671 [DEBUG   ] Writing TrueType font.
+LINE 2515: 2019-08-13 13:17:06,703 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-13 13:17:06,751 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-13 13:17:06,779 [DEBUG   ] update_title_pos
+LINE 653 : 2019-08-13 13:17:06,795 [DEBUG   ] Assigning font /b'F1' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 653 : 2019-08-13 13:17:06,823 [DEBUG   ] Assigning font /b'F2' = 'C:\\Users\\Daniel\\AppData\\Local\\conda\\conda\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf'
+LINE 703 : 2019-08-13 13:17:06,867 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans-Bold.ttf.
+LINE 710 : 2019-08-13 13:17:06,867 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-08-13 13:17:06,891 [DEBUG   ] Embedding font C:\Users\Daniel\AppData\Local\conda\conda\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-08-13 13:17:06,891 [DEBUG   ] Writing TrueType font.
+LINE 348 : 2019-08-13 13:17:06,915 [INFO    ] Done.
+
+LINE 2515: 2019-08-13 13:17:07,123 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-13 13:17:07,603 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-13 13:17:07,643 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-13 13:17:07,699 [DEBUG   ] update_title_pos
+LINE 206 : 2019-08-13 13:17:08,772 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-13 13:17:08,908 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-13 13:17:08,972 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-13 13:17:08,976 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-13 13:17:08,976 [INFO    ] Analysis name: pathologic_staging_regional_lymph_nodes_pN_pN0or1_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-13 13:17:09,000 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-13 13:17:09,164 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-13 13:17:10,184 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-13 13:17:10,356 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18418684&filename=KEGG_2019_Human.pathologic_staging_regional_lymph_nodes_pN_pN0or1_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 1190
+LINE 338 : 2019-08-13 13:17:11,376 [INFO    ] Save file of enrichment results: Job Id:f6138f9d701bf2ee26a417f6e9fa1169
+LINE 347 : 2019-08-13 13:17:11,388 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.05
+LINE 348 : 2019-08-13 13:17:11,400 [INFO    ] Done.
+
+LINE 206 : 2019-08-13 13:17:11,612 [DEBUG   ] Starting new HTTP connection (1): www.dgidb.org:80
+LINE 396 : 2019-08-13 13:17:11,728 [DEBUG   ] http://www.dgidb.org:80 "GET /api/v2/interactions.json?genes=AVL9,COG1,GOLPH3L,RAB3GAP1,RAB3GAP2 HTTP/1.1" 200 None
+LINE 206 : 2019-08-13 13:17:11,788 [DEBUG   ] Starting new HTTP connection (1): www.dgidb.org:80
+LINE 396 : 2019-08-13 13:17:12,521 [DEBUG   ] http://www.dgidb.org:80 "GET /api/v2/interactions.json?genes=AAGAB,ABCB7,ABCF2,AGA,AKT2,ANKMY2,AP5S1,AP5Z1,ASAH1,ATRAID,CAPN2,CAPNS1,CCDC6,CCDC9B,CCZ1,CHKB,CIAPIN1,CKAP5,CLCN7,COPG2,CTSD,CYB5B,DAZAP2,DDX19A,DMXL2,EPG5,EPHA2,EXOC7,EXOC8,FIG4,FYCO1,GABARAPL2,GOLM1,GPAT4,GPD2,GPNMB,GPX1,GSPT1,GTPBP1,GYG1,KPNA4,KRT18,LAMA3,LAMTOR3,LCMT1,LRRN4,MANBA,MAP4,MBP,MCU,MICU1,MICU2,MINDY1,MINDY2,MROH1,MTMR1,MYO5A,NPC1,NPTN,NTMT1,OCRL,OSTM1,PHKA1,PIP4P2,PLD1,PLEK2,PPFIA1,PRKAA1,PTGFRN,PTPN11,RAB11FIP1,RAB7A,RABEP2,RABGEF1,RANBP10,RHEB,RMC1,RPTOR,RRAGB,RRAGC,RWDD4,SLC25A25,SLC25A40,SLC2A4,SLC2A8,SLC38A1,SLC9A7,SMDT1,SORL1,SPG11,SPTLC2,SRPK2,STT3B,STXBP6,TMCO4,TMEM106B,TMEM200C,TOM1,TP53BP1,TRIM4,TXNL1,UBE3C,USP7,VAC14,VPS13C,VPS16,VPS18,VPS33A,WDR24,WDR37,WIPI2,WWP2,YKT6,YTHDF2,ZNF330 HTTP/1.1" 200 None
+LINE 206 : 2019-08-13 13:17:12,621 [DEBUG   ] Starting new HTTP connection (1): www.dgidb.org:80
+LINE 396 : 2019-08-13 13:17:12,733 [DEBUG   ] http://www.dgidb.org:80 "GET /api/v2/interactions.json?genes=AZU1,CAMP,FLNC,S100P,TXNRD1 HTTP/1.1" 200 None

@@ -396,9 +396,15 @@ def dgidb_get_request(genes_or_drugs_list,
             drugs_string = 'drugs='
             for drug in genes_or_drugs_list:
                 if drug == genes_or_drugs_list[0]:
-                    drugs_string += drug
+                    if '(' in drug:
+                        drugs_string += drug[:-3]
+                    else:
+                        drugs_string += drug
                 else:
-                    drugs_string += ',' + drug
+                    if '(' in drug:
+                        drugs_string += ',' + drug[:-3]
+                    else:
+                        drugs_string += ',' + drug
             url += drugs_string
         
         if (drugs == False and genes == False) or (drugs == True and genes == True):
@@ -498,3 +504,20 @@ def dgidb_get_request(genes_or_drugs_list,
         get_dgidb_parameters()
         
         return
+    
+def dgidb_json_parse(json_obj):
+    json_obj = json_obj['matchedTerms']
+    drugs = {}
+    for item in json_obj:
+        if len(item['interactions']) > 0:
+            interactions_list = []
+            for interaction in item['interactions']:
+                interactions_list.append(interaction['drugName'])
+            drugs[item['geneName']] = interactions_list
+    for k, v in drugs.items():
+        print('Gene: ' + k)
+        print('Drugs: ')
+        print(v)
+        print('\n')
+            
+    return drugs
