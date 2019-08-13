@@ -79,7 +79,7 @@ def get_missence_truncation_comparison(cancer_object, omics_name, gene):
     # Step 2 - Create the binary column needed to do the comparison
     # Get mutation catagories with omics data
     missence_omics = tumors.loc[tumors.index.isin(miss_unique_samples)]
-    missence_omics = missence_omics.assign(binary_mutations = 'Missence')
+    missence_omics = missence_omics.assign(binary_mutations = 'Missense')
     truncation_omics = tumors.loc[tumors.index.isin(trunc_unique_samples)]
     truncation_omics = truncation_omics.assign(binary_mutations = 'Truncation')
     binary_mut_omics = missence_omics.append(truncation_omics)
