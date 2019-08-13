@@ -86,7 +86,7 @@ def get_missence_truncation_comparison(cancer_object, omics_name, gene):
 
     # Step 3 - Format the dataframe correctly for the T-test(just omics and binary columns for tumors)
     columns_to_drop = [gene+"_Mutation", gene+"_Location", gene+"_Mutation_Status", "Sample_Status"]
-    binary_mut_omics = binary_mut_omics.drop(columns_to_drop, axis = 1)
+    #binary_mut_omics = binary_mut_omics.drop(columns_to_drop, axis = 1)
 
     return binary_mut_omics
 
