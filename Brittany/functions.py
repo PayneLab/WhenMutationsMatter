@@ -39,19 +39,19 @@ def get_missence_truncation_comparison(cancer_object, omics_name, gene):
     if cancer_object.get_cancer_type() == 'colon':
         missence_truncation_groups = {'frameshift substitution': 'Truncation', 
             'frameshift deletion': 'Truncation', 'frameshift insertion': 'Truncation', 
-            'stopgain': 'Truncation', 'stoploss': 'Truncation', 'nonsynonymous SNV': 'Missence',
-            'nonframeshift insertion': 'Missence','nonframeshift deletion': 'Missence', 
-            'nonframeshift substitution': 'Missence'}
+            'stopgain': 'Truncation', 'stoploss': 'Truncation', 'nonsynonymous SNV': 'Missense',
+            'nonframeshift insertion': 'Missense','nonframeshift deletion': 'Missense', 
+            'nonframeshift substitution': 'Missense'}
     else: 
-        missence_truncation_groups = {'In_Frame_Del': 'Missence', 'In_Frame_Ins': 'Missence',
-            'Missense_Mutation': 'Missence', 'Frame_Shift_Del': 'Truncation','Nonsense_Mutation': 'Truncation', 
+        missence_truncation_groups = {'In_Frame_Del': 'Missense', 'In_Frame_Ins': 'Missense',
+            'Missense_Mutation': 'Missense', 'Frame_Shift_Del': 'Truncation','Nonsense_Mutation': 'Truncation', 
             'Splice_Site': 'Truncation', 'Frame_Shift_Ins': 'Truncation','Nonstop_Mutation':'Truncation'}
 
     mutations_replaced_M_T = somatic_mutations.replace(missence_truncation_groups)
     mutations_replaced_M_T = mutations_replaced_M_T.loc[mutations_replaced_M_T['Gene'] == gene]
 
     # group mutation categories
-    miss = mutations_replaced_M_T.loc[mutations_replaced_M_T['Mutation'] == 'Missence']
+    miss = mutations_replaced_M_T.loc[mutations_replaced_M_T['Mutation'] == 'Missense']
     trunc = mutations_replaced_M_T.loc[mutations_replaced_M_T['Mutation'] == 'Truncation']
 
     #get lists of unique samples for missence and trucation categories
