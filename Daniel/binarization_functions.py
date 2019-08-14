@@ -510,9 +510,11 @@ def dgidb_json_parse(json_obj):
     drugs = {}
     for item in json_obj:
         if len(item['interactions']) > 0:
-            interactions_list = []
+            #interactions_list = []
+            interactions_dict = {}
             for interaction in item['interactions']:
-                interactions_list.append(interaction['drugName'])
+                #interactions_list.append(interaction['drugName'])
+                interactions_dict[interaction['drugName']] = interaction['interaction_types']
             drugs[item['geneName']] = interactions_list
     for k, v in drugs.items():
         print('Gene: ' + k)
