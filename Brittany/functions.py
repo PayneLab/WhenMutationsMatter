@@ -26,7 +26,7 @@ def format_cis_comparison_data(cancer_object, omics_name, gene):
         else:
             return omics_binary_mutations
 
-def get_missence_truncation_comparison(cancer_object, omics_name, gene):
+def get_missense_truncation_comparison(cancer_object, omics_name, gene):
     import numpy as np
     #get omics data and tumors
     omics_and_mutations = cancer_object.join_omics_to_mutations(
@@ -71,7 +71,7 @@ def get_missence_truncation_comparison(cancer_object, omics_name, gene):
         print('Only missence type mutations found for', gene+'.', 
              'Not possible to compare mutation types.')
         missence_omics = tumors.loc[tumors.index.isin(miss_unique_samples)]
-        missence_omics = missence_omics.assign(binary_mutations = 'Missence')
+        missence_omics = missence_omics.assign(binary_mutations = 'Missense')
         columns_to_drop = [gene+"_Mutation", gene+"_Location", gene+"_Mutation_Status", "Sample_Status"]
         binary_mut_omics = missence_omics.drop(columns_to_drop, axis = 1)
         return binary_mut_omics
@@ -86,7 +86,7 @@ def get_missence_truncation_comparison(cancer_object, omics_name, gene):
 
     # Step 3 - Format the dataframe correctly for the T-test(just omics and binary columns for tumors)
     columns_to_drop = [gene+"_Mutation", gene+"_Location", gene+"_Mutation_Status", "Sample_Status"]
-    #binary_mut_omics = binary_mut_omics.drop(columns_to_drop, axis = 1)
+    binary_mut_omics = binary_mut_omics.drop(columns_to_drop, axis = 1)
 
     return binary_mut_omics
 
