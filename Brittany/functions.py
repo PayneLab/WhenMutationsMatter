@@ -61,7 +61,7 @@ def get_missense_truncation_comparison(cancer_object, omics_name, gene):
     #check if there is only one type of mutation for the specific gene
     if miss_unique_samples == []:
         print('Only truncation type mutations found for', gene+'.', 
-             'Not possible to compare mutation types.')
+             'Not possible to compare missense with wildtype.')
         truncation_omics = tumors.loc[tumors.index.isin(trunc_unique_samples)]
         truncation_omics = truncation_omics.assign(binary_mutations = 'Truncation')
         columns_to_drop = [gene+"_Mutation", gene+"_Location", gene+"_Mutation_Status", "Sample_Status"]
@@ -69,7 +69,7 @@ def get_missense_truncation_comparison(cancer_object, omics_name, gene):
         return binary_mut_omics
     elif trunc_unique_samples == []:
         print('Only missence type mutations found for', gene+'.', 
-             'Not possible to compare mutation types.')
+             'Not possible to compare truncation with wildtype.')
         missence_omics = tumors.loc[tumors.index.isin(miss_unique_samples)]
         missence_omics = missence_omics.assign(binary_mutations = 'Missense')
         columns_to_drop = [gene+"_Mutation", gene+"_Location", gene+"_Mutation_Status", "Sample_Status"]
