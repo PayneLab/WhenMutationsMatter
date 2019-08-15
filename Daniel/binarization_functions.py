@@ -260,13 +260,11 @@ def get_dgidb_parameters():
     dgidb_list_parameters() will be called in dgidb_get_request() if 
     incorrect parameter values are given.
     """
-    
-    param_list = ['genes_or_drugs_list, genes, drugs, interaction_sources, interaction_types, fda_approved_drug, immunotherapy, anti_neoplastic, clinically_actionable, druggable_genome, drug_resistance, gene_categories, source_trust_levels']
-    
+        
     print('\nRequired Parameters:')
     print('genes_or_drugs_list (list)')
-    print('genes (bool)')
-    print('drugs (bool)\n')
+    print('\nOne of the following:')
+    print('genes (bool) OR drugs (bool)\n')
     
     print('Optional Parameters:')
     print('interaction_sources (list (case-sensitive): ["DrugBank","PharmGKB","TALC","TEND","TTD"])')
@@ -398,9 +396,15 @@ def dgidb_get_request(genes_or_drugs_list,
             drugs_string = 'drugs='
             for drug in genes_or_drugs_list:
                 if drug == genes_or_drugs_list[0]:
-                    drugs_string += drug
+                    if '(' in drug:
+                        drugs_string += drug[:-3]
+                    else:
+                        drugs_string += drug
                 else:
-                    drugs_string += ',' + drug
+                    if '(' in drug:
+                        drugs_string += ',' + drug[:-3]
+                    else:
+                        drugs_string += ',' + drug
             url += drugs_string
         
         if (drugs == False and genes == False) or (drugs == True and genes == True):
@@ -500,3 +504,22 @@ def dgidb_get_request(genes_or_drugs_list,
         get_dgidb_parameters()
         
         return
+    
+def dgidb_json_parse(json_obj):
+    json_obj = json_obj['matchedTerms']
+    drugs = {}
+    for item in json_obj:
+        if len(item['interactions']) > 0:
+            #interactions_list = []
+            interactions_dict = {}
+            for interaction in item['interactions']:
+                #interactions_list.append(interaction['drugName'])
+                interactions_dict[interaction['drugName']] = interaction['interaction_types']
+            drugs[item['geneName']] = interactions_list
+    for k, v in drugs.items():
+        print('Gene: ' + k)
+        print('Drugs: ')
+        print(v)
+        print('\n')
+            
+    return drugs

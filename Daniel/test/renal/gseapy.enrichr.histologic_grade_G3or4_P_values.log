@@ -1,0 +1,119 @@
+LINE 206 : 2019-08-14 08:55:23,155 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-14 08:55:23,455 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-14 08:55:23,547 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-14 08:55:23,551 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-14 08:55:23,551 [INFO    ] Analysis name: histologic_grade_G3or4_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-14 08:55:23,559 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-14 08:55:23,771 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-14 08:55:24,786 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-14 08:55:24,982 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18425722&filename=KEGG_2019_Human.histologic_grade_G3or4_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 514
+LINE 338 : 2019-08-14 08:55:26,012 [INFO    ] Save file of enrichment results: Job Id:a1b11fd5fa31127a47fc7fbf5d143d78
+LINE 347 : 2019-08-14 08:55:26,104 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.05
+LINE 348 : 2019-08-14 08:55:26,120 [INFO    ] Done.
+
+LINE 206 : 2019-08-14 08:55:26,184 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-14 08:55:26,373 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-14 08:55:26,465 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-14 08:55:26,469 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-14 08:55:26,469 [INFO    ] Analysis name: tumor_necrosis_Present_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-14 08:55:26,477 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-14 08:55:26,695 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-14 08:55:27,704 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-14 08:55:27,943 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18425724&filename=KEGG_2019_Human.tumor_necrosis_Present_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 1624
+LINE 338 : 2019-08-14 08:55:28,971 [INFO    ] Save file of enrichment results: Job Id:68f9d49269e4411c2d2cef5e8172565b
+LINE 347 : 2019-08-14 08:55:28,991 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.05
+LINE 348 : 2019-08-14 08:55:29,004 [INFO    ] Done.
+
+LINE 206 : 2019-08-14 08:55:29,124 [DEBUG   ] Starting new HTTP connection (1): www.dgidb.org:80
+LINE 396 : 2019-08-14 08:55:29,264 [DEBUG   ] http://www.dgidb.org:80 "GET /api/v2/interactions.json?genes=ACBD3,GOLPH3L,GSDME,PYCR2,TXNRD1 HTTP/1.1" 200 None
+LINE 206 : 2019-08-14 08:55:29,324 [DEBUG   ] Starting new HTTP connection (1): www.dgidb.org:80
+LINE 396 : 2019-08-14 08:55:29,466 [DEBUG   ] http://www.dgidb.org:80 "GET /api/v2/interactions.json?genes=ACBD3,GOLPH3L,HSP90AB1,LARP1,TXNRD1 HTTP/1.1" 200 None
+LINE 506 : 2019-08-14 09:00:24,090 [DEBUG   ] locator: <matplotlib.ticker.MaxNLocator object at 0x0000023E1B32E240>
+LINE 535 : 2019-08-14 09:00:24,094 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 536 : 2019-08-14 09:00:24,094 [DEBUG   ] locator: <matplotlib.ticker.MaxNLocator object at 0x0000023E1B32E240>
+LINE 692 : 2019-08-14 09:00:24,094 [DEBUG   ] Setting pcolormesh
+LINE 2515: 2019-08-14 09:00:24,142 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-14 09:00:24,214 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-14 09:00:24,258 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-14 09:00:24,330 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-14 09:00:24,366 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-14 09:00:24,394 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-14 09:00:24,426 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-14 09:00:24,458 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-14 09:00:24,474 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-14 09:00:24,542 [DEBUG   ] update_title_pos
+LINE 506 : 2019-08-14 09:01:29,522 [DEBUG   ] locator: <matplotlib.ticker.MaxNLocator object at 0x0000023E1E551208>
+LINE 535 : 2019-08-14 09:01:29,526 [DEBUG   ] Using auto colorbar locator on colorbar
+LINE 536 : 2019-08-14 09:01:29,526 [DEBUG   ] locator: <matplotlib.ticker.MaxNLocator object at 0x0000023E1E551208>
+LINE 692 : 2019-08-14 09:01:29,526 [DEBUG   ] Setting pcolormesh
+LINE 2515: 2019-08-14 09:01:29,562 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-14 09:01:29,658 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-14 09:01:29,690 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-14 09:01:29,778 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-14 09:01:29,806 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-14 09:01:29,826 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-14 09:01:29,862 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-14 09:01:29,882 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-14 09:01:29,898 [DEBUG   ] update_title_pos
+LINE 2515: 2019-08-14 09:01:29,998 [DEBUG   ] update_title_pos
+LINE 206 : 2019-08-14 09:02:08,285 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-14 09:02:08,494 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-14 09:02:08,592 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-14 09:02:08,596 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-14 09:02:08,596 [INFO    ] Analysis name: tumor_site_Other_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-14 09:02:08,604 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-14 09:02:08,831 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-14 09:02:09,839 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-14 09:02:10,101 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18425777&filename=KEGG_2019_Human.tumor_site_Other_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 103
+LINE 338 : 2019-08-14 09:02:11,126 [INFO    ] Save file of enrichment results: Job Id:d15af8aec6644ad13d98115c37ccee46
+LINE 347 : 2019-08-14 09:02:11,182 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.05
+LINE 348 : 2019-08-14 09:02:11,198 [INFO    ] Done.
+
+LINE 206 : 2019-08-14 09:02:11,246 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-14 09:02:11,464 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-14 09:02:11,560 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-14 09:02:11,560 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-14 09:02:11,560 [INFO    ] Analysis name: tumor_size_in_cm_Above_Mean(6.51)_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-14 09:02:11,568 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-14 09:02:11,788 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-14 09:02:12,798 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-14 09:02:13,070 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18425778&filename=KEGG_2019_Human.tumor_size_in_cm_Above_Mean(6.51)_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 407
+LINE 338 : 2019-08-14 09:02:14,092 [INFO    ] Save file of enrichment results: Job Id:2567976b5905339dd6ebcce167f3dd31
+LINE 347 : 2019-08-14 09:02:14,108 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.05
+LINE 348 : 2019-08-14 09:02:14,148 [INFO    ] Done.
+
+LINE 206 : 2019-08-14 09:02:14,296 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-14 09:02:14,492 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-14 09:02:14,592 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-14 09:02:14,592 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-14 09:02:14,592 [INFO    ] Analysis name: histologic_grade_G3or4_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-14 09:02:14,596 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-14 09:02:14,824 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-14 09:02:15,833 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-14 09:02:16,142 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18425779&filename=KEGG_2019_Human.histologic_grade_G3or4_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 514
+LINE 338 : 2019-08-14 09:02:17,168 [INFO    ] Save file of enrichment results: Job Id:acb190c4726904d204f8923c47436660
+LINE 347 : 2019-08-14 09:02:17,180 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.05
+LINE 348 : 2019-08-14 09:02:17,200 [INFO    ] Done.
+
+LINE 206 : 2019-08-14 09:02:17,304 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-14 09:02:17,499 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-14 09:02:17,680 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-14 09:02:17,680 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-14 09:02:17,680 [INFO    ] Analysis name: tumor_necrosis_Present_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-14 09:02:17,684 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-14 09:02:17,901 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-14 09:02:18,911 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-14 09:02:19,111 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18425780&filename=KEGG_2019_Human.tumor_necrosis_Present_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 200 1624
+LINE 338 : 2019-08-14 09:02:20,134 [INFO    ] Save file of enrichment results: Job Id:1db61cf1afb7d67c7fa2984968868b63
+LINE 347 : 2019-08-14 09:02:20,142 [WARNING ] Warning: No enrich terms using library KEGG_2019_Human when cutoff = 0.05
+LINE 348 : 2019-08-14 09:02:20,154 [INFO    ] Done.
+
+LINE 206 : 2019-08-14 09:02:20,242 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-14 09:02:20,446 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-14 09:02:20,545 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-14 09:02:20,549 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-14 09:02:20,549 [INFO    ] Analysis name: tumor_status_at_12months_follow_up_With Tumor_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-14 09:02:20,557 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-14 09:02:20,775 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 206 : 2019-08-14 09:02:21,780 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-14 09:02:22,079 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18425781&filename=KEGG_2019_Human.tumor_status_at_12months_follow_up_With%20Tumor_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 400 972

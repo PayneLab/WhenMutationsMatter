@@ -1,0 +1,6 @@
+LINE 206 : 2019-08-12 13:51:53,167 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 396 : 2019-08-12 13:51:53,327 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 311 : 2019-08-12 13:51:53,391 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 329 : 2019-08-12 13:51:53,391 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
+LINE 330 : 2019-08-12 13:51:53,391 [INFO    ] Analysis name: Proteomic_subtype_DorE_P_values, Enrichr Library: KEGG_2019_Human
+LINE 206 : 2019-08-12 13:51:53,411 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80

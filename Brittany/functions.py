@@ -26,7 +26,7 @@ def format_cis_comparison_data(cancer_object, omics_name, gene):
         else:
             return omics_binary_mutations
 
-def get_missence_truncation_comparison(cancer_object, omics_name, gene):
+def get_missense_truncation_comparison(cancer_object, omics_name, gene):
     import numpy as np
     #get omics data and tumors
     omics_and_mutations = cancer_object.join_omics_to_mutations(
@@ -39,19 +39,19 @@ def get_missence_truncation_comparison(cancer_object, omics_name, gene):
     if cancer_object.get_cancer_type() == 'colon':
         missence_truncation_groups = {'frameshift substitution': 'Truncation', 
             'frameshift deletion': 'Truncation', 'frameshift insertion': 'Truncation', 
-            'stopgain': 'Truncation', 'stoploss': 'Truncation', 'nonsynonymous SNV': 'Missence',
-            'nonframeshift insertion': 'Missence','nonframeshift deletion': 'Missence', 
-            'nonframeshift substitution': 'Missence'}
+            'stopgain': 'Truncation', 'stoploss': 'Truncation', 'nonsynonymous SNV': 'Missense',
+            'nonframeshift insertion': 'Missense','nonframeshift deletion': 'Missense', 
+            'nonframeshift substitution': 'Missense'}
     else: 
-        missence_truncation_groups = {'In_Frame_Del': 'Missence', 'In_Frame_Ins': 'Missence',
-            'Missense_Mutation': 'Missence', 'Frame_Shift_Del': 'Truncation','Nonsense_Mutation': 'Truncation', 
+        missence_truncation_groups = {'In_Frame_Del': 'Missense', 'In_Frame_Ins': 'Missense',
+            'Missense_Mutation': 'Missense', 'Frame_Shift_Del': 'Truncation','Nonsense_Mutation': 'Truncation', 
             'Splice_Site': 'Truncation', 'Frame_Shift_Ins': 'Truncation','Nonstop_Mutation':'Truncation'}
 
     mutations_replaced_M_T = somatic_mutations.replace(missence_truncation_groups)
     mutations_replaced_M_T = mutations_replaced_M_T.loc[mutations_replaced_M_T['Gene'] == gene]
 
     # group mutation categories
-    miss = mutations_replaced_M_T.loc[mutations_replaced_M_T['Mutation'] == 'Missence']
+    miss = mutations_replaced_M_T.loc[mutations_replaced_M_T['Mutation'] == 'Missense']
     trunc = mutations_replaced_M_T.loc[mutations_replaced_M_T['Mutation'] == 'Truncation']
 
     #get lists of unique samples for missence and trucation categories
@@ -71,7 +71,7 @@ def get_missence_truncation_comparison(cancer_object, omics_name, gene):
         print('Only missence type mutations found for', gene+'.', 
              'Not possible to compare mutation types.')
         missence_omics = tumors.loc[tumors.index.isin(miss_unique_samples)]
-        missence_omics = missence_omics.assign(binary_mutations = 'Missence')
+        missence_omics = missence_omics.assign(binary_mutations = 'Missense')
         columns_to_drop = [gene+"_Mutation", gene+"_Location", gene+"_Mutation_Status", "Sample_Status"]
         binary_mut_omics = missence_omics.drop(columns_to_drop, axis = 1)
         return binary_mut_omics
@@ -79,7 +79,7 @@ def get_missence_truncation_comparison(cancer_object, omics_name, gene):
     # Step 2 - Create the binary column needed to do the comparison
     # Get mutation catagories with omics data
     missence_omics = tumors.loc[tumors.index.isin(miss_unique_samples)]
-    missence_omics = missence_omics.assign(binary_mutations = 'Missence')
+    missence_omics = missence_omics.assign(binary_mutations = 'Missense')
     truncation_omics = tumors.loc[tumors.index.isin(trunc_unique_samples)]
     truncation_omics = truncation_omics.assign(binary_mutations = 'Truncation')
     binary_mut_omics = missence_omics.append(truncation_omics)

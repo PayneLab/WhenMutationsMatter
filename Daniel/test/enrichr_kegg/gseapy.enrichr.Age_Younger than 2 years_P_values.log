@@ -1,9 +1,0 @@
-LINE 206 : 2019-07-16 13:45:51,711 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
-LINE 396 : 2019-07-16 13:45:52,047 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
-LINE 311 : 2019-07-16 13:45:52,109 [INFO    ] Connecting to Enrichr Server to get latest library names
-LINE 329 : 2019-07-16 13:45:52,110 [DEBUG   ] Start Enrichr using library: KEGG_2019_Human
-LINE 330 : 2019-07-16 13:45:52,111 [INFO    ] Analysis name: Age_Younger than 2 years_P_values, Enrichr Library: KEGG_2019_Human
-LINE 206 : 2019-07-16 13:45:52,118 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
-LINE 396 : 2019-07-16 13:45:52,317 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
-LINE 206 : 2019-07-16 13:45:53,326 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
-LINE 396 : 2019-07-16 13:45:53,465 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=18103599&filename=KEGG_2019_Human.Age_Younger%20than%202%20years_P_values.reports&backgroundType=KEGG_2019_Human HTTP/1.1" 400 972

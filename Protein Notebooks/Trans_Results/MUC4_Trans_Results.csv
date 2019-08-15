@@ -1,0 +1,12 @@
+Cancer_Type,Gene,Comparison,Interacting_Protein,P_Value
+Endometrial,MUC4,NF1_proteomics,False,5.948002744642168e-07
+Endometrial,MUC4,TAF9_proteomics,False,1.1573776599495585e-06
+Endometrial,MUC4,WDR4_proteomics,False,3.416198460985637e-06
+Colon,MUC4,RPL22L1_proteomics,False,6.41396845738791e-07
+Endometrial,MUC4,MIR4640_transcriptomics,False,8.929467769776578e-08
+Endometrial,MUC4,SNORD32A_transcriptomics,False,1.802401793952096e-07
+Endometrial,MUC4,CDRT8_transcriptomics,False,4.033316775108297e-07
+Endometrial,MUC4,OR5B17_transcriptomics,False,1.0320022525002993e-06
+Colon,MUC4,SUPT4H1_transcriptomics,False,1.4653048181240182e-06
+Ovarian,MUC4,LMBR1L_transcriptomics,False,1.031719719657122e-06
+Endometrial,MUC4,PJA1-S365_phosphoproteomics,False,2.849520383038077e-07
