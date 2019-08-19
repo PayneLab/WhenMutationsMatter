@@ -193,15 +193,15 @@ def significantEnrichments(df, column, p_value=0.05):
         return
     
     elif len(sig_results) == 1:
-        print('1 significant protein enrichment in '
-              +attribute+':\n')
+        #print('1 significant protein enrichment in '
+        #      +attribute+':\n')
         
         return(sig_results)
     
     else:
-        print(str(len(sig_results))
-              +' significant protein enrichments in '
-              +attribute+'\n')
+        #print(str(len(sig_results))
+        #      +' significant protein enrichments in '
+        #      +attribute+'\n')
         
         return(sig_results)
 
@@ -282,8 +282,7 @@ def get_dgidb_parameters():
     print('http://www.dgidb.org/api')
     
     return
-    
-#GET request maker for the DGIdb    
+      
 def dgidb_get_request(genes_or_drugs_list,
                       genes=True, drugs=False,
                       interaction_sources=[], 
@@ -374,7 +373,7 @@ def dgidb_get_request(genes_or_drugs_list,
     Return Value:
         A Python requests object containing JSON with the information from your GET
         request to the DGIdb.
-    """
+    """   
     url = 'http://www.dgidb.org/api/v2/interactions.json?'
     valid_interaction_sources = ["DrugBank","PharmGKB","TALC","TEND","TTD"]
     valid_interaction_types = ["activator", "inhibitor", "unknown"]
@@ -383,59 +382,34 @@ def dgidb_get_request(genes_or_drugs_list,
     try:
     
         if genes == True:
-            genes_string = 'genes='
-            for gene in genes_or_drugs_list:
-                if gene == genes_or_drugs_list[0]:
-                    genes_string += gene
-                else:
-                    genes_string += ',' + gene
+            url += 'genes='
+            length = len(genes_or_drugs_list)
+            for i, gene in enumerate(genes_or_drugs_list):
+                if '(' in gene:
+                    genes_or_drugs_list[i] = gene[:-3]     
 
-            url += genes_string
+            url += ','.join(genes_or_drugs_list)
 
         elif drugs == True:
-            drugs_string = 'drugs='
-            for drug in genes_or_drugs_list:
-                if drug == genes_or_drugs_list[0]:
-                    if '(' in drug:
-                        drugs_string += drug[:-3]
-                    else:
-                        drugs_string += drug
-                else:
-                    if '(' in drug:
-                        drugs_string += ',' + drug[:-3]
-                    else:
-                        drugs_string += ',' + drug
-            url += drugs_string
+            url += 'drugs='
+            url += ','.join(genes_or_drugs_list)
         
         if (drugs == False and genes == False) or (drugs == True and genes == True):
             raise Exception("genes_or_drugs is ambiguous. Please specify if it is a list of genes or drugs.")
-        
-        unique_sources = list(set(interaction_sources))
-        if len(unique_sources) == 1 and unique_sources[0] in valid_interaction_sources:
-            url += '&interaction_sources=' + unique_sources[0]
-           
-        elif len(unique_sources) > 1:
+          
+        if len(interaction_sources) >= 1:
             url += '&interaction_sources='
             for source in unique_sources:
                 if source not in valid_interaction_sources:
                     raise Exception("Invalid input interaction_sources: {}".format(source))
-                elif source in valid_interaction_sources and source != unique_sources[-1]:
-                    url += source + ','
-                else:
-                    url += source
+            url += ','.join(interaction_sources)
                     
-        unique_types = list(set(interaction_types))
-        if len(unique_types) == 1 and unique_types[0] in valid_interaction_types:
-            url += '&interaction_types=' + unique_types[0]
-        elif len(unique_types) > 1:
+        if len(interaction_types) >= 1:
             url += '&interaction_types='
-            for types in unique_types:
+            for types in interaction_types:
                 if types not in valid_interaction_types:
                     raise Exception("Invalid input interaction_types: {}".format(types))
-                elif types in valid_interaction_types and types != unique_types[-1]:
-                    url += types + ","
-                else:
-                    url += types
+            url += ','.join(interaction_types)
 
         if fda_approved_drug == True:
             url += '&fda_approved_drug=true'
@@ -454,49 +428,43 @@ def dgidb_get_request(genes_or_drugs_list,
             
         if drug_resistance == True:
             url += '&drug_resistance=true'
-        
-        unique_categories = list(set(gene_categories))
-        if len(unique_categories) == 1:
-            url += '&gene_categories=' + unique_categories[0]
-            
-        elif len(unique_categories) > 1:
+         
+        if len(gene_categories) >= 1:
             url += '&gene_categories='
-            for cat in unique_categories:
-                if cat.lower() not in valid_gene_categories:
-                    raise Exception("Invalid gene category: {}".format(cat))
-                elif cat.lower() == 'dna repair':
-                    url += 'dna%20repair'
-                elif cat.lower() == 'tumor suppressor':
-                    url += 'tumor%20suppressor'
-                else:
-                    url += cat.lower()
-                if cat.lower() in valid_gene_categories and cat.lower() != unique_categories[-1]:
-                    url += ","
+            for i, category in enumerate(gene_categories):
+                element = category.lower()
+                if element not in valid_gene_categories:
+                    raise Exception("Invalid gene category: {}".format(category))
+                gene_categories[i] = element
+                gene_categories[i] = '%20'.join(gene_categories[i])
+            url += ','.join(gene_categories)
+                
                     
-        unique_levels = list(set(source_trust_levels))            
-        if len(unique_levels) == 1:
-            if unique_levels[0].lower() not in valid_source_trust_levels:
-                raise Exception("Invalid input source_trust_levels: {}".format(unique_levels[0]))
-            if unique_levels[0].lower() == "expert curated":
+        length = len(source_trust_levels)
+        if length == 1:
+            element = source_trust_levels[0].lower()
+            if element not in valid_source_trust_levels:
+                raise Exception("Invalid input source_trust_levels: {}".format(source_trust_levels[0]))
+            if element == "expert curated":
                 url += '&source_trust_levels=Expert%20curated'
             else:
                 url += '&source_trust_levels=Non-curated'
         
-        elif len(unique_levels) > 1:
+        elif length > 1:
             url += '&source_trust_levels='
-            for item in unique_levels:
+            for item in source_trust_levels:
                 if item.lower() not in valid_source_trust_levels:
                     raise Exception("Invalid source_trust_level: {}".format(item))
                 
             url += 'Expert%20curated,Non-curated'
                     
             
-        print("This is the full URL to your GET request:")
-        print(url)
+        #print("This is the full URL to your GET request:")
+        #print(url)
         r = requests.get(url)
-        print("\nSee www.dgidb.org/api or this function's docstring for further explanation and resources on valid parameter inputs")
+        #print("\nSee www.dgidb.org/api or this function's docstring for further explanation and resources on valid parameter inputs")
         
-        return r
+        return r.json()
     
     except Exception as e:
         print("Invalid parameter value: ")
@@ -509,13 +477,16 @@ def dgidb_json_parse(json_obj):
     json_obj = json_obj['matchedTerms']
     drugs = {}
     for item in json_obj:
+        print('Gene:', item['geneName'])
         if len(item['interactions']) > 0:
-            #interactions_list = []
+            interactions_list = []
             interactions_dict = {}
             for interaction in item['interactions']:
-                #interactions_list.append(interaction['drugName'])
-                interactions_dict[interaction['drugName']] = interaction['interaction_types']
+                interactions_list.append(interaction['drugName'])
+                print('Drug:', interaction['drugName'], '\nInteraction Type:', interaction['interactionTypes'])
+                interactions_dict[interaction['drugName']] = interaction['interactionTypes']
             drugs[item['geneName']] = interactions_list
+        print('\n')
     for k, v in drugs.items():
         print('Gene: ' + k)
         print('Drugs: ')
