@@ -1,3 +1,15 @@
+def add_significance_col(results_df, num_comparisons):
+    "bonferroni multiple hypothesis"""
+    alpha = .05
+    bonferroni_cutoff = alpha / num_comparisons
+    
+    pval = results_df['P_Value']
+    if pval[0] <= bonferroni_cutoff:
+        results_df['Significant'] = True
+    else: 
+        results_df['Significant'] = False
+    return results_df
+
 def format_cis_comparison_data(cancer_object, omics_name, gene):
     import numpy as np
     # Step 1 - Create dataframe in order to do comparisons with wrap_ttest - drop nan values
