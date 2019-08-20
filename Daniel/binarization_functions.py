@@ -224,7 +224,6 @@ def renameDuplicateColumns(outliers_df, dict_of_counts=False):
                 duplicates[outliers_list[i]] = 1
 
         #Go through and check for duplicates, and then rename duplicates accordingly
-        #Can this be made more efficient?
         for i in range(len(outliers_list) - 1):
             #Check if the current == the next
             if outliers_list[i] == outliers_list[i + 1]:
@@ -399,7 +398,7 @@ def dgidb_get_request(genes_or_drugs_list,
           
         if len(interaction_sources) >= 1:
             url += '&interaction_sources='
-            for source in unique_sources:
+            for source in interaction_sources:
                 if source not in valid_interaction_sources:
                     raise Exception("Invalid input interaction_sources: {}".format(source))
             url += ','.join(interaction_sources)
@@ -473,24 +472,44 @@ def dgidb_get_request(genes_or_drugs_list,
         
         return
     
-def dgidb_json_parse(json_obj):
-    json_obj = json_obj['matchedTerms']
-    drugs = {}
-    for item in json_obj:
-        print('Gene:', item['geneName'])
-        if len(item['interactions']) > 0:
-            interactions_list = []
-            interactions_dict = {}
-            for interaction in item['interactions']:
-                interactions_list.append(interaction['drugName'])
-                print('Drug:', interaction['drugName'], '\nInteraction Type:', interaction['interactionTypes'])
-                interactions_dict[interaction['drugName']] = interaction['interactionTypes']
-            drugs[item['geneName']] = interactions_list
-        print('\n')
-    for k, v in drugs.items():
-        print('Gene: ' + k)
-        print('Drugs: ')
-        print(v)
-        print('\n')
-            
-    return drugs
+def dgidb_json_parse(json_obj, genes=False, drugs=False):
+    if (drugs == False and genes == False) or (drugs == True and genes == True):
+        print("'genes' or 'drugs' must be set to True.")
+        
+        return
+    
+    elif genes == True:
+        json_obj = json_obj['matchedTerms']
+        drugs_dict = {}
+
+        for item in json_obj:
+            if len(item['interactions']) > 0:
+                interactions_dict = {}
+                for interaction in item['interactions']:
+                    interactions_dict[interaction['drugName']] = interaction['interactionTypes']
+                drugs_dict[item['geneName']] = interactions_dict
+
+        if len(drugs_dict) == 0:
+            print('No Gene/Drug interactions')
+
+            return
+
+        return drugs_dict
+    
+    elif drugs == True:
+        json_obj = json_obj['matchedTerms']
+        genes_dict = {}
+
+        for item in json_obj:
+            if len(item['interactions']) > 0:
+                interactions_dict = {}
+                for interaction in item['interactions']:
+                    interactions_dict[interaction['geneName']] = interaction['interactionTypes']
+                genes_dict[item['drugName']] = interactions_dict
+
+        if len(genes_dict) == 0:
+            print('No Drug/Gene interactions')
+
+            return
+
+        return genes_dict
