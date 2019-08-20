@@ -393,8 +393,11 @@ def dgidb_get_request(genes_or_drugs_list,
             url += 'drugs='
             url += ','.join(genes_or_drugs_list)
         
-        if (drugs == False and genes == False) or (drugs == True and genes == True):
-            raise Exception("genes_or_drugs is ambiguous. Please specify if it is a list of genes or drugs.")
+        if (drugs == False and genes == False):
+            raise Exception("'drugs' and 'genes' are both False. Please specify if genes_or_drugs is a list of genes or drugs.")
+            
+        elif (drugs == True and genes == True):
+            raise Exception("'drugs' and 'genes' are both True. Please specify if genes_or_drugs is a list of genes or drugs.")
           
         if len(interaction_sources) >= 1:
             url += '&interaction_sources='
