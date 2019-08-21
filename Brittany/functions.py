@@ -1,3 +1,14 @@
+def add_to_all_results(df, omics, comparison, all_comp):
+    expanded = df
+    expanded['Gene'] = gene
+    expanded['Comparison'] = comparison
+    expanded['Omics'] = omics
+    
+    updated_all_comparisons = pd.concat([all_comp, expanded], sort=False)
+    
+    return updated_all_comparisons
+
+
 def add_significance_col(results_df, num_comparisons):
     "bonferroni multiple hypothesis"""
     alpha = .05
