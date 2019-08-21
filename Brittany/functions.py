@@ -11,28 +11,6 @@ def pval_annotation(df, pval_symbol_text, col_A=0, col_B=1, below=False):
     plt.text((x1+x2)*.5, # half between x coord
              y+h, pval_symbol_text, horizontalalignment='center', verticalalignment='bottom', color = ".3")
 
-# Boxplot
-def cis_plot(df, gene, omics_name, mutation_type="Mutated", sig_pval=None, matplot=plt):
-    omics_col = gene+"_"+omics_name
-    
-    plt.rcParams['figure.figsize']=(8,5)
-    sns.set(font_scale = 1.3)
-    cis_boxplot = sns.boxplot(data = df, x = 'binary_mutations',
-                              y = omics_col, order = ["Wildtype", mutation_type], showfliers = False)  
-    cis_boxplot.set_title(gene + " Effect on " + gene + " Proteomics in Kidney Tumors\n P-Value = "+prot_pval[:6]+"\n")
-    cis_boxplot = sns.stripplot(data= df, x = 'binary_mutations',
-                                y = omics_col,jitter = True, color = ".3", order = ["Wildtype", mutation_type])
-    cis_boxplot.set(xlabel = gene + " Mutation Status in Tumors", ylabel = omics_name.capitalize())
-    cis_boxplot.set_xticklabels(cis_boxplot.get_xticklabels())
-
-    if pval is not None:
-        pval_annotation("*")
-    else:
-        pval_annotation("ns")
-    plt.show()
-    plt.clf()
-    plt.close()
-
 
 def add_to_all_results(df, gene, omics, comparison, all_comp, pandas=pd):
     expanded = df
