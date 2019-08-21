@@ -1,3 +1,17 @@
+# statistical annotation
+def pval_annotation(df, pval_symbol_text, col_A=, col_B=1, below=False):
+    x1, x2 = col_A, col_B   # columns (first column: 0, see plt.xticks())
+    if below == True:
+        y, h = df[col_A].max() + .05, .05  
+    else:
+        y, h = df[col_A].max() + .2, .05 
+    plt.plot([x1, x1, x2, x2], #draw horizontal line
+             [y, y+h, y+h, y], #vertical line
+             lw=1.5, color= '.3')
+    plt.text((x1+x2)*.5, # half between x coord
+             y+h, pval_symbol_text, horizontalalignment='center', verticalalignment='bottom', color = ".3")
+
+
 def add_significance_col(results_df, num_comparisons):
     "bonferroni multiple hypothesis"""
     alpha = .05
