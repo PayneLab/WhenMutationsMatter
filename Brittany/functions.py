@@ -1,4 +1,4 @@
-def add_to_all_results(df, omics, comparison, all_comp):
+def add_to_all_results(df, gene, omics, comparison, all_comp):
     expanded = df
     expanded['Gene'] = gene
     expanded['Comparison'] = comparison
