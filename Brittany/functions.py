@@ -4,7 +4,7 @@ def pval_annotation(df, pval_symbol_text, col_A=0, col_B=1, below=False):
     if below == True:
         y, h = df[col_A].max() + .05, .05  
     else:
-        y, h = df[col_A]].max() + .2, .05 
+        y, h = df[col_A].max() + .2, .05 
     plt.plot([x1, x1, x2, x2], #draw horizontal line
              [y, y+h, y+h, y], #vertical line
              lw=1.5, color= '.3')
