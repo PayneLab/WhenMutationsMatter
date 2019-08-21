@@ -493,7 +493,7 @@ def dgidb_json_parse(json_obj, genes=False, drugs=False):
                 drugs_dict[item['geneName']] = interactions_dict
 
         if len(drugs_dict) == 0:
-            print('No Gene/Drug interactions')
+            #print('No Gene/Drug interactions')
 
             return
 
@@ -511,8 +511,37 @@ def dgidb_json_parse(json_obj, genes=False, drugs=False):
                 genes_dict[item['drugName']] = interactions_dict
 
         if len(genes_dict) == 0:
-            print('No Drug/Gene interactions')
+            #print('No Drug/Gene interactions')
 
             return
 
         return genes_dict
+    
+def compare_enrichments_with_drugs(outliers_dict, clinical_df):
+    patient_drugs_genes = {}
+    for key in outliers_dict.keys():
+        if key in clinical_df.index:
+            comparisons = {}
+            if isinstance(clinical_df.loc[key]['patient_medications'], str):
+                drug_list = clinical_df.loc[key]['patient_medications'].split(',')
+                for i, drug in enumerate(drug_list):
+                    paren = drug.find('(')
+                    if paren != -1:
+                        drug_list[i] = drug[0:paren]
+                comparisons['current_medications'] = drug_list
+                patient_drugs_genes[key] = comparisons
+                query = dgidb_get_request(genes=False, drugs=True,
+                                          genes_or_drugs_list = drug_list)
+                parsed = dgidb_json_parse(query, drugs=True)
+                check = False
+                if parsed is None:
+                    continue
+                for k,v in parsed.items():
+                    for i, j in v.items():
+                        if i in outliers_dict[key]:
+                            comparisons[k] = {i : j}
+                            check = True
+                if check is False:
+                    patient_drugs_genes['Gene/Drug Interactions'] = "No connection between current drugs and significantly enriched genes"
+    print(json.dumps(patient_drugs_genes, indent=4))
+    return patient_drugs_genes
