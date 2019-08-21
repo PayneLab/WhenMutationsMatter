@@ -1,3 +1,39 @@
+# statistical annotation
+def pval_annotation(pval_symbol_text, col_A=0, col_B=1, below=False):
+    x1, x2 = col_A, col_B   # columns (first column: 0, see plt.xticks())
+    if below == True:
+        y, h = prot_mut_status[prot_col].max() + .05, .05  
+    else:
+        y, h = prot_mut_status[prot_col].max() + .2, .05 
+    plt.plot([x1, x1, x2, x2], #draw horizontal line
+             [y, y+h, y+h, y], #vertical line
+             lw=1.5, color= '.3')
+    plt.text((x1+x2)*.5, # half between x coord
+             y+h, pval_symbol_text, horizontalalignment='center', verticalalignment='bottom', color = ".3")
+
+# Create boxplt to compare wildtype and mutation type
+def cis_plot(df, gene, omics_name, mutation_type="Mutated", sig_pval=None):
+    omics_col = gene+"_"+omics_name
+    
+    plt.rcParams['figure.figsize']=(8,5)
+    sns.set(font_scale = 1.3)
+    cis_boxplot = sns.boxplot(data = df, x = 'binary_mutations',
+                              y = omics_col, order = ["Wildtype", mutation_type], showfliers = False)  
+    cis_boxplot.set_title(gene + " Effect on " + gene + " Proteomics in Kidney Tumors\n P-Value = "+prot_pval[:6]+"\n")
+    cis_boxplot = sns.stripplot(data= df, x = 'binary_mutations',
+                                y = omics_col,jitter = True, color = ".3", order = ["Wildtype", mutation_type])
+    cis_boxplot.set(xlabel = gene + " Mutation Status in Tumors", ylabel = omics_name.capitalize())
+    cis_boxplot.set_xticklabels(cis_boxplot.get_xticklabels())
+
+    if pval is not None:
+        pval_annotation("*")
+    else:
+        pval_annotation("ns")
+    plt.show()
+    plt.clf()
+    plt.close()
+
+
 def add_to_all_results(df, gene, omics, comparison, all_comp):
     expanded = df
     expanded['Gene'] = gene
