@@ -12,17 +12,6 @@ def pval_annotation(df, pval_symbol_text, col_A=0, col_B=1, below=False):
              y+h, pval_symbol_text, horizontalalignment='center', verticalalignment='bottom', color = ".3")
 
 
-def add_to_all_results(df, gene, omics, comparison, all_comp, pandas=pd):
-    expanded = df
-    expanded['Gene'] = gene
-    expanded['Comparison'] = comparison
-    expanded['Omics'] = omics
-    
-    updated_all_comparisons = pd.concat([all_comp, expanded], sort=False)
-    
-    return updated_all_comparisons
-
-
 def add_significance_col(results_df, num_comparisons):
     "bonferroni multiple hypothesis"""
     alpha = .05
