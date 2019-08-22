@@ -1,5 +1,6 @@
 # statistical annotation
-def pval_annotation(df, pval_symbol_text, col_A=, col_B=1, below=False):
+def pval_annotation(df, pval_symbol_text, col_A=0, col_B=1, below=False):
+    import matplotlib.pyplot as plt
     x1, x2 = col_A, col_B   # columns (first column: 0, see plt.xticks())
     if below == True:
         y, h = df[col_A].max() + .05, .05  
