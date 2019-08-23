@@ -55,6 +55,10 @@ def pval_annotation(pval_df, plotted_df):
         plt.text((x3+x4)*.5, # half between x coord
                  y2+h2, trunc_pval_symbol, horizontalalignment='center', verticalalignment='bottom', color = "black")
 
+        
+        
+        
+        
 # Create boxplot and stripplot with pval annotation
 def cis_plot(df, gene, omics_name, pval_df, mutation_type="Mutated"):
     omics_col = gene+"_"+omics_name
@@ -80,7 +84,7 @@ def cis_plot(df, gene, omics_name, pval_df, mutation_type="Mutated"):
     cis_boxplot = sns.boxplot(data = df, x = 'binary_mutations',
                               y = omics_col, order = order_mutations, showfliers = False)  
     cis_boxplot.set_title(
-        gene + " Effect on " + gene +" "+omics_name.capitalize()+" in Kidney Tumors\n"+str_pval[:16])
+        gene + " Effect on " + gene +" "+omics_name.capitalize()+" in Kidney Tumors\n"+str_pval)
     cis_boxplot = sns.stripplot(data= df, x = 'binary_mutations',
                                 y = omics_col,jitter = True, color = ".3", order = order_mutations)
     cis_boxplot.set(xlabel = "\n"+gene + " Mutation Status in Tumors", ylabel = omics_name.capitalize())
@@ -93,7 +97,7 @@ def cis_plot(df, gene, omics_name, pval_df, mutation_type="Mutated"):
     plt.close()
     
     
-# get pval from dataframe or float 
+# get pval from dataframe -- used in cis_plot
 def get_pval(results_df):
     if isinstance(results_df, pd.DataFrame):
         pval_series = results_df['P_Value']
