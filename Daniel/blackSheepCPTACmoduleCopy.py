@@ -185,21 +185,21 @@ def compare_groups_outliers(outliers, annotations, frac_filter=0.3):
         label0 = '%s_%s_enrichment_FDR' %(comp, group0_label)
         df = filterOutliers(outliers, group0, group1, frac_filter)
         if len(df) > 0:
-            print("Testing %s rows for enrichment in %s %s samples" %(len(df), comp, group0_label))
+            #print("Testing %s rows for enrichment in %s %s samples" %(len(df), comp, group0_label))
             col = pd.DataFrame(testDifferentGroupsOutliers(group0, group1, df))
             col.columns = [label0]
             results_df = pd.concat([results_df, col], axis=1, join='outer', sort=False)
-        else:
-            print("No rows had outliers in at least %s of %s %s samples" %(frac_filter, comp, group0_label))
+        #else:
+            #print("No rows had outliers in at least %s of %s %s samples" %(frac_filter, comp, group0_label))
 
         label1 = '%s_%s_enrichment_FDR' % (comp, group1_label)
         df = filterOutliers(outliers, group1, group0, frac_filter)
         if len(df) > 0:
-            print("Testing %s rows for enrichment in %s %s samples" % (len(df), comp, group1_label))
+            #print("Testing %s rows for enrichment in %s %s samples" % (len(df), comp, group1_label))
             col = pd.DataFrame(testDifferentGroupsOutliers(group0, group1, df))
             col.columns = [label1]
             results_df = pd.concat([results_df, col], axis=1, join='outer', sort=False)
-        else:
-            print("No rows had outliers in at least %s of %s %s samples" % (frac_filter, comp, group1_label))
+        #else:
+            #print("No rows had outliers in at least %s of %s %s samples" % (frac_filter, comp, group1_label))
 
     return results_df
