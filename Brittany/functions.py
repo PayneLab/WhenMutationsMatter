@@ -71,20 +71,20 @@ def cis_plot(df, gene, omics_name, pval_df, mutation_type="Mutated"):
     else:
         order_mutations = ['Wildtype', 'Missense', 'Truncation']
         num_pvals = 2
-        
+    '''    
     if num_pvals == 1:
         pval = get_pval(pval_df)
         str_pval = "P-Value = "+str(pval)+"\n"
     else:
         str_pval = ''
-        
+    '''    
     # Boxplot and Stripplot
     plt.rcParams['figure.figsize']=(8,5)
     sns.set(font_scale = 1.3)
     cis_boxplot = sns.boxplot(data = df, x = 'binary_mutations',
                               y = omics_col, order = order_mutations, showfliers = False)  
     cis_boxplot.set_title(
-        gene + " Effect on " + gene +" "+omics_name.capitalize()+" in Kidney Tumors\n"+str_pval)
+        gene + " Effect on " + gene +" "+omics_name.capitalize()+" in Kidney Tumors\n")
     cis_boxplot = sns.stripplot(data= df, x = 'binary_mutations',
                                 y = omics_col,jitter = True, color = ".3", order = order_mutations)
     cis_boxplot.set(xlabel = "\n"+gene + " Mutation Status in Tumors", ylabel = omics_name.capitalize())
