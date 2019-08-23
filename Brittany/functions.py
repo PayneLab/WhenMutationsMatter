@@ -148,7 +148,7 @@ def wrap_ttest_return_all(df, label_column, comparison_columns, total_tests=1, a
         all_comparisons_df.columns = ['Comparison', 'P_Value']
         
                                                
-        all_comparisons_sig_col = f.add_significance_col(all_comparisons_df, number_of_comparisons)
+        all_comparisons_sig_col = add_significance_col(all_comparisons_df, number_of_comparisons)
         return all_comparisons_sig_col
                                 
     except:
