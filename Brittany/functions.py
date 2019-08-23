@@ -1,6 +1,61 @@
-# statistical annotation
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+
+# Create boxplot and stripplot with pval annotation
+def cis_plot(df, gene, omics_name, pval, mutation_type="Mutated"):
+    omics_col = gene+"_"+omics_name
+    
+    # get right order for boxplots
+    if mutation_type == "Mutated":
+        comparison_list = ['Wildtype', 'Mutated']
+    elif mutation_type == "Missense":
+        comparison_list = ['Wildtype', 'Missense']
+    elif mutation_type == "Truncation":
+        comparison_list = ['Wildtype', 'Truncation']
+        
+    # get pval from dataframe or float 
+    if isinstance(pval, pd.DataFrame):
+        pval_series = pval['P_Value']
+        num_pval = float(pval_series[0])
+        str_pval = str(pval_series[0])
+    elif isinstance(pval, float):
+        num_pval = pval
+        str_pval = str(pval)
+        
+    # Boxplot and Stripplot
+    plt.rcParams['figure.figsize']=(8,5)
+    sns.set(font_scale = 1.3)
+    cis_boxplot = sns.boxplot(data = df, x = 'binary_mutations',
+                              y = omics_col, order = comparison_list, showfliers = False)  
+    cis_boxplot.set_title(
+        gene + " Effect on " + gene +" "+omics_name.capitalize()+" in Kidney Tumors\n P-Value = "+str_pval[:6]+"\n")
+    cis_boxplot = sns.stripplot(data= df, x = 'binary_mutations',
+                                y = omics_col,jitter = True, color = ".3", order = comparison_list)
+    cis_boxplot.set(xlabel = "\n"+gene + " Mutation Status in Tumors", ylabel = omics_name.capitalize())
+    cis_boxplot.set_xticklabels(cis_boxplot.get_xticklabels())
+    
+    # pval annotation
+    bonferroni_cutoff = .05/6
+    if num_pval <= bonferroni_cutoff:
+        pval_symbol = "*"
+    else:
+        pval_symbol = "ns"
+    
+    x1, x2 = 0, 1   # columns (first column: 0, see plt.xticks())
+    y, h = df[omics_col].max() + .05, .05  
+    plt.plot([x1, x1, x2, x2], [y, y+h, y+h, y], lw=1.5, color= '.3')
+    plt.text((x1+x2)*.5,y+h, pval_symbol, horizontalalignment='center', verticalalignment='bottom', color = "black")
+
+    plt.show()
+    plt.clf()
+    plt.close()
+
+
+#statistical annotation
 def pval_annotation(df, pval_symbol_text, col_A=0, col_B=1, below=False):
-    import matplotlib.pyplot as plt
+    
     x1, x2 = col_A, col_B   # columns (first column: 0, see plt.xticks())
     if below == True:
         y, h = df[col_A].max() + .05, .05  
