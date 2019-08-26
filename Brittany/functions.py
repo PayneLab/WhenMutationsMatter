@@ -1,29 +1,164 @@
-# statistical annotation
-def pval_annotation(df, pval_symbol_text, col_A=0, col_B=1, below=False):
-    import matplotlib.pyplot as plt
-    x1, x2 = col_A, col_B   # columns (first column: 0, see plt.xticks())
-    if below == True:
-        y, h = df[col_A].max() + .05, .05  
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# used in pval_annotation
+def get_pval_symbol(pval_df):
+    if pval_df.iloc[0:,2].bool() == True:
+        pval_symbol = '*'
     else:
-        y, h = df[col_A].max() + .2, .05 
-    plt.plot([x1, x1, x2, x2], #draw horizontal line
-             [y, y+h, y+h, y], #vertical line
-             lw=1.5, color= '.3')
-    plt.text((x1+x2)*.5, # half between x coord
-             y+h, pval_symbol_text, horizontalalignment='center', verticalalignment='bottom', color = ".3")
+        pval_symbol = 'ns'
+    return pval_symbol
 
+def pval_annotation(pval_df, plotted_df):
+    # pval symbol
+    num_pvals = len(pval_df)
+    omics_col = plotted_df.columns[0]
+    
 
+    # annotation for Mutated and Wiltype
+    if num_pvals == 1:
+        mut_pval = pval_df.loc[pval_df.index == "Mutated/Wildtype"]
+        mut_pval_symbol = get_pval_symbol(pval_df)
+        
+        x1, x2 = 0, 1   # columns (first column: 0, see plt.xticks())
+        y, h = plotted_df[omics_col].max() + .05, .05     
+        plt.plot([x1, x1, x2, x2], #draw horizontal line
+                 [y, y+h, y+h, y], #vertical line
+                 lw=1.5, color= '.3')
+        plt.text((x1+x2)*.5, # half between x coord
+                 y+h, mut_pval_symbol, horizontalalignment='center', verticalalignment='bottom', color = "black")
+    
+    # annotation for Missense, Truncation and Wildtype
+    elif num_pvals == 2:
+        # Missense
+        miss_pval = pval_df.loc[pval_df.index == "Missense/Wildtype"]
+        miss_pval_symbol = get_pval_symbol(miss_pval)
+    
+        x1, x2 = 0, 1   # columns (first column: 0, see plt.xticks())
+        y, h = plotted_df[omics_col].max() + .05, .05     
+        plt.plot([x1, x1, x2, x2], #draw horizontal line
+                 [y, y+h, y+h, y], #vertical line
+                 lw=1.5, color= '.3')
+        plt.text((x1+x2)*.5, # half between x coord
+                 y+h, miss_pval_symbol, horizontalalignment='center', verticalalignment='bottom', color = "black")
+        
+        # Truncation 
+        trunc_pval = pval_df.loc[pval_df.index == "Truncation/Wildtype"]
+        trunc_pval_symbol = get_pval_symbol(trunc_pval)
+        
+        x3, x4 = 0, 2   # columns (first column: 0, see plt.xticks())
+        y2, h2 = plotted_df[omics_col].max() + .15, .05     
+        plt.plot([x3, x3, x4, x4], #draw horizontal line
+                 [y2, y2+h2, y2+h2, y2], #vertical line
+                 lw=1.5, color= '.3')
+        plt.text((x3+x4)*.5, # half between x coord
+                 y2+h2, trunc_pval_symbol, horizontalalignment='center', verticalalignment='bottom', color = "black")
+
+        
+        
+        
+        
+# Create boxplot and stripplot with pval annotation
+def cis_plot(df, gene, omics_name, pval_df, mutation_type="Mutated"):
+    omics_col = gene+"_"+omics_name
+    
+    # get right order for boxplots
+    mutations = df['binary_mutations'].unique()
+    if len(mutations) == 2:
+        order_mutations = ['Wildtype', 'Mutated']
+        num_pvals = 1
+    else:
+        order_mutations = ['Wildtype', 'Missense', 'Truncation']
+        num_pvals = 2
+    '''    
+    if num_pvals == 1:
+        pval = get_pval(pval_df)
+        str_pval = "P-Value = "+str(pval)+"\n"
+    else:
+        str_pval = ''
+    '''    
+    # Boxplot and Stripplot
+    plt.rcParams['figure.figsize']=(8,5)
+    sns.set(font_scale = 1.3)
+    cis_boxplot = sns.boxplot(data = df, x = 'binary_mutations',
+                              y = omics_col, order = order_mutations, showfliers = False)  
+    cis_boxplot.set_title(
+        gene + " Effect on " + gene +" "+omics_name.capitalize()+" in Kidney Tumors\n")
+    cis_boxplot = sns.stripplot(data= df, x = 'binary_mutations',
+                                y = omics_col,jitter = True, color = ".3", order = order_mutations)
+    cis_boxplot.set(xlabel = "\n"+gene + " Mutation Status in Tumors", ylabel = omics_name.capitalize())
+    cis_boxplot.set_xticklabels(cis_boxplot.get_xticklabels())
+    
+    pval_annotation(pval_df, df)
+    
+    plt.show()
+    plt.clf()
+    plt.close()
+    
+    
+# get pval from dataframe -- used in cis_plot
+def get_pval(results_df):
+    if isinstance(results_df, pd.DataFrame):
+        pval_series = results_df['P_Value']
+        num_pval = float(pval_series[0])
+        return num_pval
+    else:
+        return "Not Significant" # > 0.05
+
+# used in wrap_ttest_return_all
 def add_significance_col(results_df, num_comparisons):
     "bonferroni multiple hypothesis"""
     alpha = .05
     bonferroni_cutoff = alpha / num_comparisons
     
     pval = results_df['P_Value']
-    if pval[0] <= bonferroni_cutoff:
+    if float(pval[0]) <= bonferroni_cutoff:
         results_df['Significant'] = True
     else: 
         results_df['Significant'] = False
     return results_df
+
+def wrap_ttest_return_all(df, label_column, comparison_columns, total_tests=1, alpha=.05):
+    try:
+        #Verify precondition that label column exists and has exactly 2 unique values
+        label_values = df[label_column].unique()
+        if len(label_values) != 2:
+            print("Incorrectly Formatted Dataframe! Label column must have exactly 2 unique values.")
+            return None
+        
+        #Partition dataframe into two sets, one for each of the two unique values from the label column
+        partition1 = df.loc[df[label_column] == label_values[0]]
+        partition2 = df.loc[df[label_column] == label_values[1]]
+        
+        #Determine the number of real valued columns on which we will do t-tests
+        number_of_comparisons = total_tests # ? phospho sites or num freq mut genes doing cis comp
+        
+        #Use a bonferroni correction to adjust for multiple testing by altering the p-value needed for acceptance
+        bonferroni_cutoff = alpha/number_of_comparisons
+        
+        #Store all comparisons with their p-values in a dictionary
+        all_comparisons = {}
+        
+        #Loop through each comparison column, perform the t-test, and determine whether it meets the significance cutoff'''
+        for column in comparison_columns:
+            stat, pval = scipy.stats.ttest_ind(partition1[column].dropna(axis=0), partition2[column].dropna(axis=0))
+            all_comparisons[column] = pval
+    
+        #Sort dictionary to list smallest p-values first
+        sorted_comparisons = sorted(all_comparisons.items(), key=lambda kv: kv[1])
+        #Format as a dataframe and return to caller
+        all_comparisons_df = pd.DataFrame.from_dict(sorted_comparisons)
+        all_comparisons_df.columns = ['Comparison', 'P_Value']
+        
+                                               
+        all_comparisons_sig_col = add_significance_col(all_comparisons_df, number_of_comparisons)
+        return all_comparisons_sig_col
+                                
+    except:
+        print("Incorrectly Formatted Dataframe!")
+        return None
+
 
 def format_cis_comparison_data(cancer_object, omics_name, gene):
     import numpy as np
