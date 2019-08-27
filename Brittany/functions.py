@@ -2,6 +2,27 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+
+"""
+functions:
+cis_plot
+    format_pval_annotation
+    pval_annotation
+        get_pval_symbol
+
+add_sig_col (wrap_ttest_return_all)
+"""
+
+def format_pval_annotation(pval_symbol, x1, x2, line_start = .05, line_height=.05):
+    # for manual adjustment to pval annotations
+    
+    y, h = line_start, line_height
+    plt.plot([x1, x1, x2, x2], #draw horizontal line
+             [y, y+h, y+h, y], #vertical line
+             lw=1.5, color= '.3')
+    plt.text((x1+x2)*.5, # half between x coord
+             y+h, pval_symbol, horizontalalignment='center', verticalalignment='bottom', color = "black")
+
 # used in pval_annotation
 def get_pval_symbol(pval_df):
     if pval_df.iloc[0:,2].bool() == True:
