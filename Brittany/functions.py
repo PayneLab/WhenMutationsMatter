@@ -13,6 +13,35 @@ cis_plot
 add_sig_col (wrap_ttest_return_all)
 """
 
+def rename_columns(df):
+    # for 3 copies only
+    cols = []
+    one_before = ''
+    two_before = ''
+    for column in df.columns:
+
+        if column == one_before: 
+            column = column+"_"+str(2)
+            cols.append(column)
+            two_before = one_before
+            one_before = column
+            continue
+
+        elif column == two_before:
+            column = column+"_"+str(3)
+            cols.append(column)
+            two_before = one_before
+            one_before = column
+            continue
+        else:
+            cols.append(column)
+            two_before = one_before
+            one_before = column
+            continue
+            
+    df.columns = cols
+    return df
+
 def format_pval_annotation(pval_symbol, x1, x2, line_start = .05, line_height=.05):
     # for manual adjustment to pval annotations
     
