@@ -1,0 +1,3 @@
+Gene_set	Term	Overlap	P-value	Adjusted P-value	Old P-value	Old Adjusted P-value	Odds Ratio	Combined Score	Genes
+KEGG_2019_Human	Terpenoid backbone biosynthesis	1/22	0.005488389443320514	1.0	0	0	181.8181818181818	946.3855324312927	MVD
+KEGG_2019_Human	Serotonergic synapse	1/113	0.02793515614368397	1.0	0	0	35.398230088495566	126.6502409398512	CYP4X1
