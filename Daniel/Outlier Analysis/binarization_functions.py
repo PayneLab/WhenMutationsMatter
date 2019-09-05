@@ -176,7 +176,7 @@ def significantEnrichments(df, column, p_value=0.05):
     words = column.split('_')
     attribute = []
     for item in words:
-        if item == 'enrichment' or item == 'FDR':
+        if item == 'fisherFDR':
             break
         else:
             attribute.append(item)
@@ -192,20 +192,10 @@ def significantEnrichments(df, column, p_value=0.05):
         
         return
     
-    elif len(sig_results) == 1:
-        #print('1 significant protein enrichment in '
-        #      +attribute+':\n')
-        
-        return(sig_results)
-    
     else:
-        #print(str(len(sig_results))
-        #      +' significant protein enrichments in '
-        #      +attribute+'\n')
-        
         return(sig_results)
 
-def renameDuplicateColumns(outliers_df, dict_of_counts=False):
+def renameDuplicateColumns(outliers_df):
     #Dealing with the duplicate genes problem
     outliers_list = list(outliers_df.columns)
     if len(outliers_list) == len(set(outliers_list)):
@@ -240,15 +230,6 @@ def renameDuplicateColumns(outliers_df, dict_of_counts=False):
         
         #Renaming Columns to avoid errors
         outliers_df.columns = outliers_list
-
-        if dict_of_counts == True:
-            
-            #Count how many duplicates of each gene there are and update counts in dict        
-            for i in range(len(duplicates_list) - 1):
-                if duplicates_list[i] == duplicates_list[i + 1]:
-                    duplicates[duplicates_list[i]] += 1
-
-            return duplicates
         
         return
 
@@ -459,12 +440,8 @@ def dgidb_get_request(genes_or_drugs_list,
                     raise Exception("Invalid source_trust_level: {}".format(item))
                 
             url += 'Expert%20curated,Non-curated'
-                    
-            
-        #print("This is the full URL to your GET request:")
-        #print(url)
+        ]
         r = requests.get(url)
-        #print("\nSee www.dgidb.org/api or this function's docstring for further explanation and resources on valid parameter inputs")
         
         return r.json()
     
