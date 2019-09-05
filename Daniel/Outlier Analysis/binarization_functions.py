@@ -172,7 +172,7 @@ def significantEnrichments(df, column, p_value=0.05):
     Return Value:
         The DataFrame of significant proteins and their p-values will be returned.
     """
-    #Get rid of '_enrichment_FDR' for nicer print statement
+    #Get rid of 'fisherFDR' for nicer print statement
     words = column.split('_')
     attribute = []
     for item in words:
