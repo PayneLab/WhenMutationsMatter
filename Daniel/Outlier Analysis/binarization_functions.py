@@ -440,7 +440,7 @@ def dgidb_get_request(genes_or_drugs_list,
                     raise Exception("Invalid source_trust_level: {}".format(item))
                 
             url += 'Expert%20curated,Non-curated'
-        ]
+        
         r = requests.get(url)
         
         return r.json()
