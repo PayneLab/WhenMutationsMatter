@@ -177,7 +177,7 @@ def significantEnrichments(df, column, p_value=0.05):
     attribute = []
     for item in words:
         if item == 'fisherFDR':
-            break
+            continue
         else:
             attribute.append(item)
     attribute = "_".join(attribute)
