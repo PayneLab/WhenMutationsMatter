@@ -246,7 +246,7 @@ def get_missense_truncation_comparison(cancer_object, omics_name, gene):
     tumors = omics_and_mutations.loc[omics_and_mutations['Sample_Status'] == 'Tumor'] #drop Normal samples
 
 
-    somatic_mutations = cancer_object.get_mutations().reset_index()
+    somatic_mutations = cancer_object.get_somatic_mutation().reset_index()
 
     if cancer_object.get_cancer_type() == 'colon':
         missence_truncation_groups = {'frameshift substitution': 'Truncation', 
@@ -329,7 +329,7 @@ def get_missence_truncation_phospho(cancer_object, omics_name, gene, specific_ph
                 mutations_genes = gene, omics_df_name = omics_name, omics_genes = gene)
     tumors = omics_and_mutations.loc[omics_and_mutations['Sample_Status'] == 'Tumor'] #drop Normal samples
 
-    somatic_mutations = cancer_object.get_mutations().reset_index()
+    somatic_mutations = cancer_object.get_somatic_mutation().reset_index()
 
     if cancer_object.get_cancer_type() == 'colon':
         missence_truncation_groups = {'frameshift substitution': 'Truncation', 
