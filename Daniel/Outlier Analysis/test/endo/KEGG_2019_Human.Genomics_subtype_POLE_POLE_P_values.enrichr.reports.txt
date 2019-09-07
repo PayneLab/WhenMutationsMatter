@@ -1,0 +1,2 @@
+Gene_set	Term	Overlap	P-value	Adjusted P-value	Old P-value	Old Adjusted P-value	Odds Ratio	Combined Score	Genes
+KEGG_2019_Human	Vitamin digestion and absorption	1/24	0.004791660011821214	1.0	0	0	208.3333333333333	1112.6829937093976	TCN2

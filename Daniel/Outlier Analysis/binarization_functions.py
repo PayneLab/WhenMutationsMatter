@@ -363,11 +363,10 @@ def dgidb_get_request(genes_or_drugs_list,
     
         if genes == True:
             url += 'genes='
-            length = len(genes_or_drugs_list)
-            for i, gene in enumerate(genes_or_drugs_list):
-                if '(' in gene:
-                    genes_or_drugs_list[i] = gene[:-3]     
-
+            #length = len(genes_or_drugs_list)
+            #for i, gene in enumerate(genes_or_drugs_list):
+            #    if '(' in gene:
+            #        genes_or_drugs_list[i] = gene[:-3]     
             url += ','.join(genes_or_drugs_list)
 
         elif drugs == True:
@@ -470,7 +469,6 @@ def dgidb_json_parse(json_obj, genes=False, drugs=False):
                 drugs_dict[item['geneName']] = interactions_dict
 
         if len(drugs_dict) == 0:
-            #print('No Gene/Drug interactions')
 
             return
 
@@ -488,7 +486,6 @@ def dgidb_json_parse(json_obj, genes=False, drugs=False):
                 genes_dict[item['drugName']] = interactions_dict
 
         if len(genes_dict) == 0:
-            #print('No Drug/Gene interactions')
 
             return
 
