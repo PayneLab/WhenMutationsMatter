@@ -1,0 +1,2 @@
+Gene_set	Term	Overlap	P-value	Adjusted P-value	Old P-value	Old Adjusted P-value	Odds Ratio	Combined Score	Genes
+KEGG_2019_Human	Olfactory transduction	3/444	0.0002067724664246024	0.06368591965877753	0	0	22.522522522522525	191.0786388575297	OR8B3;OR4C6;OR6T1

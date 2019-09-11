@@ -1,0 +1,3 @@
+Gene_set	Term	Overlap	P-value	Adjusted P-value	Old P-value	Old Adjusted P-value	Odds Ratio	Combined Score	Genes
+KEGG_2019_Human	Aminoacyl-tRNA biosynthesis	2/66	0.00022283723883950474	0.06863386956256745	0	0	86.5800865800866	728.0579154687705	LARS2;QARS
+KEGG_2019_Human	PI3K-Akt signaling pathway	1/354	0.11752795686800263	1.0	0	0	8.071025020177562	17.28070252548389	CDC37
