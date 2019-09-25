@@ -1,3 +1,0 @@
-Gene_set	Term	Overlap	P-value	Adjusted P-value	Old P-value	Old Adjusted P-value	Odds Ratio	Combined Score	Genes
-KEGG_2019_Human	Staphylococcus aureus infection	1/68	0.016886331477543003	1.0	0	0	58.82352941176471	240.07357485940585	DEFA5
-KEGG_2019_Human	NOD-like receptor signaling pathway	1/178	0.043718990497635515	1.0	0	0	22.471910112359552	70.33646530591915	DEFA5
