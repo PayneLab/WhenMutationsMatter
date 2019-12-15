@@ -1,0 +1,447 @@
+LINE 154 : 2019-12-14 16:14:16,474 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 205 : 2019-12-14 16:14:16,484 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:14:16,824 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 158 : 2019-12-14 16:14:16,924 [INFO    ] Libraries are used: KEGG_2016
+LINE 166 : 2019-12-14 16:14:16,924 [DEBUG   ] Start Enrichr using library: KEGG_2016
+LINE 167 : 2019-12-14 16:14:16,924 [INFO    ] Analysis name: Tumor_partition, Enrichr Library: KEGG_2016
+LINE 205 : 2019-12-14 16:14:16,929 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:14:17,314 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 205 : 2019-12-14 16:14:18,314 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:14:18,584 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=25191136&filename=KEGG_2016.Tumor_partition.reports&backgroundType=KEGG_2016 HTTP/1.1" 200 None
+LINE 178 : 2019-12-14 16:14:21,604 [INFO    ] Save file of enrichment results: Job Id:343a803977f8dd1347d7f3137199ba20
+LINE 2515: 2019-12-14 16:14:21,704 [DEBUG   ] update_title_pos
+LINE 1254: 2019-12-14 16:14:21,714 [DEBUG   ] findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=24.0 to Arial ('C:\\Windows\\Fonts\\arial.ttf') with score of 0.050000.
+LINE 653 : 2019-12-14 16:14:21,714 [DEBUG   ] Assigning font /b'F1' = 'C:\\Windows\\Fonts\\arial.ttf'
+LINE 1254: 2019-12-14 16:14:21,724 [DEBUG   ] findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=bold:stretch=normal:size=24.0 to Arial ('C:\\WINDOWS\\Fonts\\arialbd.ttf') with score of 0.000000.
+LINE 1254: 2019-12-14 16:14:21,729 [DEBUG   ] findfont: Matching :family=STIXGeneral:style=normal:variant=normal:weight=normal:stretch=normal:size=15.600000000000001 to STIXGeneral ('C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXGeneral.ttf') with score of 0.050000.
+LINE 1254: 2019-12-14 16:14:21,734 [DEBUG   ] findfont: Matching :family=STIXGeneral:style=italic:variant=normal:weight=normal:stretch=normal:size=15.600000000000001 to STIXGeneral ('C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXGeneralItalic.ttf') with score of 0.050000.
+LINE 1254: 2019-12-14 16:14:21,734 [DEBUG   ] findfont: Matching :family=STIXGeneral:style=normal:variant=normal:weight=bold:stretch=normal:size=15.600000000000001 to STIXGeneral ('C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXGeneralBol.ttf') with score of 0.000000.
+LINE 1254: 2019-12-14 16:14:21,739 [DEBUG   ] findfont: Matching :family=STIXNonUnicode:style=normal:variant=normal:weight=normal:stretch=normal:size=15.600000000000001 to STIXNonUnicode ('C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXNonUni.ttf') with score of 0.050000.
+LINE 1254: 2019-12-14 16:14:21,744 [DEBUG   ] findfont: Matching :family=STIXNonUnicode:style=italic:variant=normal:weight=normal:stretch=normal:size=15.600000000000001 to STIXNonUnicode ('C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXNonUniIta.ttf') with score of 0.050000.
+LINE 1254: 2019-12-14 16:14:21,749 [DEBUG   ] findfont: Matching :family=STIXNonUnicode:style=normal:variant=normal:weight=bold:stretch=normal:size=15.600000000000001 to STIXNonUnicode ('C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXNonUniBol.ttf') with score of 0.000000.
+LINE 1254: 2019-12-14 16:14:21,749 [DEBUG   ] findfont: Matching :family=STIXSizeOneSym:style=normal:variant=normal:weight=normal:stretch=normal:size=15.600000000000001 to STIXSizeOneSym ('C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizOneSymReg.ttf') with score of 0.050000.
+LINE 1254: 2019-12-14 16:14:21,754 [DEBUG   ] findfont: Matching :family=STIXSizeTwoSym:style=normal:variant=normal:weight=normal:stretch=normal:size=15.600000000000001 to STIXSizeTwoSym ('C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizTwoSymReg.ttf') with score of 0.050000.
+LINE 1254: 2019-12-14 16:14:21,759 [DEBUG   ] findfont: Matching :family=STIXSizeThreeSym:style=normal:variant=normal:weight=normal:stretch=normal:size=15.600000000000001 to STIXSizeThreeSym ('C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizThreeSymReg.ttf') with score of 0.050000.
+LINE 1254: 2019-12-14 16:14:21,764 [DEBUG   ] findfont: Matching :family=STIXSizeFourSym:style=normal:variant=normal:weight=normal:stretch=normal:size=15.600000000000001 to STIXSizeFourSym ('C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizFourSymReg.ttf') with score of 0.050000.
+LINE 1254: 2019-12-14 16:14:21,769 [DEBUG   ] findfont: Matching :family=STIXSizeFiveSym:style=normal:variant=normal:weight=normal:stretch=normal:size=15.600000000000001 to STIXSizeFiveSym ('C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizFiveSymReg.ttf') with score of 0.050000.
+LINE 1254: 2019-12-14 16:14:21,774 [DEBUG   ] findfont: Matching :family=cmsy10:style=normal:variant=normal:weight=normal:stretch=normal:size=15.600000000000001 to cmsy10 ('C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmsy10.ttf') with score of 0.050000.
+LINE 1254: 2019-12-14 16:14:21,774 [DEBUG   ] findfont: Matching :family=cmr10:style=normal:variant=normal:weight=normal:stretch=normal:size=15.600000000000001 to cmr10 ('C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmr10.ttf') with score of 0.050000.
+LINE 1254: 2019-12-14 16:14:21,784 [DEBUG   ] findfont: Matching :family=cmtt10:style=normal:variant=normal:weight=normal:stretch=normal:size=15.600000000000001 to cmtt10 ('C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmtt10.ttf') with score of 0.050000.
+LINE 1254: 2019-12-14 16:14:21,789 [DEBUG   ] findfont: Matching :family=cmmi10:style=normal:variant=normal:weight=normal:stretch=normal:size=15.600000000000001 to cmmi10 ('C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmmi10.ttf') with score of 0.050000.
+LINE 1254: 2019-12-14 16:14:21,794 [DEBUG   ] findfont: Matching :family=cmb10:style=normal:variant=normal:weight=normal:stretch=normal:size=15.600000000000001 to cmb10 ('C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmb10.ttf') with score of 0.050000.
+LINE 1254: 2019-12-14 16:14:21,799 [DEBUG   ] findfont: Matching :family=cmss10:style=normal:variant=normal:weight=normal:stretch=normal:size=15.600000000000001 to cmss10 ('C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmss10.ttf') with score of 0.050000.
+LINE 1254: 2019-12-14 16:14:21,804 [DEBUG   ] findfont: Matching :family=cmex10:style=normal:variant=normal:weight=normal:stretch=normal:size=15.600000000000001 to cmex10 ('C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmex10.ttf') with score of 0.050000.
+LINE 1254: 2019-12-14 16:14:21,809 [DEBUG   ] findfont: Matching :family=DejaVu Sans:style=normal:variant=normal:weight=normal:stretch=normal:size=15.600000000000001 to DejaVu Sans ('C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+LINE 1254: 2019-12-14 16:14:21,814 [DEBUG   ] findfont: Matching :family=DejaVu Sans:style=italic:variant=normal:weight=normal:stretch=normal:size=15.600000000000001 to DejaVu Sans ('C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Oblique.ttf') with score of 0.150000.
+LINE 1254: 2019-12-14 16:14:21,814 [DEBUG   ] findfont: Matching :family=DejaVu Sans:style=normal:variant=normal:weight=bold:stretch=normal:size=15.600000000000001 to DejaVu Sans ('C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf') with score of 0.000000.
+LINE 1254: 2019-12-14 16:14:21,819 [DEBUG   ] findfont: Matching :family=DejaVu Sans Mono:style=normal:variant=normal:weight=normal:stretch=normal:size=15.600000000000001 to DejaVu Sans Mono ('C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSansMono.ttf') with score of 0.050000.
+LINE 1254: 2019-12-14 16:14:21,824 [DEBUG   ] findfont: Matching :family=DejaVu Sans Display:style=normal:variant=normal:weight=normal:stretch=normal:size=15.600000000000001 to DejaVu Sans Display ('C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSansDisplay.ttf') with score of 0.050000.
+LINE 653 : 2019-12-14 16:14:22,087 [DEBUG   ] Assigning font /b'F2' = 'C:\\WINDOWS\\Fonts\\arialbd.ttf'
+LINE 653 : 2019-12-14 16:14:22,094 [DEBUG   ] Assigning font /b'F3' = 'C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 703 : 2019-12-14 16:14:22,164 [DEBUG   ] Embedding font C:\Users\brittany henderson\Anaconda3\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-12-14 16:14:22,164 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:14:22,194 [DEBUG   ] Embedding font C:\WINDOWS\Fonts\arialbd.ttf.
+LINE 710 : 2019-12-14 16:14:22,194 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:14:22,214 [DEBUG   ] Embedding font C:\Windows\Fonts\arial.ttf.
+LINE 710 : 2019-12-14 16:14:22,214 [DEBUG   ] Writing TrueType font.
+LINE 2515: 2019-12-14 16:14:22,244 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:14:22,279 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:14:22,304 [DEBUG   ] update_title_pos
+LINE 653 : 2019-12-14 16:14:22,309 [DEBUG   ] Assigning font /b'F1' = 'C:\\Windows\\Fonts\\arial.ttf'
+LINE 653 : 2019-12-14 16:14:22,324 [DEBUG   ] Assigning font /b'F2' = 'C:\\WINDOWS\\Fonts\\arialbd.ttf'
+LINE 653 : 2019-12-14 16:14:22,324 [DEBUG   ] Assigning font /b'F3' = 'C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 703 : 2019-12-14 16:14:22,394 [DEBUG   ] Embedding font C:\Users\brittany henderson\Anaconda3\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-12-14 16:14:22,394 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:14:22,419 [DEBUG   ] Embedding font C:\WINDOWS\Fonts\arialbd.ttf.
+LINE 710 : 2019-12-14 16:14:22,419 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:14:22,439 [DEBUG   ] Embedding font C:\Windows\Fonts\arial.ttf.
+LINE 710 : 2019-12-14 16:14:22,439 [DEBUG   ] Writing TrueType font.
+LINE 193 : 2019-12-14 16:14:22,469 [INFO    ] Done.
+
+LINE 2515: 2019-12-14 16:18:09,714 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:18:09,987 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:18:10,046 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:18:10,079 [DEBUG   ] update_title_pos
+LINE 154 : 2019-12-14 16:19:10,342 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 205 : 2019-12-14 16:19:10,346 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:19:10,544 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 158 : 2019-12-14 16:19:10,644 [INFO    ] Libraries are used: KEGG_2016
+LINE 166 : 2019-12-14 16:19:10,644 [DEBUG   ] Start Enrichr using library: KEGG_2016
+LINE 167 : 2019-12-14 16:19:10,644 [INFO    ] Analysis name: Tumor_partition, Enrichr Library: KEGG_2016
+LINE 205 : 2019-12-14 16:19:10,644 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:19:11,794 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 205 : 2019-12-14 16:19:12,794 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:19:13,364 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=25191139&filename=KEGG_2016.Tumor_partition.reports&backgroundType=KEGG_2016 HTTP/1.1" 200 None
+LINE 178 : 2019-12-14 16:19:16,404 [INFO    ] Save file of enrichment results: Job Id:1b3674b0f38233cc033fdec9d461ef78
+LINE 2515: 2019-12-14 16:19:16,487 [DEBUG   ] update_title_pos
+LINE 653 : 2019-12-14 16:19:16,499 [DEBUG   ] Assigning font /b'F1' = 'C:\\Windows\\Fonts\\arial.ttf'
+LINE 653 : 2019-12-14 16:19:16,524 [DEBUG   ] Assigning font /b'F2' = 'C:\\WINDOWS\\Fonts\\arialbd.ttf'
+LINE 653 : 2019-12-14 16:19:16,524 [DEBUG   ] Assigning font /b'F3' = 'C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 703 : 2019-12-14 16:19:16,599 [DEBUG   ] Embedding font C:\Users\brittany henderson\Anaconda3\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-12-14 16:19:16,599 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:19:16,619 [DEBUG   ] Embedding font C:\WINDOWS\Fonts\arialbd.ttf.
+LINE 710 : 2019-12-14 16:19:16,619 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:19:16,643 [DEBUG   ] Embedding font C:\Windows\Fonts\arial.ttf.
+LINE 710 : 2019-12-14 16:19:16,643 [DEBUG   ] Writing TrueType font.
+LINE 2515: 2019-12-14 16:19:16,678 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:19:16,716 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:19:16,739 [DEBUG   ] update_title_pos
+LINE 653 : 2019-12-14 16:19:16,747 [DEBUG   ] Assigning font /b'F1' = 'C:\\Windows\\Fonts\\arial.ttf'
+LINE 653 : 2019-12-14 16:19:16,779 [DEBUG   ] Assigning font /b'F2' = 'C:\\WINDOWS\\Fonts\\arialbd.ttf'
+LINE 653 : 2019-12-14 16:19:16,779 [DEBUG   ] Assigning font /b'F3' = 'C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 703 : 2019-12-14 16:19:16,853 [DEBUG   ] Embedding font C:\Users\brittany henderson\Anaconda3\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-12-14 16:19:16,853 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:19:16,873 [DEBUG   ] Embedding font C:\WINDOWS\Fonts\arialbd.ttf.
+LINE 710 : 2019-12-14 16:19:16,873 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:19:16,894 [DEBUG   ] Embedding font C:\Windows\Fonts\arial.ttf.
+LINE 710 : 2019-12-14 16:19:16,894 [DEBUG   ] Writing TrueType font.
+LINE 193 : 2019-12-14 16:19:16,923 [INFO    ] Done.
+
+LINE 154 : 2019-12-14 16:20:02,794 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 205 : 2019-12-14 16:20:02,794 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:20:02,994 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 158 : 2019-12-14 16:20:03,084 [INFO    ] Libraries are used: KEGG_2016
+LINE 166 : 2019-12-14 16:20:03,084 [DEBUG   ] Start Enrichr using library: KEGG_2016
+LINE 167 : 2019-12-14 16:20:03,084 [INFO    ] Analysis name: Tumor_partition, Enrichr Library: KEGG_2016
+LINE 205 : 2019-12-14 16:20:03,093 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:20:03,964 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 205 : 2019-12-14 16:20:04,964 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:20:05,194 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=25191142&filename=KEGG_2016.Tumor_partition.reports&backgroundType=KEGG_2016 HTTP/1.1" 200 None
+LINE 178 : 2019-12-14 16:20:08,214 [INFO    ] Save file of enrichment results: Job Id:337c57f029cdc8aab472f53f556f7bd8
+LINE 2515: 2019-12-14 16:20:08,299 [DEBUG   ] update_title_pos
+LINE 653 : 2019-12-14 16:20:08,304 [DEBUG   ] Assigning font /b'F1' = 'C:\\Windows\\Fonts\\arial.ttf'
+LINE 653 : 2019-12-14 16:20:08,334 [DEBUG   ] Assigning font /b'F2' = 'C:\\WINDOWS\\Fonts\\arialbd.ttf'
+LINE 653 : 2019-12-14 16:20:08,334 [DEBUG   ] Assigning font /b'F3' = 'C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 703 : 2019-12-14 16:20:08,409 [DEBUG   ] Embedding font C:\Users\brittany henderson\Anaconda3\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-12-14 16:20:08,409 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:20:08,427 [DEBUG   ] Embedding font C:\WINDOWS\Fonts\arialbd.ttf.
+LINE 710 : 2019-12-14 16:20:08,434 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:20:08,455 [DEBUG   ] Embedding font C:\Windows\Fonts\arial.ttf.
+LINE 710 : 2019-12-14 16:20:08,455 [DEBUG   ] Writing TrueType font.
+LINE 2515: 2019-12-14 16:20:08,488 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:20:08,529 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:20:08,554 [DEBUG   ] update_title_pos
+LINE 653 : 2019-12-14 16:20:08,564 [DEBUG   ] Assigning font /b'F1' = 'C:\\Windows\\Fonts\\arial.ttf'
+LINE 653 : 2019-12-14 16:20:08,590 [DEBUG   ] Assigning font /b'F2' = 'C:\\WINDOWS\\Fonts\\arialbd.ttf'
+LINE 653 : 2019-12-14 16:20:08,590 [DEBUG   ] Assigning font /b'F3' = 'C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 703 : 2019-12-14 16:20:08,664 [DEBUG   ] Embedding font C:\Users\brittany henderson\Anaconda3\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-12-14 16:20:08,664 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:20:08,684 [DEBUG   ] Embedding font C:\WINDOWS\Fonts\arialbd.ttf.
+LINE 710 : 2019-12-14 16:20:08,684 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:20:08,704 [DEBUG   ] Embedding font C:\Windows\Fonts\arial.ttf.
+LINE 710 : 2019-12-14 16:20:08,704 [DEBUG   ] Writing TrueType font.
+LINE 193 : 2019-12-14 16:20:08,734 [INFO    ] Done.
+
+LINE 154 : 2019-12-14 16:20:33,534 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 205 : 2019-12-14 16:20:33,534 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:20:33,744 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 158 : 2019-12-14 16:20:33,834 [INFO    ] Libraries are used: KEGG_2016
+LINE 166 : 2019-12-14 16:20:33,839 [DEBUG   ] Start Enrichr using library: KEGG_2016
+LINE 167 : 2019-12-14 16:20:33,839 [INFO    ] Analysis name: Tumor_partition, Enrichr Library: KEGG_2016
+LINE 205 : 2019-12-14 16:20:33,839 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:20:34,784 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 205 : 2019-12-14 16:20:35,803 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:20:36,033 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=25191143&filename=KEGG_2016.Tumor_partition.reports&backgroundType=KEGG_2016 HTTP/1.1" 200 None
+LINE 178 : 2019-12-14 16:20:39,046 [INFO    ] Save file of enrichment results: Job Id:3290aa5842068546abef388a5fea0184
+LINE 2515: 2019-12-14 16:20:39,138 [DEBUG   ] update_title_pos
+LINE 653 : 2019-12-14 16:20:39,150 [DEBUG   ] Assigning font /b'F1' = 'C:\\Windows\\Fonts\\arial.ttf'
+LINE 653 : 2019-12-14 16:20:39,186 [DEBUG   ] Assigning font /b'F2' = 'C:\\WINDOWS\\Fonts\\arialbd.ttf'
+LINE 653 : 2019-12-14 16:20:39,186 [DEBUG   ] Assigning font /b'F3' = 'C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 703 : 2019-12-14 16:20:39,290 [DEBUG   ] Embedding font C:\Users\brittany henderson\Anaconda3\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-12-14 16:20:39,290 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:20:39,316 [DEBUG   ] Embedding font C:\WINDOWS\Fonts\arialbd.ttf.
+LINE 710 : 2019-12-14 16:20:39,316 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:20:39,336 [DEBUG   ] Embedding font C:\Windows\Fonts\arial.ttf.
+LINE 710 : 2019-12-14 16:20:39,336 [DEBUG   ] Writing TrueType font.
+LINE 2515: 2019-12-14 16:20:39,368 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:20:39,421 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:20:39,444 [DEBUG   ] update_title_pos
+LINE 653 : 2019-12-14 16:20:39,456 [DEBUG   ] Assigning font /b'F1' = 'C:\\Windows\\Fonts\\arial.ttf'
+LINE 653 : 2019-12-14 16:20:39,492 [DEBUG   ] Assigning font /b'F2' = 'C:\\WINDOWS\\Fonts\\arialbd.ttf'
+LINE 653 : 2019-12-14 16:20:39,492 [DEBUG   ] Assigning font /b'F3' = 'C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 703 : 2019-12-14 16:20:39,589 [DEBUG   ] Embedding font C:\Users\brittany henderson\Anaconda3\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-12-14 16:20:39,590 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:20:39,623 [DEBUG   ] Embedding font C:\WINDOWS\Fonts\arialbd.ttf.
+LINE 710 : 2019-12-14 16:20:39,623 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:20:39,651 [DEBUG   ] Embedding font C:\Windows\Fonts\arial.ttf.
+LINE 710 : 2019-12-14 16:20:39,651 [DEBUG   ] Writing TrueType font.
+LINE 193 : 2019-12-14 16:20:39,682 [INFO    ] Done.
+
+LINE 2515: 2019-12-14 16:22:35,942 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:22:36,167 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:22:36,216 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:22:36,247 [DEBUG   ] update_title_pos
+LINE 154 : 2019-12-14 16:22:37,353 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 205 : 2019-12-14 16:22:37,353 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:22:37,563 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 158 : 2019-12-14 16:22:37,653 [INFO    ] Libraries are used: KEGG_2016
+LINE 166 : 2019-12-14 16:22:37,653 [DEBUG   ] Start Enrichr using library: KEGG_2016
+LINE 167 : 2019-12-14 16:22:37,653 [INFO    ] Analysis name: Tumor_partition, Enrichr Library: KEGG_2016
+LINE 205 : 2019-12-14 16:22:37,663 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:22:37,974 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 205 : 2019-12-14 16:22:38,984 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:22:39,243 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=25191145&filename=KEGG_2016.Tumor_partition.reports&backgroundType=KEGG_2016 HTTP/1.1" 200 None
+LINE 178 : 2019-12-14 16:22:42,273 [INFO    ] Save file of enrichment results: Job Id:2f08482ea29a11bb9b96c3f00333719f
+LINE 2515: 2019-12-14 16:22:42,353 [DEBUG   ] update_title_pos
+LINE 653 : 2019-12-14 16:22:42,358 [DEBUG   ] Assigning font /b'F1' = 'C:\\Windows\\Fonts\\arial.ttf'
+LINE 653 : 2019-12-14 16:22:42,378 [DEBUG   ] Assigning font /b'F2' = 'C:\\WINDOWS\\Fonts\\arialbd.ttf'
+LINE 653 : 2019-12-14 16:22:42,378 [DEBUG   ] Assigning font /b'F3' = 'C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 703 : 2019-12-14 16:22:42,449 [DEBUG   ] Embedding font C:\Users\brittany henderson\Anaconda3\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-12-14 16:22:42,449 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:22:42,469 [DEBUG   ] Embedding font C:\WINDOWS\Fonts\arialbd.ttf.
+LINE 710 : 2019-12-14 16:22:42,469 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:22:42,493 [DEBUG   ] Embedding font C:\Windows\Fonts\arial.ttf.
+LINE 710 : 2019-12-14 16:22:42,493 [DEBUG   ] Writing TrueType font.
+LINE 2515: 2019-12-14 16:22:42,524 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:22:42,558 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:22:42,580 [DEBUG   ] update_title_pos
+LINE 653 : 2019-12-14 16:22:42,584 [DEBUG   ] Assigning font /b'F1' = 'C:\\Windows\\Fonts\\arial.ttf'
+LINE 653 : 2019-12-14 16:22:42,600 [DEBUG   ] Assigning font /b'F2' = 'C:\\WINDOWS\\Fonts\\arialbd.ttf'
+LINE 653 : 2019-12-14 16:22:42,600 [DEBUG   ] Assigning font /b'F3' = 'C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 703 : 2019-12-14 16:22:42,672 [DEBUG   ] Embedding font C:\Users\brittany henderson\Anaconda3\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-12-14 16:22:42,672 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:22:42,693 [DEBUG   ] Embedding font C:\WINDOWS\Fonts\arialbd.ttf.
+LINE 710 : 2019-12-14 16:22:42,693 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:22:42,715 [DEBUG   ] Embedding font C:\Windows\Fonts\arial.ttf.
+LINE 710 : 2019-12-14 16:22:42,715 [DEBUG   ] Writing TrueType font.
+LINE 193 : 2019-12-14 16:22:42,744 [INFO    ] Done.
+
+LINE 2515: 2019-12-14 16:31:01,706 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:31:01,909 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:31:01,950 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:31:01,981 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:31:30,912 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:31:31,225 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:31:31,295 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:31:31,336 [DEBUG   ] update_title_pos
+LINE 154 : 2019-12-14 16:35:57,369 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 205 : 2019-12-14 16:35:57,385 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:35:57,592 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 158 : 2019-12-14 16:35:57,692 [INFO    ] Libraries are used: KEGG_2016
+LINE 166 : 2019-12-14 16:35:57,692 [DEBUG   ] Start Enrichr using library: KEGG_2016
+LINE 167 : 2019-12-14 16:35:57,692 [INFO    ] Analysis name: Tumor_partition, Enrichr Library: KEGG_2016
+LINE 205 : 2019-12-14 16:35:57,692 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:35:57,993 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 205 : 2019-12-14 16:35:59,006 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:35:59,244 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=25191152&filename=KEGG_2016.Tumor_partition.reports&backgroundType=KEGG_2016 HTTP/1.1" 200 None
+LINE 178 : 2019-12-14 16:36:02,266 [INFO    ] Save file of enrichment results: Job Id:6fbde64013dc4a4ca87cf1474049cca7
+LINE 189 : 2019-12-14 16:36:02,282 [WARNING ] Warning: No enrich terms using library KEGG_2016 when cutoff = 0.05
+LINE 193 : 2019-12-14 16:36:02,282 [INFO    ] Done.
+
+LINE 154 : 2019-12-14 16:38:32,880 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 205 : 2019-12-14 16:38:32,880 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:38:33,081 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 158 : 2019-12-14 16:38:33,174 [INFO    ] Libraries are used: KEGG_2016
+LINE 166 : 2019-12-14 16:38:33,174 [DEBUG   ] Start Enrichr using library: KEGG_2016
+LINE 167 : 2019-12-14 16:38:33,174 [INFO    ] Analysis name: Tumor_partition, Enrichr Library: KEGG_2016
+LINE 205 : 2019-12-14 16:38:33,181 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:38:33,444 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 205 : 2019-12-14 16:38:34,447 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:38:34,686 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=25191153&filename=KEGG_2016.Tumor_partition.reports&backgroundType=KEGG_2016 HTTP/1.1" 200 None
+LINE 154 : 2019-12-14 16:39:38,436 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 205 : 2019-12-14 16:39:38,436 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:39:38,630 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 158 : 2019-12-14 16:39:38,715 [INFO    ] Libraries are used: KEGG_2016
+LINE 166 : 2019-12-14 16:39:38,715 [DEBUG   ] Start Enrichr using library: KEGG_2016
+LINE 167 : 2019-12-14 16:39:38,715 [INFO    ] Analysis name: Tumor_partition, Enrichr Library: KEGG_2016
+LINE 205 : 2019-12-14 16:39:38,731 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:39:39,703 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 205 : 2019-12-14 16:39:40,710 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:39:41,250 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=25191154&filename=KEGG_2016.Tumor_partition.reports&backgroundType=KEGG_2016 HTTP/1.1" 200 None
+LINE 178 : 2019-12-14 16:39:44,280 [INFO    ] Save file of enrichment results: Job Id:a07f1cd419560e796c63896e16f25ba0
+LINE 2515: 2019-12-14 16:39:44,365 [DEBUG   ] update_title_pos
+LINE 653 : 2019-12-14 16:39:44,365 [DEBUG   ] Assigning font /b'F1' = 'C:\\Windows\\Fonts\\arial.ttf'
+LINE 653 : 2019-12-14 16:39:44,396 [DEBUG   ] Assigning font /b'F2' = 'C:\\WINDOWS\\Fonts\\arialbd.ttf'
+LINE 653 : 2019-12-14 16:39:44,396 [DEBUG   ] Assigning font /b'F3' = 'C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 703 : 2019-12-14 16:39:44,482 [DEBUG   ] Embedding font C:\Users\brittany henderson\Anaconda3\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-12-14 16:39:44,482 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:39:44,502 [DEBUG   ] Embedding font C:\WINDOWS\Fonts\arialbd.ttf.
+LINE 710 : 2019-12-14 16:39:44,502 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:39:44,522 [DEBUG   ] Embedding font C:\Windows\Fonts\arial.ttf.
+LINE 710 : 2019-12-14 16:39:44,522 [DEBUG   ] Writing TrueType font.
+LINE 2515: 2019-12-14 16:39:44,550 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:39:44,601 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:39:44,623 [DEBUG   ] update_title_pos
+LINE 653 : 2019-12-14 16:39:44,631 [DEBUG   ] Assigning font /b'F1' = 'C:\\Windows\\Fonts\\arial.ttf'
+LINE 653 : 2019-12-14 16:39:44,663 [DEBUG   ] Assigning font /b'F2' = 'C:\\WINDOWS\\Fonts\\arialbd.ttf'
+LINE 653 : 2019-12-14 16:39:44,663 [DEBUG   ] Assigning font /b'F3' = 'C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 703 : 2019-12-14 16:39:44,734 [DEBUG   ] Embedding font C:\Users\brittany henderson\Anaconda3\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-12-14 16:39:44,734 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:39:44,754 [DEBUG   ] Embedding font C:\WINDOWS\Fonts\arialbd.ttf.
+LINE 710 : 2019-12-14 16:39:44,754 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:39:44,775 [DEBUG   ] Embedding font C:\Windows\Fonts\arial.ttf.
+LINE 710 : 2019-12-14 16:39:44,775 [DEBUG   ] Writing TrueType font.
+LINE 193 : 2019-12-14 16:39:44,805 [INFO    ] Done.
+
+LINE 154 : 2019-12-14 16:40:14,253 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 205 : 2019-12-14 16:40:14,253 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:40:15,473 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 158 : 2019-12-14 16:40:15,573 [INFO    ] Libraries are used: KEGG_2016
+LINE 166 : 2019-12-14 16:40:15,573 [DEBUG   ] Start Enrichr using library: KEGG_2016
+LINE 167 : 2019-12-14 16:40:15,573 [INFO    ] Analysis name: Tumor_partition, Enrichr Library: KEGG_2016
+LINE 205 : 2019-12-14 16:40:15,573 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:40:16,499 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 205 : 2019-12-14 16:40:17,513 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:40:17,745 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=25191155&filename=KEGG_2016.Tumor_partition.reports&backgroundType=KEGG_2016 HTTP/1.1" 200 None
+LINE 178 : 2019-12-14 16:40:20,776 [INFO    ] Save file of enrichment results: Job Id:b408ee073df759aebc1a14a3401f4e2a
+LINE 2515: 2019-12-14 16:40:20,860 [DEBUG   ] update_title_pos
+LINE 653 : 2019-12-14 16:40:20,883 [DEBUG   ] Assigning font /b'F1' = 'C:\\Windows\\Fonts\\arial.ttf'
+LINE 653 : 2019-12-14 16:40:20,898 [DEBUG   ] Assigning font /b'F2' = 'C:\\WINDOWS\\Fonts\\arialbd.ttf'
+LINE 653 : 2019-12-14 16:40:20,898 [DEBUG   ] Assigning font /b'F3' = 'C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 703 : 2019-12-14 16:40:20,976 [DEBUG   ] Embedding font C:\Users\brittany henderson\Anaconda3\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-12-14 16:40:20,976 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:40:20,995 [DEBUG   ] Embedding font C:\WINDOWS\Fonts\arialbd.ttf.
+LINE 710 : 2019-12-14 16:40:20,995 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:40:21,024 [DEBUG   ] Embedding font C:\Windows\Fonts\arial.ttf.
+LINE 710 : 2019-12-14 16:40:21,024 [DEBUG   ] Writing TrueType font.
+LINE 2515: 2019-12-14 16:40:21,056 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:40:21,095 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:40:21,117 [DEBUG   ] update_title_pos
+LINE 653 : 2019-12-14 16:40:21,125 [DEBUG   ] Assigning font /b'F1' = 'C:\\Windows\\Fonts\\arial.ttf'
+LINE 653 : 2019-12-14 16:40:21,155 [DEBUG   ] Assigning font /b'F2' = 'C:\\WINDOWS\\Fonts\\arialbd.ttf'
+LINE 653 : 2019-12-14 16:40:21,155 [DEBUG   ] Assigning font /b'F3' = 'C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 703 : 2019-12-14 16:40:21,227 [DEBUG   ] Embedding font C:\Users\brittany henderson\Anaconda3\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-12-14 16:40:21,227 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:40:21,249 [DEBUG   ] Embedding font C:\WINDOWS\Fonts\arialbd.ttf.
+LINE 710 : 2019-12-14 16:40:21,249 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:40:21,269 [DEBUG   ] Embedding font C:\Windows\Fonts\arial.ttf.
+LINE 710 : 2019-12-14 16:40:21,269 [DEBUG   ] Writing TrueType font.
+LINE 193 : 2019-12-14 16:40:21,300 [INFO    ] Done.
+
+LINE 154 : 2019-12-14 16:40:49,266 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 205 : 2019-12-14 16:40:49,266 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:40:49,482 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 158 : 2019-12-14 16:40:49,567 [INFO    ] Libraries are used: KEGG_2016
+LINE 166 : 2019-12-14 16:40:49,567 [DEBUG   ] Start Enrichr using library: KEGG_2016
+LINE 167 : 2019-12-14 16:40:49,567 [INFO    ] Analysis name: Tumor_partition, Enrichr Library: KEGG_2016
+LINE 205 : 2019-12-14 16:40:49,582 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:40:50,517 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 205 : 2019-12-14 16:40:51,536 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:40:51,793 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=25191157&filename=KEGG_2016.Tumor_partition.reports&backgroundType=KEGG_2016 HTTP/1.1" 200 None
+LINE 178 : 2019-12-14 16:40:54,805 [INFO    ] Save file of enrichment results: Job Id:c897da8efa60756d86fffcb433367ad2
+LINE 2515: 2019-12-14 16:40:54,906 [DEBUG   ] update_title_pos
+LINE 653 : 2019-12-14 16:40:54,906 [DEBUG   ] Assigning font /b'F1' = 'C:\\Windows\\Fonts\\arial.ttf'
+LINE 653 : 2019-12-14 16:40:54,946 [DEBUG   ] Assigning font /b'F2' = 'C:\\WINDOWS\\Fonts\\arialbd.ttf'
+LINE 653 : 2019-12-14 16:40:54,946 [DEBUG   ] Assigning font /b'F3' = 'C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 703 : 2019-12-14 16:40:55,025 [DEBUG   ] Embedding font C:\Users\brittany henderson\Anaconda3\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-12-14 16:40:55,025 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:40:55,045 [DEBUG   ] Embedding font C:\WINDOWS\Fonts\arialbd.ttf.
+LINE 710 : 2019-12-14 16:40:55,045 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:40:55,068 [DEBUG   ] Embedding font C:\Windows\Fonts\arial.ttf.
+LINE 710 : 2019-12-14 16:40:55,068 [DEBUG   ] Writing TrueType font.
+LINE 2515: 2019-12-14 16:40:55,098 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:40:55,138 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:40:55,169 [DEBUG   ] update_title_pos
+LINE 653 : 2019-12-14 16:40:55,179 [DEBUG   ] Assigning font /b'F1' = 'C:\\Windows\\Fonts\\arial.ttf'
+LINE 653 : 2019-12-14 16:40:55,209 [DEBUG   ] Assigning font /b'F2' = 'C:\\WINDOWS\\Fonts\\arialbd.ttf'
+LINE 653 : 2019-12-14 16:40:55,209 [DEBUG   ] Assigning font /b'F3' = 'C:\\Users\\brittany henderson\\Anaconda3\\envs\\Research\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf'
+LINE 703 : 2019-12-14 16:40:55,291 [DEBUG   ] Embedding font C:\Users\brittany henderson\Anaconda3\envs\Research\lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf.
+LINE 710 : 2019-12-14 16:40:55,291 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:40:55,311 [DEBUG   ] Embedding font C:\WINDOWS\Fonts\arialbd.ttf.
+LINE 710 : 2019-12-14 16:40:55,311 [DEBUG   ] Writing TrueType font.
+LINE 703 : 2019-12-14 16:40:55,331 [DEBUG   ] Embedding font C:\Windows\Fonts\arial.ttf.
+LINE 710 : 2019-12-14 16:40:55,331 [DEBUG   ] Writing TrueType font.
+LINE 193 : 2019-12-14 16:40:55,362 [INFO    ] Done.
+
+LINE 2515: 2019-12-14 16:51:45,649 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:51:45,861 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:51:45,912 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 16:51:45,941 [DEBUG   ] update_title_pos
+LINE 154 : 2019-12-14 16:54:42,533 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 205 : 2019-12-14 16:54:42,538 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:54:42,827 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 158 : 2019-12-14 16:54:42,918 [INFO    ] Libraries are used: KEGG_2016
+LINE 166 : 2019-12-14 16:54:42,928 [DEBUG   ] Start Enrichr using library: KEGG_2016
+LINE 167 : 2019-12-14 16:54:42,928 [INFO    ] Analysis name: Tumor_partition, Enrichr Library: KEGG_2016
+LINE 205 : 2019-12-14 16:54:42,928 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:54:43,198 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 205 : 2019-12-14 16:54:44,217 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:54:44,427 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=25191189&filename=KEGG_2016.Tumor_partition.reports&backgroundType=KEGG_2016 HTTP/1.1" 200 None
+LINE 178 : 2019-12-14 16:54:47,458 [INFO    ] Save file of enrichment results: Job Id:ff5efad187566ad83b072f3b8ce307b9
+LINE 189 : 2019-12-14 16:54:47,468 [WARNING ] Warning: No enrich terms using library KEGG_2016 when cutoff = 0.05
+LINE 193 : 2019-12-14 16:54:47,468 [INFO    ] Done.
+
+LINE 154 : 2019-12-14 16:56:44,677 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 205 : 2019-12-14 16:56:44,687 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:56:44,887 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 158 : 2019-12-14 16:56:44,982 [INFO    ] Libraries are used: KEGG_2016
+LINE 166 : 2019-12-14 16:56:44,982 [DEBUG   ] Start Enrichr using library: KEGG_2016
+LINE 167 : 2019-12-14 16:56:44,982 [INFO    ] Analysis name: Tumor_partition, Enrichr Library: KEGG_2016
+LINE 205 : 2019-12-14 16:56:44,982 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:56:45,227 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 205 : 2019-12-14 16:56:46,228 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 16:56:46,447 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=25191190&filename=KEGG_2016.Tumor_partition.reports&backgroundType=KEGG_2016 HTTP/1.1" 200 8145
+LINE 178 : 2019-12-14 16:56:49,477 [INFO    ] Save file of enrichment results: Job Id:41f13a6434c35cb882ffdecb3fe99cb5
+LINE 189 : 2019-12-14 16:56:49,477 [WARNING ] Warning: No enrich terms using library KEGG_2016 when cutoff = 0.05
+LINE 193 : 2019-12-14 16:56:49,477 [INFO    ] Done.
+
+LINE 154 : 2019-12-14 17:04:18,623 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 205 : 2019-12-14 17:04:18,638 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 17:04:18,824 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 158 : 2019-12-14 17:04:18,911 [INFO    ] Libraries are used: KEGG_2016
+LINE 166 : 2019-12-14 17:04:18,911 [DEBUG   ] Start Enrichr using library: KEGG_2016
+LINE 167 : 2019-12-14 17:04:18,911 [INFO    ] Analysis name: Tumor_partition, Enrichr Library: KEGG_2016
+LINE 205 : 2019-12-14 17:04:18,911 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 17:04:19,393 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 205 : 2019-12-14 17:04:20,403 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 17:04:20,642 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=25191197&filename=KEGG_2016.Tumor_partition.reports&backgroundType=KEGG_2016 HTTP/1.1" 200 None
+LINE 178 : 2019-12-14 17:04:23,665 [INFO    ] Save file of enrichment results: Job Id:9905da7576f016089dada31a8a43b43e
+LINE 189 : 2019-12-14 17:04:23,665 [WARNING ] Warning: No enrich terms using library KEGG_2016 when cutoff = 0.05
+LINE 193 : 2019-12-14 17:04:23,665 [INFO    ] Done.
+
+LINE 154 : 2019-12-14 17:05:36,006 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 205 : 2019-12-14 17:05:36,006 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 17:05:36,207 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 158 : 2019-12-14 17:05:36,320 [INFO    ] Libraries are used: KEGG_2016
+LINE 166 : 2019-12-14 17:05:36,320 [DEBUG   ] Start Enrichr using library: KEGG_2016
+LINE 167 : 2019-12-14 17:05:36,320 [INFO    ] Analysis name: Tumor_partition, Enrichr Library: KEGG_2016
+LINE 205 : 2019-12-14 17:05:36,324 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 17:05:36,586 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 205 : 2019-12-14 17:05:37,598 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 17:05:37,837 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=25191199&filename=KEGG_2016.Tumor_partition.reports&backgroundType=KEGG_2016 HTTP/1.1" 200 None
+LINE 178 : 2019-12-14 17:05:40,851 [INFO    ] Save file of enrichment results: Job Id:8c1b2c68382540eb4b52b2aaa086495e
+LINE 189 : 2019-12-14 17:05:40,851 [WARNING ] Warning: No enrich terms using library KEGG_2016 when cutoff = 0.05
+LINE 193 : 2019-12-14 17:05:40,851 [INFO    ] Done.
+
+LINE 154 : 2019-12-14 17:06:15,284 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 205 : 2019-12-14 17:06:15,284 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 17:06:15,500 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 158 : 2019-12-14 17:06:15,584 [INFO    ] Libraries are used: KEGG_2016
+LINE 166 : 2019-12-14 17:06:15,584 [DEBUG   ] Start Enrichr using library: KEGG_2016
+LINE 167 : 2019-12-14 17:06:15,584 [INFO    ] Analysis name: Tumor_partition, Enrichr Library: KEGG_2016
+LINE 205 : 2019-12-14 17:06:15,600 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 17:06:15,879 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 205 : 2019-12-14 17:06:16,886 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 17:06:17,093 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=25191200&filename=KEGG_2016.Tumor_partition.reports&backgroundType=KEGG_2016 HTTP/1.1" 200 None
+LINE 178 : 2019-12-14 17:06:20,124 [INFO    ] Save file of enrichment results: Job Id:e6c4216a6776e151527a718cdb2ff621
+LINE 189 : 2019-12-14 17:06:20,131 [WARNING ] Warning: No enrich terms using library KEGG_2016 when cutoff = 0.05
+LINE 193 : 2019-12-14 17:06:20,131 [INFO    ] Done.
+
+LINE 154 : 2019-12-14 17:06:34,407 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 205 : 2019-12-14 17:06:34,407 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 17:06:34,608 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 158 : 2019-12-14 17:06:34,708 [INFO    ] Libraries are used: KEGG_2016
+LINE 166 : 2019-12-14 17:06:34,708 [DEBUG   ] Start Enrichr using library: KEGG_2016
+LINE 167 : 2019-12-14 17:06:34,708 [INFO    ] Analysis name: Tumor_partition, Enrichr Library: KEGG_2016
+LINE 205 : 2019-12-14 17:06:34,708 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 17:06:34,943 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 205 : 2019-12-14 17:06:35,946 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 17:06:36,162 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=25191201&filename=KEGG_2016.Tumor_partition.reports&backgroundType=KEGG_2016 HTTP/1.1" 200 None
+LINE 178 : 2019-12-14 17:06:39,177 [INFO    ] Save file of enrichment results: Job Id:dca4187ed2b90375cb9992e1f150f367
+LINE 189 : 2019-12-14 17:06:39,184 [WARNING ] Warning: No enrich terms using library KEGG_2016 when cutoff = 0.05
+LINE 193 : 2019-12-14 17:06:39,184 [INFO    ] Done.
+
+LINE 154 : 2019-12-14 17:06:44,509 [INFO    ] Connecting to Enrichr Server to get latest library names
+LINE 205 : 2019-12-14 17:06:44,524 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 17:06:44,709 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/datasetStatistics HTTP/1.1" 200 None
+LINE 158 : 2019-12-14 17:06:44,809 [INFO    ] Libraries are used: KEGG_2016
+LINE 166 : 2019-12-14 17:06:44,809 [DEBUG   ] Start Enrichr using library: KEGG_2016
+LINE 167 : 2019-12-14 17:06:44,809 [INFO    ] Analysis name: Tumor_partition, Enrichr Library: KEGG_2016
+LINE 205 : 2019-12-14 17:06:44,809 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 17:06:45,048 [DEBUG   ] http://amp.pharm.mssm.edu:80 "POST /Enrichr/addList HTTP/1.1" 200 74
+LINE 205 : 2019-12-14 17:06:46,052 [DEBUG   ] Starting new HTTP connection (1): amp.pharm.mssm.edu:80
+LINE 393 : 2019-12-14 17:06:46,272 [DEBUG   ] http://amp.pharm.mssm.edu:80 "GET /Enrichr/export?userListId=25191202&filename=KEGG_2016.Tumor_partition.reports&backgroundType=KEGG_2016 HTTP/1.1" 200 8145
+LINE 178 : 2019-12-14 17:06:49,288 [INFO    ] Save file of enrichment results: Job Id:7ba2a2886c402a8d1cd25e547cda53de
+LINE 189 : 2019-12-14 17:06:49,288 [WARNING ] Warning: No enrich terms using library KEGG_2016 when cutoff = 0.05
+LINE 193 : 2019-12-14 17:06:49,304 [INFO    ] Done.
+
