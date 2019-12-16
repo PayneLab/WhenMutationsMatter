@@ -445,3 +445,23 @@ LINE 178 : 2019-12-14 17:06:49,288 [INFO    ] Save file of enrichment results: J
 LINE 189 : 2019-12-14 17:06:49,288 [WARNING ] Warning: No enrich terms using library KEGG_2016 when cutoff = 0.05
 LINE 193 : 2019-12-14 17:06:49,304 [INFO    ] Done.
 
+LINE 2515: 2019-12-14 17:42:05,826 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 17:42:06,180 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 17:42:06,372 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 17:42:06,479 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 17:43:50,571 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 17:43:50,921 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 17:43:51,116 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 17:43:51,222 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 17:44:03,733 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 17:44:04,099 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 17:44:04,308 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 17:44:04,422 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 17:44:22,369 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 17:44:22,722 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 17:44:22,916 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 17:44:23,032 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 17:45:58,472 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 17:45:58,788 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 17:45:59,000 [DEBUG   ] update_title_pos
+LINE 2515: 2019-12-14 17:45:59,112 [DEBUG   ] update_title_pos
